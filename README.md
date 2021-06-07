@@ -37,6 +37,8 @@ $ pip install pandas
 ----
 ### Anaconda
 
+Note: sostituire <env_name> con il nome dell'enviroment che volete creare...
+
 ```sh
 $ conda create -n <env_name>
 $ conda activate <env_name>
