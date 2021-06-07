@@ -16,11 +16,11 @@ Rappresentazione tramite formato .html di una cartina geografica dell'Italia di 
 
 | Name | Description |
 | ------------- | ------------------------------ |
-| [Math] | Used for miscellaneous operating system operations.
-| [Numpy] | Time is a package that implements time in python script.
-| [Pandas]| Instantly make your loops show a smart progress meter - just wrap any iterable with tqdm(iterable).
-| [Folium]| Instantly make your loops show a smart progress meter - just wrap any iterable with tqdm(iterable).
-| [Webbrowser]| Instantly make your loops show a smart progress meter - just wrap any iterable with tqdm(iterable).
+| [Math] | module that provides access to the mathematical functions defined by the C standard.
+| [Numpy] | package for scientific computing with Python.
+| [Pandas]| fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
+| [Folium]| folium builds on the data wrangling strengths of the Python ecosystem and the mapping strengths of the Leaflet.js library.
+| [Webbrowser]| provides a high-level interface to allow displaying Web-based documents to users..
 | [Folium]| Instantly make your loops show a smart progress meter - just wrap any iterable with tqdm(iterable).
 
 
