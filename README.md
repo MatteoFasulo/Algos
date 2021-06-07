@@ -23,8 +23,9 @@ Rappresentazione tramite formato .html di una cartina geografica dell'Italia di 
 ---
 ### Dependencies
 
-[Python 3.9.X]
-[Numpy]
+- [Python 3.9.X]
+- [Numpy]
+- [Pandas]
 ---
 ### PIP
 
