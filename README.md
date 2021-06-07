@@ -8,7 +8,7 @@ L'implementazione prevede due differenti modelli. Il primo modello assume che tu
 Rappresentazione tramite formato .html di una cartina geografica dell'Italia di tutti i nodi compreso il sorgente e il più distante (in Km). Il raggio di ogni nodo è proporzionale alla distanza in Km dalla sorgente (considerando solo le loro coordinate geografiche).
 
 ### Datasets
-- Il dataset contenente le informazioni sulle ASL ed i comuni di riferimento è disponibile a: https://www.salute.gov.it/portale/documentazione/p6_2_8_1_1.jsp?id=13
+- Il dataset contenente le informazioni sulle ASL ed i comuni di riferimento è disponibile all'[indirizzo](https://www.salute.gov.it/portale/documentazione/p6_2_8_1_1.jsp?id=13)
 - Le coordinate geografiche di ogni comune sono state reperite nel [repository](https://github.com/MatteoHenryChinaski/Comuni-Italiani-2018-Sql-Json-excel)
 
 
