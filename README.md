@@ -21,7 +21,11 @@ Rappresentazione tramite formato .html di una cartina geografica dell'Italia di 
 | [Pandas]| fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
 | [Folium]| folium builds on the data wrangling strengths of the Python ecosystem and the mapping strengths of the Leaflet.js library.
 | [Webbrowser]| provides a high-level interface to allow displaying Web-based documents to users..
-| [Folium]| Instantly make your loops show a smart progress meter - just wrap any iterable with tqdm(iterable).
+| [Os]| this module provides a portable way of using operating system dependent functionality.
+| [Json]| the json library can parse JSON from strings or files.
+| [Time]| this module provides various time-related functions.
+| [Datetime]| the datetime module supplies classes for manipulating dates and times.
+|[Googlemaps]| the Python Client for Google Maps Services is a Python Client library for the following Google Maps APIs.
 
 
 ---
@@ -29,24 +33,35 @@ Rappresentazione tramite formato .html di una cartina geografica dell'Italia di 
 
 - [Python 3.9.X]
 - [Numpy]
+- [Folium]
+- [Os]
 - [Pandas]
+- [Time]
+- [Json]
+- [Datetime]
+- [Googlemaps]
+- [Webbrowser]
 ---
 ### PIP
 
-```sh
+```
 $ pip install numpy
 $ pip install pandas
+$ pip install os
+$ pip install time
+$ pip install datetime
+$ pip install json
+$ pip install folium
+$ pip install googlemaps
+$ pip install webbrowser
 ```
 
 ----
 ### Anaconda
 
-Note: sostituire <env_name> con il nome dell'enviroment che volete creare...
+Note: 
 
-```sh
-$ conda create -n <env_name>
-$ conda activate <env_name>
-$ conda config --env --add channels conda-forge
+```
 $ conda install pandas
 $ conda install numpy
 ```
@@ -57,13 +72,13 @@ $ conda install numpy
          
 | Function                   | Description                    |
 | -------------------------- | ------------------------------ |
-| `def main()`                       | **rappresenta la socket TCP principale su cui ogni client si connette prima di essere instradato sulla sua socket personale**|
-| `def assign_socket()`              |**crea una nuova socket prendendo una porta disponibile nel nostro sistema a coda, notifica il client e chiude la vecchia connessione**|
-| `def release_socket()`             | **chiude la connessione attuale e restituisce la porta al sistema a coda per un nuovo utente**|
-| `def tcp_socket()`                 | **instaura una connessione tcp e gestisce tutto il mapping degli argument per eseguire ogni specifica funzione richiesta**|
-| `def encode()`                     | **gestisce la compressione video per utenti concorrenti**|
-| `def clear_shadow()`               | **rimuove i file nativi dopo che essi sono stati compressi risparmiando spazio sul server**|
-| `def compress_video()`             | **comprime il video tramite ffmpeg in un sottoprocesso shell**|
+| `def main()`                       | ** **|
+| `def ()`              |** **|
+| `def ()`             | ** **|
+| `def ()`                 | ** **|
+| `def ()`                     | ** **|
+| `def ()`               | ** **|
+| `def()`             | ** **|
 
 ----
 
@@ -72,16 +87,16 @@ $ conda install numpy
 
 
 [time]
-[performance]
-[pythonds]
+[]
+[]
 
-[Python 3.9.X]: <https://www.python.org/downloads/release/python-390/>
+[Python 3.8]: <>
 [time]: <http://robyp.x10host.com/3/time.html#loaded>
-[performance]: <https://www.promezio.it/2018/10/02/python-misurazione-delle-performance/>
-[pythonds]: <https://elearning.lumsa.it/pluginfile.php/76990/mod_resource/content/1/pythonGraphs.pdf>
-[Math]: <https://docs.python.org/3/library/math.html>
+[datetime]: <https://docs.python.org/3/library/datetime.html> 
+[os]: <https://docs.python.org/3.8/library/os.html>
+[json]: <https://docs.python.org/3.8/library/json.html>
 [Numpy]: <https://numpy.org/install/>
 [Pandas]: <https://pandas.pydata.org/>
 [Folium]: <https://python-visualization.github.io/folium/>
 [Webbrowser]: <https://docs.python.org/3/library/webbrowser.html>
-
+[googlemaps]: <https://pypi.org/project/googlemaps/>
