@@ -86,11 +86,23 @@ $ conda install numpy
 
 
 [time]
+
+---
 [numpy]
+
+---
 [pandas]
+
+---
 [os]
+
+---
 [time]
+
+---
 [googlemaps]
+
+---
 [datetime]
 
 [Python 3.8]: <>
