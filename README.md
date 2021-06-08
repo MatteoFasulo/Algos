@@ -33,26 +33,16 @@ Rappresentazione tramite formato .html di una cartina geografica dell'Italia di 
 - [Python 3.9.X]
 - [Numpy]
 - [Folium]
-- [Os]
 - [Pandas]
-- [Time]
-- [Json]
-- [Datetime]
 - [Googlemaps]
-- [Webbrowser]
 ---
 ### PIP
 
 ```
 $ pip install numpy
 $ pip install pandas
-$ pip install os
-$ pip install time
-$ pip install datetime
-$ pip install json
 $ pip install folium
 $ pip install googlemaps
-$ pip install webbrowser
 ```
 
 ----
@@ -82,28 +72,6 @@ $ conda install numpy
 ----
 
 ### *End*
-
-
-
-[time]
-
----
-[numpy]
-
----
-[pandas]
-
----
-[os]
-
----
-[time]
-
----
-[googlemaps]
-
----
-[datetime]
 
 [Python 3.8]: <>
 [time]: <http://robyp.x10host.com/3/time.html#loaded>
