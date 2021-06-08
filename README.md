@@ -16,7 +16,6 @@ Rappresentazione tramite formato .html di una cartina geografica dell'Italia di 
 
 | Name | Description |
 | ------------- | ------------------------------ |
-| [Math] | module that provides access to the mathematical functions defined by the C standard.
 | [Numpy] | package for scientific computing with Python.
 | [Pandas]| fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
 | [Folium]| folium builds on the data wrangling strengths of the Python ecosystem and the mapping strengths of the Leaflet.js library.
@@ -87,8 +86,12 @@ $ conda install numpy
 
 
 [time]
-[]
-[]
+[numpy]
+[pandas]
+[os]
+[time]
+[googlemaps]
+[datetime]
 
 [Python 3.8]: <>
 [time]: <http://robyp.x10host.com/3/time.html#loaded>
