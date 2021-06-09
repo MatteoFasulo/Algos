@@ -1,0 +1,366 @@
+{
+  "L'Aquila": {
+    "capoluoghi_provincia": [
+      "Chieti",
+      "L'Aquila",
+      "Pescara",
+      "Teramo"
+    ],
+    "sigla_province": [
+      "CH",
+      "AQ",
+      "PE",
+      "TE"
+    ]
+  },
+  "Potenza": {
+    "capoluoghi_provincia": [
+      "Matera",
+      "Potenza"
+    ],
+    "sigla_province": [
+      "MT",
+      "PZ"
+    ]
+  },
+  "Catanzaro": {
+    "capoluoghi_provincia": [
+      "Catanzaro",
+      "Cosenza",
+      "Crotone",
+      "Locri",
+      "Reggio di Calabria",
+      "Vibo Valentia"
+    ],
+    "sigla_province": [
+      "CZ",
+      "CS",
+      "KR",
+      "RC",
+      "VV"
+    ]
+  },
+  "Napoli": {
+    "capoluoghi_provincia": [
+      "Avellino",
+      "Benevento",
+      "Caserta",
+      "Castellammare di Stabia",
+      "Napoli",
+      "Pozzuoli",
+      "Salerno"
+    ],
+    "sigla_province": [
+      "AV",
+      "BN",
+      "CE",
+      "NA",
+      "SA"
+    ]
+  },
+  "Bologna": {
+    "capoluoghi_provincia": [
+      "Bologna",
+      "Cesena",
+      "Ferrara",
+      "Forl\u00ec",
+      "Imola",
+      "Modena",
+      "Parma",
+      "Piacenza",
+      "Ravenna",
+      "Reggio nell'Emilia",
+      "Rimini"
+    ],
+    "sigla_province": [
+      "BO",
+      "FC",
+      "FE",
+      "MO",
+      "PR",
+      "PC",
+      "RA",
+      "RE",
+      "RN"
+    ]
+  },
+  "Trieste": {
+    "capoluoghi_provincia": [
+      "Gemona del Friuli",
+      "Gorizia",
+      "Palmanova",
+      "Pordenone",
+      "Trieste",
+      "Udine"
+    ],
+    "sigla_province": [
+      "UD",
+      "GO",
+      "PN",
+      "TS"
+    ]
+  },
+  "Roma": {
+    "capoluoghi_provincia": [
+      "Albano laziale",
+      "Civitavecchia",
+      "Frosinone",
+      "Latina",
+      "Rieti",
+      "Roma",
+      "Tivoli",
+      "Viterbo"
+    ],
+    "sigla_province": [
+      "RM",
+      "FR",
+      "LT",
+      "RI",
+      "VT"
+    ]
+  },
+  "Genova": {
+    "capoluoghi_provincia": [
+      "Chiavari",
+      "Genova",
+      "La Spezia",
+      "Sanremo",
+      "Savona"
+    ],
+    "sigla_province": [
+      "GE",
+      "SP",
+      "IM",
+      "SV"
+    ]
+  },
+  "Milano": {
+    "capoluoghi_provincia": [
+      "Bergamo",
+      "Breno",
+      "Brescia",
+      "Como",
+      "Cremona",
+      "Lecco",
+      "Legnano",
+      "Lodi",
+      "Mantova",
+      "Melegnano",
+      "Milano",
+      "Monza",
+      "Pavia",
+      "Sondrio",
+      "Varese"
+    ],
+    "sigla_province": [
+      "BG",
+      "BS",
+      "CO",
+      "CR",
+      "LC",
+      "MI",
+      "LO",
+      "MN",
+      "MB",
+      "PV",
+      "SO",
+      "VA"
+    ]
+  },
+  "Ancona": {
+    "capoluoghi_provincia": [
+      "Ancona"
+    ],
+    "sigla_province": [
+      "AN"
+    ]
+  },
+  "Campobasso": {
+    "capoluoghi_provincia": [
+      "Campobasso"
+    ],
+    "sigla_province": [
+      "CB"
+    ]
+  },
+  "Torino": {
+    "capoluoghi_provincia": [
+      "Alba",
+      "Alessandria",
+      "Asti",
+      "Biella",
+      "Casale Monferrato",
+      "Chieri",
+      "Chivasso",
+      "Collegno",
+      "Cuneo",
+      "Novara",
+      "Omegna",
+      "Ponderano",
+      "Torino",
+      "Vercelli"
+    ],
+    "sigla_province": [
+      "CN",
+      "AL",
+      "AT",
+      "BI",
+      "TO",
+      "NO",
+      "VB",
+      "VC"
+    ]
+  },
+  "Bari": {
+    "capoluoghi_provincia": [
+      "Andria",
+      "Bari",
+      "Brindisi",
+      "Foggia",
+      "Lecce",
+      "Taranto"
+    ],
+    "sigla_province": [
+      "BT",
+      "BA",
+      "BR",
+      "FG",
+      "LE",
+      "TA"
+    ]
+  },
+  "Cagliari": {
+    "capoluoghi_provincia": [
+      "Cagliari",
+      "Lanusei",
+      "Nuoro",
+      "Olbia",
+      "Oristano",
+      "Sassari"
+    ],
+    "sigla_province": [
+      "CA",
+      "NU",
+      "SS",
+      "OR"
+    ]
+  },
+  "Palermo": {
+    "capoluoghi_provincia": [
+      "Agrigento",
+      "Caltanissetta",
+      "Catania",
+      "Enna",
+      "Messina",
+      "Palermo",
+      "Ragusa",
+      "Siracusa",
+      "Trapani"
+    ],
+    "sigla_province": [
+      "AG",
+      "CL",
+      "CT",
+      "EN",
+      "ME",
+      "PA",
+      "RG",
+      "SR",
+      "TP"
+    ]
+  },
+  "Firenze": {
+    "capoluoghi_provincia": [
+      "Arezzo",
+      "Camaiore",
+      "Empoli",
+      "Firenze",
+      "Grosseto",
+      "Livorno",
+      "Lucca",
+      "Massa Carrara",
+      "Pisa",
+      "Pistoia",
+      "Prato",
+      "Siena",
+      "Viareggio"
+    ],
+    "sigla_province": [
+      "AR",
+      "LU",
+      "FI",
+      "GR",
+      "LI",
+      "MS",
+      "PI",
+      "PT",
+      "PO",
+      "SI"
+    ]
+  },
+  "Trento": {
+    "capoluoghi_provincia": [
+      "Bolzano",
+      "Trento"
+    ],
+    "sigla_province": [
+      "BZ",
+      "TN"
+    ]
+  },
+  "Perugia": {
+    "capoluoghi_provincia": [
+      "Citt\u00e0 di Castello",
+      "Foligno",
+      "Perugia",
+      "Terni"
+    ],
+    "sigla_province": [
+      "PG",
+      "TR"
+    ]
+  },
+  "Aosta": {
+    "capoluoghi_provincia": [
+      "Aosta"
+    ],
+    "sigla_province": [
+      "AO"
+    ]
+  },
+  "Venezia": {
+    "capoluoghi_provincia": [
+      "Adria",
+      "Arzignano",
+      "Asolo",
+      "Bassano del Grappa",
+      "Belluno",
+      "Bussolengo",
+      "Chioggia",
+      "Cittadella",
+      "Feltre",
+      "Legnago",
+      "Mirano",
+      "Monselice",
+      "Montagnana",
+      "Padova",
+      "Pieve di Soligo",
+      "Piovene Rocchette",
+      "Rovigo",
+      "San Don\u00e0 di Piave",
+      "Treviso",
+      "Venezia",
+      "Verona",
+      "Vicenza"
+    ],
+    "sigla_province": [
+      "RO",
+      "VI",
+      "TV",
+      "BL",
+      "VR",
+      "VE",
+      "PD"
+    ]
+  }
+}
