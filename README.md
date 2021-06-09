@@ -2,14 +2,17 @@
 Progetto di Algoritmi e Strutture Dati
 
 ### Description
-L'implementazione prevede due differenti modelli. Il primo modello assume che tutti i comuni (nodi) siano direttamente connessi tra loro con distanza (peso) pari al numero di Km che li separa, considerando le loro coordinate geografiche e l'asse terrestre medio pari a 6373Km . Il secondo modello prevede che i capoluoghi regionali (nodi) siano direttamente connessi tra loro con le stesse assunzioni sulla distanza del precedente modello; a partire da ogni capoluogo regionale è possibile arrivare ai capoluoghi di provincia e successivamente ai comuni (se esistenti).
+L'implementazione prevede tre differenti modelli. Il primo modello assume che tutti i comuni (nodi) siano fortemente connessi tra loro con distanza (peso) pari al numero di Km che li separa considerando la formula dell'emisenoverso [Haversine formula]("https://en.wikipedia.org/wiki/Haversine_formula"). Il secondo modello è una versione migliorata del primo che assume che tutti i comuni (nodi) siano fortemente connessi tra loro con distanza (peso) pari al numero di Km che li separa o pari al tempo impiegato a raggiungerlo; utilizza l'API di Google Maps per calcolare distanza e tempo di percorrenza. Il terzo modello prevede che solo i capoluoghi regionali (nodi) siano fortemente connessi tra loro; a partire da ogni capoluogo regionale è possibile arrivare ai capoluoghi di provincia e successivamente ai comuni (se esistenti) ma la connessione tra province e capoluoghi di altre regioni non è diretta; viene calcolata distanza e tempo di percorrenza tramite API di Google Maps.
 
 ### Features
-Rappresentazione tramite formato .html di una cartina geografica dell'Italia di tutti i nodi compreso il sorgente e il più distante (in Km). Il raggio di ogni nodo è proporzionale alla distanza in Km dalla sorgente (considerando solo le loro coordinate geografiche).
+Rappresentazione tramite formato .html di una cartina geografica dell'Italia di tutti i nodi compreso il sorgente (rosso) e il più distante (viola, in Km o minuti). Il raggio di ogni nodo è proporzionale alla distanza in Km (1° modello) o minuti dalla sorgente (2° modello). Nel 1° e 2° modello viene inoltre calcolato il miglior comune sorgente (in blu) che minimizza le distanze o i tempi di percorrenza da qualunque altro nodo. Il 3° modello identifica sia il miglior capoluogo di regione da cui partire che la miglior provincia per ogni capoluogo da cui partire. 
 
 ### Datasets
 - Il dataset contenente le informazioni sulle ASL ed i comuni di riferimento è disponibile all'[indirizzo](https://www.salute.gov.it/portale/documentazione/p6_2_8_1_1.jsp?id=13)
 - Le coordinate geografiche di ogni comune sono state reperite nel [repository](https://github.com/MatteoHenryChinaski/Comuni-Italiani-2018-Sql-Json-excel)
+
+### Errori noti
+I dataset riportati sono stati in parte modificati manualmente per permettere all'API di Google Maps di identificare, a partire dal nome del comune, le coordinate di latitudine e longitudine. I dataset ottimizzati sono reperibili nella cartella "data".
 
 
 ### Libraries
@@ -43,6 +46,10 @@ $ pip install numpy
 $ pip install pandas
 $ pip install folium
 $ pip install googlemaps
+$ pip install rich
+$ pip install googlemaps
+$ pip install polyline
+
 ```
 
 ----
