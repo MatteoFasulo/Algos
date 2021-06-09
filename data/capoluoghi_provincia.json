@@ -1,8 +1,8 @@
 {
   "L'Aquila": {
     "capoluoghi_provincia": [
-      "Chieti",
       "L'Aquila",
+      "Chieti",
       "Pescara",
       "Teramo"
     ],
@@ -58,11 +58,11 @@
   "Bologna": {
     "capoluoghi_provincia": [
       "Bologna",
-      "Ferrara",
       "Forl\u00ec",
+      "Ferrara",
       "Modena",
-      "Parma",
       "Piacenza",
+      "Parma",
       "Ravenna",
       "Reggio nell'Emilia",
       "Rimini"
@@ -145,9 +145,9 @@
       "CR",
       "LC",
       "LO",
-      "MB",
-      "MI",
       "MN",
+      "MI",
+      "MB",
       "PV",
       "SO",
       "VA"
@@ -193,8 +193,8 @@
   },
   "Bari": {
     "capoluoghi_provincia": [
-      "Andria",
       "Bari",
+      "Andria",
       "Brindisi",
       "Foggia",
       "Lecce",
@@ -202,8 +202,8 @@
     ],
     "sigla_province": [
       "BA",
-      "BR",
       "BT",
+      "BR",
       "FG",
       "LE",
       "TA"
@@ -270,8 +270,8 @@
       "LU",
       "MS",
       "PI",
-      "PO",
       "PT",
+      "PO",
       "SI"
     ]
   },
@@ -319,8 +319,8 @@
       "RO",
       "TV",
       "VE",
-      "VI",
-      "VR"
+      "VR",
+      "VI"
     ]
   }
 }
