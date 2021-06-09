@@ -1,0 +1,1161 @@
+[
+  {
+    "comune": "Torino",
+    "sigla_provincia": "TO",
+    "provincia": "Torino",
+    "regione": "Piemonte",
+    "lng": 7.686864,
+    "lat": 45.0703393
+  },
+  {
+    "comune": "Collegno",
+    "sigla_provincia": "TO",
+    "provincia": "Torino",
+    "regione": "Piemonte",
+    "lng": 7.5865634,
+    "lat": 45.0897785
+  },
+  {
+    "comune": "Chivasso",
+    "sigla_provincia": "TO",
+    "provincia": "Torino",
+    "regione": "Piemonte",
+    "lng": 7.888952,
+    "lat": 45.19003840000001
+  },
+  {
+    "comune": "Chieri",
+    "sigla_provincia": "TO",
+    "provincia": "Torino",
+    "regione": "Piemonte",
+    "lng": 7.827555100000001,
+    "lat": 45.008885
+  },
+  {
+    "comune": "Vercelli",
+    "sigla_provincia": "VC",
+    "provincia": "Vercelli",
+    "regione": "Piemonte",
+    "lng": 8.418573499999999,
+    "lat": 45.32022720000001
+  },
+  {
+    "comune": "Biella",
+    "sigla_provincia": "BI",
+    "provincia": "Biella",
+    "regione": "Piemonte",
+    "lng": 8.0583397,
+    "lat": 45.56288420000001
+  },
+  {
+    "comune": "Novara",
+    "sigla_provincia": "NO",
+    "provincia": "Novara",
+    "regione": "Piemonte",
+    "lng": 8.622161199999999,
+    "lat": 45.44692999999999
+  },
+  {
+    "comune": "Omegna",
+    "sigla_provincia": "VB",
+    "provincia": "Verbano-Cusio-Ossola",
+    "regione": "Piemonte",
+    "lng": 8.414451999999999,
+    "lat": 45.8706086
+  },
+  {
+    "comune": "Cuneo",
+    "sigla_provincia": "CN",
+    "provincia": "Cuneo",
+    "regione": "Piemonte",
+    "lng": 7.5426711,
+    "lat": 44.3844766
+  },
+  {
+    "comune": "Alba",
+    "sigla_provincia": "CN",
+    "provincia": "Cuneo",
+    "regione": "Piemonte",
+    "lng": 8.0356911,
+    "lat": 44.7009153
+  },
+  {
+    "comune": "Asti",
+    "sigla_provincia": "AT",
+    "provincia": "Asti",
+    "regione": "Piemonte",
+    "lng": 8.2064257,
+    "lat": 44.90075119999999
+  },
+  {
+    "comune": "Casale Monferrato",
+    "sigla_provincia": "AL",
+    "provincia": "Alessandria",
+    "regione": "Piemonte",
+    "lng": 8.450503,
+    "lat": 45.1316088
+  },
+  {
+    "comune": "Aosta",
+    "sigla_provincia": "AO",
+    "provincia": "Aosta",
+    "regione": "Valle d'Aosta",
+    "lng": 7.313076199999999,
+    "lat": 45.7349551
+  },
+  {
+    "comune": "Bergamo",
+    "sigla_provincia": "BG",
+    "provincia": "Bergamo",
+    "regione": "Lombardia",
+    "lng": 9.6772698,
+    "lat": 45.6982642
+  },
+  {
+    "comune": "Brescia",
+    "sigla_provincia": "BS",
+    "provincia": "Brescia",
+    "regione": "Lombardia",
+    "lng": 10.2118019,
+    "lat": 45.5415526
+  },
+  {
+    "comune": "Como",
+    "sigla_provincia": "CO",
+    "provincia": "Como",
+    "regione": "Lombardia",
+    "lng": 9.0851765,
+    "lat": 45.8080597
+  },
+  {
+    "comune": "Cremona",
+    "sigla_provincia": "CR",
+    "provincia": "Cremona",
+    "regione": "Lombardia",
+    "lng": 10.0226511,
+    "lat": 45.133249
+  },
+  {
+    "comune": "Lecco",
+    "sigla_provincia": "LC",
+    "provincia": "Lecco",
+    "regione": "Lombardia",
+    "lng": 9.397670399999999,
+    "lat": 45.8565698
+  },
+  {
+    "comune": "Lodi",
+    "sigla_provincia": "LO",
+    "provincia": "Lodi",
+    "regione": "Lombardia",
+    "lng": 9.503715999999999,
+    "lat": 45.3097228
+  },
+  {
+    "comune": "Mantova",
+    "sigla_provincia": "MN",
+    "provincia": "Mantova",
+    "regione": "Lombardia",
+    "lng": 10.7913751,
+    "lat": 45.1564168
+  },
+  {
+    "comune": "Milano",
+    "sigla_provincia": "MI",
+    "provincia": "Milano",
+    "regione": "Lombardia",
+    "lng": 9.189982,
+    "lat": 45.4642035
+  },
+  {
+    "comune": "Legnano",
+    "sigla_provincia": "MI",
+    "provincia": "Milano",
+    "regione": "Lombardia",
+    "lng": 8.9142485,
+    "lat": 45.5983403
+  },
+  {
+    "comune": "Melegnano",
+    "sigla_provincia": "MI",
+    "provincia": "Milano",
+    "regione": "Lombardia",
+    "lng": 9.321463,
+    "lat": 45.3563017
+  },
+  {
+    "comune": "Monza",
+    "sigla_provincia": "MB",
+    "provincia": "Monza e della Brianza",
+    "regione": "Lombardia",
+    "lng": 9.2744485,
+    "lat": 45.5845001
+  },
+  {
+    "comune": "Pavia",
+    "sigla_provincia": "PV",
+    "provincia": "Pavia",
+    "regione": "Lombardia",
+    "lng": 9.1582069,
+    "lat": 45.1847248
+  },
+  {
+    "comune": "Sondrio",
+    "sigla_provincia": "SO",
+    "provincia": "Sondrio",
+    "regione": "Lombardia",
+    "lng": 9.8787674,
+    "lat": 46.1698583
+  },
+  {
+    "comune": "Varese",
+    "sigla_provincia": "VA",
+    "provincia": "Varese",
+    "regione": "Lombardia",
+    "lng": 8.8250576,
+    "lat": 45.82059890000001
+  },
+  {
+    "comune": "Breno",
+    "sigla_provincia": "BS",
+    "provincia": "Brescia",
+    "regione": "Lombardia",
+    "lng": 10.4262024,
+    "lat": 45.9339231
+  },
+  {
+    "comune": "Bolzano",
+    "sigla_provincia": "BZ",
+    "provincia": "Bolzano",
+    "regione": "Trentino-Alto Adige",
+    "lng": 11.3547582,
+    "lat": 46.4982953
+  },
+  {
+    "comune": "Trento",
+    "sigla_provincia": "TN",
+    "provincia": "Trento",
+    "regione": "Trentino-Alto Adige",
+    "lng": 11.1217486,
+    "lat": 46.0747793
+  },
+  {
+    "comune": "Belluno",
+    "sigla_provincia": "BL",
+    "provincia": "Belluno",
+    "regione": "Veneto",
+    "lng": 12.2167088,
+    "lat": 46.1424635
+  },
+  {
+    "comune": "Feltre",
+    "sigla_provincia": "BL",
+    "provincia": "Belluno",
+    "regione": "Veneto",
+    "lng": 11.9005837,
+    "lat": 46.0178511
+  },
+  {
+    "comune": "Bassano del Grappa",
+    "sigla_provincia": "VI",
+    "provincia": "Vicenza",
+    "regione": "Veneto",
+    "lng": 11.7272747,
+    "lat": 45.7657286
+  },
+  {
+    "comune": "Piovene Rocchette",
+    "sigla_provincia": "VI",
+    "provincia": "Vicenza",
+    "regione": "Veneto",
+    "lng": 11.4773537,
+    "lat": 45.7070408
+  },
+  {
+    "comune": "Arzignano",
+    "sigla_provincia": "VI",
+    "provincia": "Vicenza",
+    "regione": "Veneto",
+    "lng": 11.3337046,
+    "lat": 45.5223525
+  },
+  {
+    "comune": "Vicenza",
+    "sigla_provincia": "VI",
+    "provincia": "Vicenza",
+    "regione": "Veneto",
+    "lng": 11.5354214,
+    "lat": 45.5454787
+  },
+  {
+    "comune": "Pieve di Soligo",
+    "sigla_provincia": "TV",
+    "provincia": "Treviso",
+    "regione": "Veneto",
+    "lng": 12.1811282,
+    "lat": 45.9078554
+  },
+  {
+    "comune": "Asolo",
+    "sigla_provincia": "TV",
+    "provincia": "Treviso",
+    "regione": "Veneto",
+    "lng": 11.9141103,
+    "lat": 45.79925859999999
+  },
+  {
+    "comune": "Treviso",
+    "sigla_provincia": "TV",
+    "provincia": "Treviso",
+    "regione": "Veneto",
+    "lng": 12.2430437,
+    "lat": 45.6668893
+  },
+  {
+    "comune": "San Don\u00e0 di Piave",
+    "sigla_provincia": "VE",
+    "provincia": "Venezia",
+    "regione": "Veneto",
+    "lng": 12.5660992,
+    "lat": 45.630335
+  },
+  {
+    "comune": "Venezia",
+    "sigla_provincia": "VE",
+    "provincia": "Venezia",
+    "regione": "Veneto",
+    "lng": 12.3155151,
+    "lat": 45.4408474
+  },
+  {
+    "comune": "Mirano",
+    "sigla_provincia": "VE",
+    "provincia": "Venezia",
+    "regione": "Veneto",
+    "lng": 12.1158683,
+    "lat": 45.4950138
+  },
+  {
+    "comune": "Chioggia",
+    "sigla_provincia": "VE",
+    "provincia": "Venezia",
+    "regione": "Veneto",
+    "lng": 12.2786505,
+    "lat": 45.2190746
+  },
+  {
+    "comune": "Cittadella",
+    "sigla_provincia": "PD",
+    "provincia": "Padova",
+    "regione": "Veneto",
+    "lng": 11.7866171,
+    "lat": 45.6660366
+  },
+  {
+    "comune": "Padova",
+    "sigla_provincia": "PD",
+    "provincia": "Padova",
+    "regione": "Veneto",
+    "lng": 11.8767611,
+    "lat": 45.4064349
+  },
+  {
+    "comune": "Montagnana",
+    "sigla_provincia": "PD",
+    "provincia": "Padova",
+    "regione": "Veneto",
+    "lng": 11.4624091,
+    "lat": 45.2308365
+  },
+  {
+    "comune": "Rovigo",
+    "sigla_provincia": "RO",
+    "provincia": "Rovigo",
+    "regione": "Veneto",
+    "lng": 11.7902158,
+    "lat": 45.0698118
+  },
+  {
+    "comune": "Adria",
+    "sigla_provincia": "RO",
+    "provincia": "Rovigo",
+    "regione": "Veneto",
+    "lng": 12.0560381,
+    "lat": 45.0555487
+  },
+  {
+    "comune": "Verona",
+    "sigla_provincia": "VR",
+    "provincia": "Verona",
+    "regione": "Veneto",
+    "lng": 10.9916215,
+    "lat": 45.43838419999999
+  },
+  {
+    "comune": "Legnago",
+    "sigla_provincia": "VR",
+    "provincia": "Verona",
+    "regione": "Veneto",
+    "lng": 11.303213,
+    "lat": 45.1935965
+  },
+  {
+    "comune": "Bussolengo",
+    "sigla_provincia": "VR",
+    "provincia": "Verona",
+    "regione": "Veneto",
+    "lng": 10.8507277,
+    "lat": 45.4732537
+  },
+  {
+    "comune": "Trieste",
+    "sigla_provincia": "TS",
+    "provincia": "Trieste",
+    "regione": "Friuli-Venezia Giulia",
+    "lng": 13.7768182,
+    "lat": 45.6495264
+  },
+  {
+    "comune": "Gorizia",
+    "sigla_provincia": "GO",
+    "provincia": "Gorizia",
+    "regione": "Friuli-Venezia Giulia",
+    "lng": 13.6201754,
+    "lat": 45.9401812
+  },
+  {
+    "comune": "Gemona del Friuli",
+    "sigla_provincia": "UD",
+    "provincia": "Udine",
+    "regione": "Friuli-Venezia Giulia",
+    "lng": 13.1457376,
+    "lat": 46.2891468
+  },
+  {
+    "comune": "Udine",
+    "sigla_provincia": "UD",
+    "provincia": "Udine",
+    "regione": "Friuli-Venezia Giulia",
+    "lng": 13.2345794,
+    "lat": 46.0710668
+  },
+  {
+    "comune": "Palmanova",
+    "sigla_provincia": "UD",
+    "provincia": "Udine",
+    "regione": "Friuli-Venezia Giulia",
+    "lng": 13.3057286,
+    "lat": 45.909424
+  },
+  {
+    "comune": "Pordenone",
+    "sigla_provincia": "PN",
+    "provincia": "Pordenone",
+    "regione": "Friuli-Venezia Giulia",
+    "lng": 12.661452,
+    "lat": 45.9563684
+  },
+  {
+    "comune": "Sanremo",
+    "sigla_provincia": "IM",
+    "provincia": "Imperia",
+    "regione": "Liguria",
+    "lng": 7.7760567,
+    "lat": 43.81596709999999
+  },
+  {
+    "comune": "Savona",
+    "sigla_provincia": "SV",
+    "provincia": "Savona",
+    "regione": "Liguria",
+    "lng": 8.464533099999999,
+    "lat": 44.298387
+  },
+  {
+    "comune": "Genova",
+    "sigla_provincia": "GE",
+    "provincia": "Genova",
+    "regione": "Liguria",
+    "lng": 8.946256,
+    "lat": 44.4056499
+  },
+  {
+    "comune": "Chiavari",
+    "sigla_provincia": "GE",
+    "provincia": "Genova",
+    "regione": "Liguria",
+    "lng": 9.3199822,
+    "lat": 44.3168416
+  },
+  {
+    "comune": "La Spezia",
+    "sigla_provincia": "SP",
+    "provincia": "La Spezia",
+    "regione": "Liguria",
+    "lng": 9.824082599999999,
+    "lat": 44.1024504
+  },
+  {
+    "comune": "Piacenza",
+    "sigla_provincia": "PC",
+    "provincia": "Piacenza",
+    "regione": "Emilia-Romagna",
+    "lng": 9.6929845,
+    "lat": 45.0526206
+  },
+  {
+    "comune": "Parma",
+    "sigla_provincia": "PR",
+    "provincia": "Parma",
+    "regione": "Emilia-Romagna",
+    "lng": 10.3279036,
+    "lat": 44.801485
+  },
+  {
+    "comune": "Reggio nell'Emilia",
+    "sigla_provincia": "RE",
+    "provincia": "Reggio Emilia",
+    "regione": "Emilia-Romagna",
+    "lng": 10.6296859,
+    "lat": 44.6989932
+  },
+  {
+    "comune": "Modena",
+    "sigla_provincia": "MO",
+    "provincia": "Modena",
+    "regione": "Emilia-Romagna",
+    "lng": 10.9252269,
+    "lat": 44.647128
+  },
+  {
+    "comune": "Bologna",
+    "sigla_provincia": "BO",
+    "provincia": "Bologna",
+    "regione": "Emilia-Romagna",
+    "lng": 11.3426162,
+    "lat": 44.494887
+  },
+  {
+    "comune": "Imola",
+    "sigla_provincia": "BO",
+    "provincia": "Bologna",
+    "regione": "Emilia-Romagna",
+    "lng": 11.7124294,
+    "lat": 44.35999959999999
+  },
+  {
+    "comune": "Ferrara",
+    "sigla_provincia": "FE",
+    "provincia": "Ferrara",
+    "regione": "Emilia-Romagna",
+    "lng": 11.619787,
+    "lat": 44.8381237
+  },
+  {
+    "comune": "Ravenna",
+    "sigla_provincia": "RA",
+    "provincia": "Ravenna",
+    "regione": "Emilia-Romagna",
+    "lng": 12.2035294,
+    "lat": 44.4183598
+  },
+  {
+    "comune": "Forl\u00ec",
+    "sigla_provincia": "FC",
+    "provincia": "Forl\u00ec",
+    "regione": "Emilia-Romagna",
+    "lng": 12.0407312,
+    "lat": 44.2227398
+  },
+  {
+    "comune": "Cesena",
+    "sigla_provincia": "FC",
+    "provincia": "Forl\u00ec",
+    "regione": "Emilia-Romagna",
+    "lng": 12.2464292,
+    "lat": 44.1396438
+  },
+  {
+    "comune": "Rimini",
+    "sigla_provincia": "RN",
+    "provincia": "Rimini",
+    "regione": "Emilia-Romagna",
+    "lng": 12.5695158,
+    "lat": 44.0678288
+  },
+  {
+    "comune": "Massa Carrara",
+    "sigla_provincia": "MS",
+    "provincia": "Massa Carrara",
+    "regione": "Toscana",
+    "lng": 10.097677,
+    "lat": 44.0793245
+  },
+  {
+    "comune": "Lucca",
+    "sigla_provincia": "LU",
+    "provincia": "Lucca",
+    "regione": "Toscana",
+    "lng": 10.5026977,
+    "lat": 43.8429197
+  },
+  {
+    "comune": "Pistoia",
+    "sigla_provincia": "PT",
+    "provincia": "Pistoia",
+    "regione": "Toscana",
+    "lng": 10.9078587,
+    "lat": 43.9303475
+  },
+  {
+    "comune": "Prato",
+    "sigla_provincia": "PO",
+    "provincia": "Prato",
+    "regione": "Toscana",
+    "lng": 11.102228,
+    "lat": 43.8777049
+  },
+  {
+    "comune": "Pisa",
+    "sigla_provincia": "PI",
+    "provincia": "Pisa",
+    "regione": "Toscana",
+    "lng": 10.4016888,
+    "lat": 43.7228386
+  },
+  {
+    "comune": "Livorno",
+    "sigla_provincia": "LI",
+    "provincia": "Livorno",
+    "regione": "Toscana",
+    "lng": 10.3105674,
+    "lat": 43.548473
+  },
+  {
+    "comune": "Siena",
+    "sigla_provincia": "SI",
+    "provincia": "Siena",
+    "regione": "Toscana",
+    "lng": 11.3307574,
+    "lat": 43.31880899999999
+  },
+  {
+    "comune": "Arezzo",
+    "sigla_provincia": "AR",
+    "provincia": "Arezzo",
+    "regione": "Toscana",
+    "lng": 11.8796336,
+    "lat": 43.46328390000001
+  },
+  {
+    "comune": "Grosseto",
+    "sigla_provincia": "GR",
+    "provincia": "Grosseto",
+    "regione": "Toscana",
+    "lng": 11.1123634,
+    "lat": 42.7635254
+  },
+  {
+    "comune": "Firenze",
+    "sigla_provincia": "FI",
+    "provincia": "Firenze",
+    "regione": "Toscana",
+    "lng": 11.2558136,
+    "lat": 43.7695604
+  },
+  {
+    "comune": "Empoli",
+    "sigla_provincia": "FI",
+    "provincia": "Firenze",
+    "regione": "Toscana",
+    "lng": 10.9477782,
+    "lat": 43.7178919
+  },
+  {
+    "comune": "Viareggio",
+    "sigla_provincia": "LU",
+    "provincia": "Lucca",
+    "regione": "Toscana",
+    "lng": 10.2513103,
+    "lat": 43.8657267
+  },
+  {
+    "comune": "Citt\u00e0 di Castello",
+    "sigla_provincia": "PG",
+    "provincia": "Perugia",
+    "regione": "Umbria",
+    "lng": 12.2319048,
+    "lat": 43.4577876
+  },
+  {
+    "comune": "Perugia",
+    "sigla_provincia": "PG",
+    "provincia": "Perugia",
+    "regione": "Umbria",
+    "lng": 12.3908279,
+    "lat": 43.1107168
+  },
+  {
+    "comune": "Foligno",
+    "sigla_provincia": "PG",
+    "provincia": "Perugia",
+    "regione": "Umbria",
+    "lng": 12.7014749,
+    "lat": 42.9508683
+  },
+  {
+    "comune": "Terni",
+    "sigla_provincia": "TR",
+    "provincia": "Terni",
+    "regione": "Umbria",
+    "lng": 12.6426604,
+    "lat": 42.5636168
+  },
+  {
+    "comune": "Ancona",
+    "sigla_provincia": "AN",
+    "provincia": "Ancona",
+    "regione": "Marche",
+    "lng": 13.518915,
+    "lat": 43.6158299
+  },
+  {
+    "comune": "Roma",
+    "sigla_provincia": "RM",
+    "provincia": "Roma",
+    "regione": "Lazio",
+    "lng": 12.4963655,
+    "lat": 41.9027835
+  },
+  {
+    "comune": "Civitavecchia",
+    "sigla_provincia": "RM",
+    "provincia": "Roma",
+    "regione": "Lazio",
+    "lng": 11.7954132,
+    "lat": 42.0924239
+  },
+  {
+    "comune": "Tivoli",
+    "sigla_provincia": "RM",
+    "provincia": "Roma",
+    "regione": "Lazio",
+    "lng": 12.8022261,
+    "lat": 41.959817
+  },
+  {
+    "comune": "Albano laziale",
+    "sigla_provincia": "RM",
+    "provincia": "Roma",
+    "regione": "Lazio",
+    "lng": 12.6589426,
+    "lat": 41.7284572
+  },
+  {
+    "comune": "Viterbo",
+    "sigla_provincia": "VT",
+    "provincia": "Viterbo",
+    "regione": "Lazio",
+    "lng": 12.107669,
+    "lat": 42.4206766
+  },
+  {
+    "comune": "Rieti",
+    "sigla_provincia": "RI",
+    "provincia": "Rieti",
+    "regione": "Lazio",
+    "lng": 12.8567281,
+    "lat": 42.404509
+  },
+  {
+    "comune": "Latina",
+    "sigla_provincia": "LT",
+    "provincia": "Latina",
+    "regione": "Lazio",
+    "lng": 12.9035965,
+    "lat": 41.4675671
+  },
+  {
+    "sigla_provincia": "FR",
+    "provincia": "Frosinone",
+    "regione": "Lazio",
+    "lng": 13.6362715,
+    "lat": 41.6576528
+  },
+  {
+    "comune": "L'Aquila",
+    "sigla_provincia": "AQ",
+    "provincia": "L'Aquila",
+    "regione": "Abruzzo",
+    "lng": 13.3995091,
+    "lat": 42.3498479
+  },
+  {
+    "comune": "Chieti",
+    "sigla_provincia": "CH",
+    "provincia": "Chieti",
+    "regione": "Abruzzo",
+    "lng": 14.1635845,
+    "lat": 42.347886
+  },
+  {
+    "comune": "Pescara",
+    "sigla_provincia": "PE",
+    "provincia": "Pescara",
+    "regione": "Abruzzo",
+    "lng": 14.2160898,
+    "lat": 42.4617902
+  },
+  {
+    "comune": "Teramo",
+    "sigla_provincia": "TE",
+    "provincia": "Teramo",
+    "regione": "Abruzzo",
+    "lng": 13.6986639,
+    "lat": 42.6611431
+  },
+  {
+    "comune": "Campobasso",
+    "sigla_provincia": "CB",
+    "provincia": "Campobasso",
+    "regione": "Molise",
+    "lng": 14.6627161,
+    "lat": 41.5602544
+  },
+  {
+    "comune": "Avellino",
+    "sigla_provincia": "AV",
+    "provincia": "Avellino",
+    "regione": "Campania",
+    "lng": 14.7906121,
+    "lat": 40.914388
+  },
+  {
+    "comune": "Benevento",
+    "sigla_provincia": "BN",
+    "provincia": "Benevento",
+    "regione": "Campania",
+    "lng": 14.7826208,
+    "lat": 41.1297613
+  },
+  {
+    "comune": "Caserta",
+    "sigla_provincia": "CE",
+    "provincia": "Caserta",
+    "regione": "Campania",
+    "lng": 14.367553,
+    "lat": 41.0854362
+  },
+  {
+    "comune": "Napoli",
+    "sigla_provincia": "NA",
+    "provincia": "Napoli",
+    "regione": "Campania",
+    "lng": 14.26812,
+    "lat": 40.8517983
+  },
+  {
+    "comune": "Pozzuoli",
+    "sigla_provincia": "NA",
+    "provincia": "Napoli",
+    "regione": "Campania",
+    "lng": 14.0932861,
+    "lat": 40.8459469
+  },
+  {
+    "comune": "Castellammare di Stabia",
+    "sigla_provincia": "NA",
+    "provincia": "Napoli",
+    "regione": "Campania",
+    "lng": 14.4898001,
+    "lat": 40.6984766
+  },
+  {
+    "comune": "Salerno",
+    "sigla_provincia": "SA",
+    "provincia": "Salerno",
+    "regione": "Campania",
+    "lng": 14.7680961,
+    "lat": 40.68244079999999
+  },
+  {
+    "comune": "Brindisi",
+    "sigla_provincia": "BR",
+    "provincia": "Brindisi",
+    "regione": "Puglia",
+    "lng": 17.9417616,
+    "lat": 40.6327278
+  },
+  {
+    "comune": "Taranto",
+    "sigla_provincia": "TA",
+    "provincia": "Taranto",
+    "regione": "Puglia",
+    "lng": 17.2470303,
+    "lat": 40.46436060000001
+  },
+  {
+    "comune": "Andria",
+    "sigla_provincia": "BT",
+    "provincia": "Andria",
+    "regione": "Puglia",
+    "lng": 16.22868,
+    "lat": 41.1382473
+  },
+  {
+    "comune": "Bari",
+    "sigla_provincia": "BA",
+    "provincia": "Bari",
+    "regione": "Puglia",
+    "lng": 16.8718715,
+    "lat": 41.1171432
+  },
+  {
+    "comune": "Foggia",
+    "sigla_provincia": "FG",
+    "provincia": "Foggia",
+    "regione": "Puglia",
+    "lng": 15.5446302,
+    "lat": 41.4621984
+  },
+  {
+    "comune": "Lecce",
+    "sigla_provincia": "LE",
+    "provincia": "Lecce",
+    "regione": "Puglia",
+    "lng": 18.1750161,
+    "lat": 40.3515155
+  },
+  {
+    "comune": "Potenza",
+    "sigla_provincia": "PZ",
+    "provincia": "Potenza",
+    "regione": "Basilicata",
+    "lng": 15.8056041,
+    "lat": 40.6404067
+  },
+  {
+    "comune": "Matera",
+    "sigla_provincia": "MT",
+    "provincia": "Matera",
+    "regione": "Basilicata",
+    "lng": 16.6043199,
+    "lat": 40.666379
+  },
+  {
+    "comune": "Locri",
+    "sigla_provincia": "RC",
+    "provincia": "Reggio Calabria",
+    "regione": "Calabria",
+    "lng": 16.2638009,
+    "lat": 38.2337193
+  },
+  {
+    "comune": "Cosenza",
+    "sigla_provincia": "CS",
+    "provincia": "Cosenza",
+    "regione": "Calabria",
+    "lng": 16.2537357,
+    "lat": 39.2982629
+  },
+  {
+    "comune": "Crotone",
+    "sigla_provincia": "KR",
+    "provincia": "Crotone",
+    "regione": "Calabria",
+    "lng": 17.1271102,
+    "lat": 39.0807932
+  },
+  {
+    "comune": "Catanzaro",
+    "sigla_provincia": "CZ",
+    "provincia": "Catanzaro",
+    "regione": "Calabria",
+    "lng": 16.5876516,
+    "lat": 38.90979189999999
+  },
+  {
+    "comune": "Vibo Valentia",
+    "sigla_provincia": "VV",
+    "provincia": "Vibo Valentia",
+    "regione": "Calabria",
+    "lng": 16.0983488,
+    "lat": 38.6757774
+  },
+  {
+    "comune": "Reggio Calabria",
+    "sigla_provincia": "RC",
+    "provincia": "Reggio Calabria",
+    "regione": "Calabria",
+    "lng": 15.6472914,
+    "lat": 38.1113006
+  },
+  {
+    "comune": "Agrigento",
+    "sigla_provincia": "AG",
+    "provincia": "Agrigento",
+    "regione": "Sicilia",
+    "lng": 13.5857528,
+    "lat": 37.3088512
+  },
+  {
+    "comune": "Caltanissetta",
+    "sigla_provincia": "CL",
+    "provincia": "Caltanissetta",
+    "regione": "Sicilia",
+    "lng": 14.0628928,
+    "lat": 37.4901115
+  },
+  {
+    "comune": "Catania",
+    "sigla_provincia": "CT",
+    "provincia": "Catania",
+    "regione": "Sicilia",
+    "lng": 15.0830304,
+    "lat": 37.5078772
+  },
+  {
+    "comune": "Enna",
+    "sigla_provincia": "EN",
+    "provincia": "Enna",
+    "regione": "Sicilia",
+    "lng": 14.262851,
+    "lat": 37.5099321
+  },
+  {
+    "comune": "Messina",
+    "sigla_provincia": "ME",
+    "provincia": "Messina",
+    "regione": "Sicilia",
+    "lng": 15.5542057,
+    "lat": 38.1937335
+  },
+  {
+    "comune": "Palermo",
+    "sigla_provincia": "PA",
+    "provincia": "Palermo",
+    "regione": "Sicilia",
+    "lng": 13.3614868,
+    "lat": 38.11569
+  },
+  {
+    "comune": "Ragusa",
+    "sigla_provincia": "RG",
+    "provincia": "Ragusa",
+    "regione": "Sicilia",
+    "lng": 14.7255129,
+    "lat": 36.9269273
+  },
+  {
+    "comune": "Siracusa",
+    "sigla_provincia": "SR",
+    "provincia": "Siracusa",
+    "regione": "Sicilia",
+    "lng": 15.2865861,
+    "lat": 37.0754739
+  },
+  {
+    "comune": "Trapani",
+    "sigla_provincia": "TP",
+    "provincia": "Trapani",
+    "regione": "Sicilia",
+    "lng": 12.5365171,
+    "lat": 38.0173505
+  },
+  {
+    "comune": "Sassari",
+    "sigla_provincia": "SS",
+    "provincia": "Sassari",
+    "regione": "Sardegna",
+    "lng": 8.5556826,
+    "lat": 40.7259269
+  },
+  {
+    "comune": "Olbia",
+    "sigla_provincia": "SS",
+    "provincia": "Sassari",
+    "regione": "Sardegna",
+    "lng": 9.4964429,
+    "lat": 40.92357639999999
+  },
+  {
+    "comune": "Nuoro",
+    "sigla_provincia": "NU",
+    "provincia": "Nuoro",
+    "regione": "Sardegna",
+    "lng": 9.3264377,
+    "lat": 40.32024210000001
+  },
+  {
+    "comune": "Lanusei",
+    "sigla_provincia": "NU",
+    "provincia": "Nuoro",
+    "regione": "Sardegna",
+    "lng": 9.5410458,
+    "lat": 39.8792062
+  },
+  {
+    "comune": "Oristano",
+    "sigla_provincia": "OR",
+    "provincia": "Oristano",
+    "regione": "Sardegna",
+    "lng": 8.5883863,
+    "lat": 39.906182
+  },
+  {
+    "comune": "Cagliari",
+    "sigla_provincia": "CA",
+    "provincia": "Cagliari",
+    "regione": "Sardegna",
+    "lng": 9.1216613,
+    "lat": 39.2238411
+  },
+  {
+    "comune": "Sanremo",
+    "sigla_provincia": "IM",
+    "provincia": "Imperia",
+    "regione": "Liguria",
+    "lng": 7.7760567,
+    "lat": 43.81596709999999
+  },
+  {
+    "comune": "Camaiore",
+    "sigla_provincia": "LU",
+    "provincia": "Lucca",
+    "regione": "Toscana",
+    "lng": 10.2969083,
+    "lat": 43.9421402
+  },
+  {
+    "comune": "Citt\u00e0 di Castello",
+    "sigla_provincia": "PG",
+    "provincia": "Perugia",
+    "regione": "Umbria",
+    "lng": 12.2319048,
+    "lat": 43.4577876
+  },
+  {
+    "comune": "Monselice",
+    "sigla_provincia": "PD",
+    "provincia": "Padova",
+    "regione": "Veneto",
+    "lng": 11.749736,
+    "lat": 45.2391132
+  },
+  {
+    "comune": "Ponderano",
+    "sigla_provincia": "BI",
+    "provincia": "Biella",
+    "regione": "Piemonte",
+    "lng": 8.054908900000001,
+    "lat": 45.5379094
+  },
+  {
+    "comune": "Alessandria",
+    "sigla_provincia": "AL",
+    "provincia": "Alessandria",
+    "regione": "Piemonte",
+    "lng": 8.6116796,
+    "lat": 44.9072727
+  }
+]
