@@ -6,11 +6,12 @@ L'implementazione prevede tre differenti modelli. Il primo modello assume che tu
 
 ### Features
 Rappresentazione tramite formato .html di una cartina geografica dell'Italia di tutti i nodi compreso il sorgente e il più distante in Km o minuti. Il raggio di ogni nodo è proporzionale alla distanza in Km (1° modello) o minuti dalla sorgente (2° modello). Nel 1° e 2° modello viene inoltre calcolato il miglior comune sorgente che minimizza le distanze o i tempi di percorrenza da qualunque altro nodo. Il 3° modello identifica sia il miglior capoluogo di regione da cui partire che la miglior provincia per ogni capoluogo da cui partire.
+
+### Legenda
 ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
+- Sorgente
++ Nodo
+@@ Nodo più "lontano"
 ```
 
 ### Datasets
