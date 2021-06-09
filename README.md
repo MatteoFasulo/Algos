@@ -11,7 +11,7 @@ Rappresentazione tramite formato .html di una cartina geografica dell'Italia di 
 ```diff
 - Sorgente
 + Nodo
-@@ Nodo più lontano
+@@ Nodo
 ```
 
 ### Datasets
