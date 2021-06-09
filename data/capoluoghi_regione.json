@@ -1,162 +1,122 @@
-[
-  {
-    "Abruzzo": {
-      "comune": "L'Aquila",
-      "sigla_provincia": "AQ",
-      "lng": 13.3995091,
-      "lat": 42.3498479
-    }
+{
+  "Abruzzo": {
+    "comune": "L'Aquila",
+    "sigla_provincia": "AQ",
+    "lng": 13.3995091,
+    "lat": 42.3498479
   },
-  {
-    "Basilicata": {
-      "comune": "Potenza",
-      "sigla_provincia": "PZ",
-      "lng": 15.8056041,
-      "lat": 40.6404067
-    }
+  "Basilicata": {
+    "comune": "Potenza",
+    "sigla_provincia": "PZ",
+    "lng": 15.8056041,
+    "lat": 40.6404067
   },
-  {
-    "Calabria": {
-      "comune": "Catanzaro",
-      "sigla_provincia": "CZ",
-      "lng": 16.5876516,
-      "lat": 38.90979189999999
-    }
+  "Calabria": {
+    "comune": "Catanzaro",
+    "sigla_provincia": "CZ",
+    "lng": 16.5876516,
+    "lat": 38.90979189999999
   },
-  {
-    "Campania": {
-      "comune": "Napoli",
-      "sigla_provincia": "NA",
-      "lng": 14.26812,
-      "lat": 40.8517983
-    }
+  "Campania": {
+    "comune": "Napoli",
+    "sigla_provincia": "NA",
+    "lng": 14.26812,
+    "lat": 40.8517983
   },
-  {
-    "Emilia-Romagna": {
-      "comune": "Bologna",
-      "sigla_provincia": "BO",
-      "lng": 11.3426162,
-      "lat": 44.494887
-    }
+  "Emilia-Romagna": {
+    "comune": "Bologna",
+    "sigla_provincia": "BO",
+    "lng": 11.3426162,
+    "lat": 44.494887
   },
-  {
-    "Friuli-Venezia Giulia": {
-      "comune": "Trieste",
-      "sigla_provincia": "TS",
-      "lng": 13.7768182,
-      "lat": 45.6495264
-    }
+  "Friuli-Venezia Giulia": {
+    "comune": "Trieste",
+    "sigla_provincia": "TS",
+    "lng": 13.7768182,
+    "lat": 45.6495264
   },
-  {
-    "Lazio": {
-      "comune": "Roma",
-      "sigla_provincia": "RM",
-      "lng": 12.4963655,
-      "lat": 41.9027835
-    }
+  "Lazio": {
+    "comune": "Roma",
+    "sigla_provincia": "RM",
+    "lng": 12.4963655,
+    "lat": 41.9027835
   },
-  {
-    "Liguria": {
-      "comune": "Genova",
-      "sigla_provincia": "GE",
-      "lng": 8.946256,
-      "lat": 44.4056499
-    }
+  "Liguria": {
+    "comune": "Genova",
+    "sigla_provincia": "GE",
+    "lng": 8.946256,
+    "lat": 44.4056499
   },
-  {
-    "Lombardia": {
-      "comune": "Milano",
-      "sigla_provincia": "MI",
-      "lng": 9.189982,
-      "lat": 45.464203499999996
-    }
+  "Lombardia": {
+    "comune": "Milano",
+    "sigla_provincia": "MI",
+    "lng": 9.189982,
+    "lat": 45.464203499999996
   },
-  {
-    "Marche": {
-      "comune": "Ancona",
-      "sigla_provincia": "AN",
-      "lng": 13.518915,
-      "lat": 43.6158299
-    }
+  "Marche": {
+    "comune": "Ancona",
+    "sigla_provincia": "AN",
+    "lng": 13.518915,
+    "lat": 43.6158299
   },
-  {
-    "Molise": {
-      "comune": "Campobasso",
-      "sigla_provincia": "CB",
-      "lng": 14.6627161,
-      "lat": 41.5602544
-    }
+  "Molise": {
+    "comune": "Campobasso",
+    "sigla_provincia": "CB",
+    "lng": 14.6627161,
+    "lat": 41.5602544
   },
-  {
-    "Piemonte": {
-      "comune": "Torino",
-      "sigla_provincia": "TO",
-      "lng": 7.686864,
-      "lat": 45.0703393
-    }
+  "Piemonte": {
+    "comune": "Torino",
+    "sigla_provincia": "TO",
+    "lng": 7.686864,
+    "lat": 45.0703393
   },
-  {
-    "Puglia": {
-      "comune": "Bari",
-      "sigla_provincia": "BA",
-      "lng": 16.8718715,
-      "lat": 41.1171432
-    }
+  "Puglia": {
+    "comune": "Bari",
+    "sigla_provincia": "BA",
+    "lng": 16.8718715,
+    "lat": 41.1171432
   },
-  {
-    "Sardegna": {
-      "comune": "Cagliari",
-      "sigla_provincia": "CA",
-      "lng": 9.1216613,
-      "lat": 39.2238411
-    }
+  "Sardegna": {
+    "comune": "Cagliari",
+    "sigla_provincia": "CA",
+    "lng": 9.1216613,
+    "lat": 39.2238411
   },
-  {
-    "Sicilia": {
-      "comune": "Palermo",
-      "sigla_provincia": "PA",
-      "lng": 13.3614868,
-      "lat": 38.11569
-    }
+  "Sicilia": {
+    "comune": "Palermo",
+    "sigla_provincia": "PA",
+    "lng": 13.3614868,
+    "lat": 38.11569
   },
-  {
-    "Toscana": {
-      "comune": "Firenze",
-      "sigla_provincia": "FI",
-      "lng": 11.2558136,
-      "lat": 43.7695604
-    }
+  "Toscana": {
+    "comune": "Firenze",
+    "sigla_provincia": "FI",
+    "lng": 11.2558136,
+    "lat": 43.7695604
   },
-  {
-    "Trentino-Alto Adige": {
-      "comune": "Trento",
-      "sigla_provincia": "TN",
-      "lng": 11.1217486,
-      "lat": 46.0747793
-    }
+  "Trentino-Alto Adige": {
+    "comune": "Trento",
+    "sigla_provincia": "TN",
+    "lng": 11.1217486,
+    "lat": 46.0747793
   },
-  {
-    "Umbria": {
-      "comune": "Perugia",
-      "sigla_provincia": "PG",
-      "lng": 12.3908279,
-      "lat": 43.1107168
-    }
+  "Umbria": {
+    "comune": "Perugia",
+    "sigla_provincia": "PG",
+    "lng": 12.3908279,
+    "lat": 43.1107168
   },
-  {
-    "Valle d'Aosta": {
-      "comune": "Aosta",
-      "sigla_provincia": "AO",
-      "lng": 7.313076199999999,
-      "lat": 45.7349551
-    }
+  "Valle d'Aosta": {
+    "comune": "Aosta",
+    "sigla_provincia": "AO",
+    "lng": 7.313076199999999,
+    "lat": 45.7349551
   },
-  {
-    "Veneto": {
-      "comune": "Venezia",
-      "sigla_provincia": "VE",
-      "lng": 12.3155151,
-      "lat": 45.4408474
-    }
+  "Veneto": {
+    "comune": "Venezia",
+    "sigla_provincia": "VE",
+    "lng": 12.3155151,
+    "lat": 45.4408474
   }
-]
+}
