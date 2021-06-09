@@ -7,8 +7,8 @@
       "Teramo"
     ],
     "sigla_province": [
-      "CH",
       "AQ",
+      "CH",
       "PE",
       "TE"
     ]
@@ -28,13 +28,12 @@
       "Catanzaro",
       "Cosenza",
       "Crotone",
-      "Locri",
       "Reggio di Calabria",
       "Vibo Valentia"
     ],
     "sigla_province": [
-      "CZ",
       "CS",
+      "CZ",
       "KR",
       "RC",
       "VV"
@@ -45,9 +44,7 @@
       "Avellino",
       "Benevento",
       "Caserta",
-      "Castellammare di Stabia",
       "Napoli",
-      "Pozzuoli",
       "Salerno"
     ],
     "sigla_province": [
@@ -61,10 +58,8 @@
   "Bologna": {
     "capoluoghi_provincia": [
       "Bologna",
-      "Cesena",
       "Ferrara",
       "Forl\u00ec",
-      "Imola",
       "Modena",
       "Parma",
       "Piacenza",
@@ -77,8 +72,8 @@
       "FC",
       "FE",
       "MO",
-      "PR",
       "PC",
+      "PR",
       "RA",
       "RE",
       "RN"
@@ -86,66 +81,57 @@
   },
   "Trieste": {
     "capoluoghi_provincia": [
-      "Gemona del Friuli",
       "Gorizia",
-      "Palmanova",
       "Pordenone",
       "Trieste",
       "Udine"
     ],
     "sigla_province": [
-      "UD",
       "GO",
       "PN",
-      "TS"
+      "TS",
+      "UD"
     ]
   },
   "Roma": {
     "capoluoghi_provincia": [
-      "Albano laziale",
-      "Civitavecchia",
       "Frosinone",
       "Latina",
       "Rieti",
       "Roma",
-      "Tivoli",
       "Viterbo"
     ],
     "sigla_province": [
-      "RM",
       "FR",
       "LT",
       "RI",
+      "RM",
       "VT"
     ]
   },
   "Genova": {
     "capoluoghi_provincia": [
-      "Chiavari",
       "Genova",
+      "Imperia",
       "La Spezia",
-      "Sanremo",
       "Savona"
     ],
     "sigla_province": [
       "GE",
-      "SP",
       "IM",
+      "SP",
       "SV"
     ]
   },
   "Milano": {
     "capoluoghi_provincia": [
       "Bergamo",
-      "Breno",
       "Brescia",
       "Como",
       "Cremona",
       "Lecco",
-      "Legnano",
       "Lodi",
       "Mantova",
-      "Melegnano",
       "Milano",
       "Monza",
       "Pavia",
@@ -158,10 +144,10 @@
       "CO",
       "CR",
       "LC",
-      "MI",
       "LO",
-      "MN",
       "MB",
+      "MI",
+      "MN",
       "PV",
       "SO",
       "VA"
@@ -185,28 +171,22 @@
   },
   "Torino": {
     "capoluoghi_provincia": [
-      "Alba",
       "Alessandria",
       "Asti",
       "Biella",
-      "Casale Monferrato",
-      "Chieri",
-      "Chivasso",
-      "Collegno",
       "Cuneo",
       "Novara",
-      "Omegna",
-      "Ponderano",
       "Torino",
+      "Verbano-Cussio-Ossola",
       "Vercelli"
     ],
     "sigla_province": [
-      "CN",
       "AL",
       "AT",
       "BI",
-      "TO",
+      "CN",
       "NO",
+      "TO",
       "VB",
       "VC"
     ]
@@ -221,9 +201,9 @@
       "Taranto"
     ],
     "sigla_province": [
-      "BT",
       "BA",
       "BR",
+      "BT",
       "FG",
       "LE",
       "TA"
@@ -232,17 +212,17 @@
   "Cagliari": {
     "capoluoghi_provincia": [
       "Cagliari",
-      "Lanusei",
       "Nuoro",
-      "Olbia",
       "Oristano",
-      "Sassari"
+      "Sassari",
+      "Sud Sardegna"
     ],
     "sigla_province": [
       "CA",
       "NU",
+      "OR",
       "SS",
-      "OR"
+      "SU"
     ]
   },
   "Palermo": {
@@ -272,8 +252,6 @@
   "Firenze": {
     "capoluoghi_provincia": [
       "Arezzo",
-      "Camaiore",
-      "Empoli",
       "Firenze",
       "Grosseto",
       "Livorno",
@@ -282,19 +260,18 @@
       "Pisa",
       "Pistoia",
       "Prato",
-      "Siena",
-      "Viareggio"
+      "Siena"
     ],
     "sigla_province": [
       "AR",
-      "LU",
       "FI",
       "GR",
       "LI",
+      "LU",
       "MS",
       "PI",
-      "PT",
       "PO",
+      "PT",
       "SI"
     ]
   },
@@ -310,8 +287,6 @@
   },
   "Perugia": {
     "capoluoghi_provincia": [
-      "Citt\u00e0 di Castello",
-      "Foligno",
       "Perugia",
       "Terni"
     ],
@@ -330,37 +305,22 @@
   },
   "Venezia": {
     "capoluoghi_provincia": [
-      "Adria",
-      "Arzignano",
-      "Asolo",
-      "Bassano del Grappa",
       "Belluno",
-      "Bussolengo",
-      "Chioggia",
-      "Cittadella",
-      "Feltre",
-      "Legnago",
-      "Mirano",
-      "Monselice",
-      "Montagnana",
       "Padova",
-      "Pieve di Soligo",
-      "Piovene Rocchette",
       "Rovigo",
-      "San Don\u00e0 di Piave",
       "Treviso",
       "Venezia",
       "Verona",
       "Vicenza"
     ],
     "sigla_province": [
-      "RO",
-      "VI",
-      "TV",
       "BL",
-      "VR",
+      "PD",
+      "RO",
+      "TV",
       "VE",
-      "PD"
+      "VI",
+      "VR"
     ]
   }
 }
