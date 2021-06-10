@@ -41,27 +41,18 @@ I dataset riportati sono stati in parte modificati manualmente per permettere al
 - [Pandas]
 - [Googlemaps]
 ---
-### PIP
+### Installation:
 
 ```
-$ pip install numpy
-$ pip install pandas
-$ pip install folium
-$ pip install googlemaps
-$ pip install rich
-$ pip install googlemaps
-$ pip install polyline
-
+$ pip install -r requirements.txt
 ```
 
 ----
-### Anaconda
 
-Note: 
+### Execution:
 
 ```
-$ conda install pandas
-$ conda install numpy
+$ python main.py
 ```
 
 ----
