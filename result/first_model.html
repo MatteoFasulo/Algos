@@ -1,0 +1,2858 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3a60d70091e447539239484c8e2a28e2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.2/Control.FullScreen.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3a60d70091e447539239484c8e2a28e2" ></div>
+        
+</body>
+<script>    
+    
+            var map_3a60d70091e447539239484c8e2a28e2 = L.map(
+                "map_3a60d70091e447539239484c8e2a28e2",
+                {
+                    center: [41.87194, 12.56738],
+                    crs: L.CRS.EPSG3857,
+                    maxBounds: [[36, 9.5], [47, 15.5]],
+                    zoom: 5.8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_99d31817418742d9ad0c3b64fc1bcc34 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 7, "maxZoom": 7, "minZoom": 5.8, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+            var circle_f776d2ceec6b40418ccc0e19f6dfdeb4 = L.circle(
+                [45.0555487, 12.0560381],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7040, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_74155727943746cd86b7d3121b654f41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c7f811f27844c3bb68ffa679c8277a2 = $(`<div id="html_5c7f811f27844c3bb68ffa679c8277a2" style="width: 100.0%; height: 100.0%;">Adria 352Km</div>`)[0];
+            popup_74155727943746cd86b7d3121b654f41.setContent(html_5c7f811f27844c3bb68ffa679c8277a2);
+        
+
+        circle_f776d2ceec6b40418ccc0e19f6dfdeb4.bindPopup(popup_74155727943746cd86b7d3121b654f41)
+        ;
+
+        
+    
+    
+            var circle_f09bee4b8be74d9084bce0b268ea7b8d = L.circle(
+                [37.3088512, 13.5857528],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10380, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_9bb67802cac74ed6b20714ae1655c6d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f56d0dd2e98244cfbffcb2d1c0214223 = $(`<div id="html_f56d0dd2e98244cfbffcb2d1c0214223" style="width: 100.0%; height: 100.0%;">Agrigento 519Km</div>`)[0];
+            popup_9bb67802cac74ed6b20714ae1655c6d9.setContent(html_f56d0dd2e98244cfbffcb2d1c0214223);
+        
+
+        circle_f09bee4b8be74d9084bce0b268ea7b8d.bindPopup(popup_9bb67802cac74ed6b20714ae1655c6d9)
+        ;
+
+        
+    
+    
+            var circle_ddfcf210d3ca46368e2bd559dc446ec5 = L.circle(
+                [44.7009153, 8.0356911],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9520, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_89012087c25b4d25bf5fb1b554603319 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17d5ac1975bd4004b2d7678a532d54f2 = $(`<div id="html_17d5ac1975bd4004b2d7678a532d54f2" style="width: 100.0%; height: 100.0%;">Alba 476Km</div>`)[0];
+            popup_89012087c25b4d25bf5fb1b554603319.setContent(html_17d5ac1975bd4004b2d7678a532d54f2);
+        
+
+        circle_ddfcf210d3ca46368e2bd559dc446ec5.bindPopup(popup_89012087c25b4d25bf5fb1b554603319)
+        ;
+
+        
+    
+    
+            var circle_a9656b14f8a7456686c9f4d9d3a02923 = L.circle(
+                [41.7284572, 12.6589426],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 460, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_acc7787fb2604adab2ebd04987bd1a0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc8f2abf2e344ac98ad45a413351b61d = $(`<div id="html_bc8f2abf2e344ac98ad45a413351b61d" style="width: 100.0%; height: 100.0%;">Albano laziale 23Km</div>`)[0];
+            popup_acc7787fb2604adab2ebd04987bd1a0b.setContent(html_bc8f2abf2e344ac98ad45a413351b61d);
+        
+
+        circle_a9656b14f8a7456686c9f4d9d3a02923.bindPopup(popup_acc7787fb2604adab2ebd04987bd1a0b)
+        ;
+
+        
+    
+    
+            var circle_ce2630303a4949c99b806a22b1c14560 = L.circle(
+                [44.9072727, 8.6116796],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9160, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_cfc7bdc559524f5087191bdba9291941 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_318eafd6150d4da895748df2253ddd70 = $(`<div id="html_318eafd6150d4da895748df2253ddd70" style="width: 100.0%; height: 100.0%;">Alessandria 458Km</div>`)[0];
+            popup_cfc7bdc559524f5087191bdba9291941.setContent(html_318eafd6150d4da895748df2253ddd70);
+        
+
+        circle_ce2630303a4949c99b806a22b1c14560.bindPopup(popup_cfc7bdc559524f5087191bdba9291941)
+        ;
+
+        
+    
+    
+            var circle_ac7818c4022d49ca870f9f7058458a30 = L.circle(
+                [43.6158299, 13.518915],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4160, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_cbf6e847df4543cab187980333f79112 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38047577a8b84b2ab87be823fa910b6c = $(`<div id="html_38047577a8b84b2ab87be823fa910b6c" style="width: 100.0%; height: 100.0%;">Ancona 208Km</div>`)[0];
+            popup_cbf6e847df4543cab187980333f79112.setContent(html_38047577a8b84b2ab87be823fa910b6c);
+        
+
+        circle_ac7818c4022d49ca870f9f7058458a30.bindPopup(popup_cbf6e847df4543cab187980333f79112)
+        ;
+
+        
+    
+    
+            var circle_27bebb3144cc4dd682cfe3d4c8559fa3 = L.circle(
+                [41.1382473, 16.22868],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6440, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_c65abd8ce1af4bba8da341ca73b62f76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25092b0bd39c475396509fee0490d488 = $(`<div id="html_25092b0bd39c475396509fee0490d488" style="width: 100.0%; height: 100.0%;">Andria 322Km</div>`)[0];
+            popup_c65abd8ce1af4bba8da341ca73b62f76.setContent(html_25092b0bd39c475396509fee0490d488);
+        
+
+        circle_27bebb3144cc4dd682cfe3d4c8559fa3.bindPopup(popup_c65abd8ce1af4bba8da341ca73b62f76)
+        ;
+
+        
+    
+    
+            var circle_3c251b03e27f4707a9c0084c6bcff18a = L.circle(
+                [45.7349551, 7.313076199999999],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11900, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_93c7ae8a203e4fe48cf42a33b205e82d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c45f91052c1149deb3abece7f697285d = $(`<div id="html_c45f91052c1149deb3abece7f697285d" style="width: 100.0%; height: 100.0%;">Aosta 595Km</div>`)[0];
+            popup_93c7ae8a203e4fe48cf42a33b205e82d.setContent(html_c45f91052c1149deb3abece7f697285d);
+        
+
+        circle_3c251b03e27f4707a9c0084c6bcff18a.bindPopup(popup_93c7ae8a203e4fe48cf42a33b205e82d)
+        ;
+
+        
+    
+    
+            var circle_eb814e2e31b04db09567fe9851efb18c = L.circle(
+                [43.46328390000001, 11.8796336],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3600, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_25b918756c1a4ef08d00f4a77e651f5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf54355021f3408f81f5061d4bfccc19 = $(`<div id="html_bf54355021f3408f81f5061d4bfccc19" style="width: 100.0%; height: 100.0%;">Arezzo 180Km</div>`)[0];
+            popup_25b918756c1a4ef08d00f4a77e651f5b.setContent(html_bf54355021f3408f81f5061d4bfccc19);
+        
+
+        circle_eb814e2e31b04db09567fe9851efb18c.bindPopup(popup_25b918756c1a4ef08d00f4a77e651f5b)
+        ;
+
+        
+    
+    
+            var circle_64f21468ec7c4c2bb4bad752c493d67f = L.circle(
+                [45.5223525, 11.3337046],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8260, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_716a02b5363a45a9bd462b36498fa4e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_634808cdc462405c8225f8f887b5c863 = $(`<div id="html_634808cdc462405c8225f8f887b5c863" style="width: 100.0%; height: 100.0%;">Arzignano 413Km</div>`)[0];
+            popup_716a02b5363a45a9bd462b36498fa4e9.setContent(html_634808cdc462405c8225f8f887b5c863);
+        
+
+        circle_64f21468ec7c4c2bb4bad752c493d67f.bindPopup(popup_716a02b5363a45a9bd462b36498fa4e9)
+        ;
+
+        
+    
+    
+            var circle_1a33d557d56e46b3b1f61572603deb0a = L.circle(
+                [45.79925859999999, 11.9141103],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8700, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_3d00fe38cb974b5d9f9417da4a857310 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_376fce15d80b44d98cbf1b1f186b32ca = $(`<div id="html_376fce15d80b44d98cbf1b1f186b32ca" style="width: 100.0%; height: 100.0%;">Asolo 435Km</div>`)[0];
+            popup_3d00fe38cb974b5d9f9417da4a857310.setContent(html_376fce15d80b44d98cbf1b1f186b32ca);
+        
+
+        circle_1a33d557d56e46b3b1f61572603deb0a.bindPopup(popup_3d00fe38cb974b5d9f9417da4a857310)
+        ;
+
+        
+    
+    
+            var circle_614cf57c76964c22aa48d280ade64ad4 = L.circle(
+                [44.90075119999999, 8.2064257],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9600, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_505739a536db4d19a46da6478b7839e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aafa7efe3f3e49a4ac20bf9101ec7f12 = $(`<div id="html_aafa7efe3f3e49a4ac20bf9101ec7f12" style="width: 100.0%; height: 100.0%;">Asti 480Km</div>`)[0];
+            popup_505739a536db4d19a46da6478b7839e8.setContent(html_aafa7efe3f3e49a4ac20bf9101ec7f12);
+        
+
+        circle_614cf57c76964c22aa48d280ade64ad4.bindPopup(popup_505739a536db4d19a46da6478b7839e8)
+        ;
+
+        
+    
+    
+            var circle_d245de5ef09d4ef499cc3dca5c988fbb = L.circle(
+                [40.914388, 14.7906121],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4400, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_210fa43670f84254ae0001054ba9b964 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44d5186b213d46a29dd2ad279570a059 = $(`<div id="html_44d5186b213d46a29dd2ad279570a059" style="width: 100.0%; height: 100.0%;">Avellino 220Km</div>`)[0];
+            popup_210fa43670f84254ae0001054ba9b964.setContent(html_44d5186b213d46a29dd2ad279570a059);
+        
+
+        circle_d245de5ef09d4ef499cc3dca5c988fbb.bindPopup(popup_210fa43670f84254ae0001054ba9b964)
+        ;
+
+        
+    
+    
+            var circle_7d012716767244c4b87a35cdf91bb301 = L.circle(
+                [41.1171432, 16.8718715],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7480, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_8fb5ea89489345aca7d78f6bf56147d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5be892a1dc524bcdbb7d74544b9bfbdb = $(`<div id="html_5be892a1dc524bcdbb7d74544b9bfbdb" style="width: 100.0%; height: 100.0%;">Bari 374Km</div>`)[0];
+            popup_8fb5ea89489345aca7d78f6bf56147d4.setContent(html_5be892a1dc524bcdbb7d74544b9bfbdb);
+        
+
+        circle_7d012716767244c4b87a35cdf91bb301.bindPopup(popup_8fb5ea89489345aca7d78f6bf56147d4)
+        ;
+
+        
+    
+    
+            var circle_04370b69689e4369992fe19f5eaf19ba = L.circle(
+                [45.7657286, 11.7272747],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8680, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_b09d100ae689477995c3d5670a1443c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0a663ef11414496bbca4fe1b58cd58d = $(`<div id="html_e0a663ef11414496bbca4fe1b58cd58d" style="width: 100.0%; height: 100.0%;">Bassano del grappa 434Km</div>`)[0];
+            popup_b09d100ae689477995c3d5670a1443c5.setContent(html_e0a663ef11414496bbca4fe1b58cd58d);
+        
+
+        circle_04370b69689e4369992fe19f5eaf19ba.bindPopup(popup_b09d100ae689477995c3d5670a1443c5)
+        ;
+
+        
+    
+    
+            var circle_07fd533173ef43aab2fef2f596af5592 = L.circle(
+                [46.1424635, 12.2167088],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9440, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_288175cfc42649a3962b1c7b4bfd6c4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79cfd9ca96e3441ba32947f796d2d1ec = $(`<div id="html_79cfd9ca96e3441ba32947f796d2d1ec" style="width: 100.0%; height: 100.0%;">Belluno 472Km</div>`)[0];
+            popup_288175cfc42649a3962b1c7b4bfd6c4a.setContent(html_79cfd9ca96e3441ba32947f796d2d1ec);
+        
+
+        circle_07fd533173ef43aab2fef2f596af5592.bindPopup(popup_288175cfc42649a3962b1c7b4bfd6c4a)
+        ;
+
+        
+    
+    
+            var circle_1caaf5bfafd74519b33a94825c136350 = L.circle(
+                [41.1297613, 14.7826208],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4160, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_29f6ac94567a4929ba184b5745e92be5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d3f5b621b014919a7c05b28251ff138 = $(`<div id="html_3d3f5b621b014919a7c05b28251ff138" style="width: 100.0%; height: 100.0%;">Benevento 208Km</div>`)[0];
+            popup_29f6ac94567a4929ba184b5745e92be5.setContent(html_3d3f5b621b014919a7c05b28251ff138);
+        
+
+        circle_1caaf5bfafd74519b33a94825c136350.bindPopup(popup_29f6ac94567a4929ba184b5745e92be5)
+        ;
+
+        
+    
+    
+            var circle_d8f00d25cfb647a4a94056c84a8a0ba8 = L.circle(
+                [45.6982642, 9.6772698],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9560, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_7af48ca306684749afc0e7033efcc656 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71286ad3555248d1933d3eb1ba492123 = $(`<div id="html_71286ad3555248d1933d3eb1ba492123" style="width: 100.0%; height: 100.0%;">Bergamo 478Km</div>`)[0];
+            popup_7af48ca306684749afc0e7033efcc656.setContent(html_71286ad3555248d1933d3eb1ba492123);
+        
+
+        circle_d8f00d25cfb647a4a94056c84a8a0ba8.bindPopup(popup_7af48ca306684749afc0e7033efcc656)
+        ;
+
+        
+    
+    
+            var circle_a811584754cb45429e9ac7a110af3c1f = L.circle(
+                [45.56288420000001, 8.0583397],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10820, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_222c834691cc4dc2813765394b3abb3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_837738ca3b34474a907e2c75c60162ff = $(`<div id="html_837738ca3b34474a907e2c75c60162ff" style="width: 100.0%; height: 100.0%;">Biella 541Km</div>`)[0];
+            popup_222c834691cc4dc2813765394b3abb3e.setContent(html_837738ca3b34474a907e2c75c60162ff);
+        
+
+        circle_a811584754cb45429e9ac7a110af3c1f.bindPopup(popup_222c834691cc4dc2813765394b3abb3e)
+        ;
+
+        
+    
+    
+            var circle_899330bf1a7b405eb3b5d1f9ed7e5894 = L.circle(
+                [44.494887, 11.3426162],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6060, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_9d6b1d4145154fe5ad3639231c7c5287 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47e5ef94524146dfb86238715dd62532 = $(`<div id="html_47e5ef94524146dfb86238715dd62532" style="width: 100.0%; height: 100.0%;">Bologna 303Km</div>`)[0];
+            popup_9d6b1d4145154fe5ad3639231c7c5287.setContent(html_47e5ef94524146dfb86238715dd62532);
+        
+
+        circle_899330bf1a7b405eb3b5d1f9ed7e5894.bindPopup(popup_9d6b1d4145154fe5ad3639231c7c5287)
+        ;
+
+        
+    
+    
+            var circle_05517ebb87ea4a63bf8a23cf9e497934 = L.circle(
+                [46.4982953, 11.3547582],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10380, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_167f49481a894fa4b92b11efa4a71f5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb9e0c0315f847c38b71d340bd69a736 = $(`<div id="html_bb9e0c0315f847c38b71d340bd69a736" style="width: 100.0%; height: 100.0%;">Bolzano 519Km</div>`)[0];
+            popup_167f49481a894fa4b92b11efa4a71f5d.setContent(html_bb9e0c0315f847c38b71d340bd69a736);
+        
+
+        circle_05517ebb87ea4a63bf8a23cf9e497934.bindPopup(popup_167f49481a894fa4b92b11efa4a71f5d)
+        ;
+
+        
+    
+    
+            var circle_1d4cc53c2cfa4f7682cc67be0d9713ba = L.circle(
+                [45.9339231, 10.4262024],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9560, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_03393c6f85d54b87a064466ebda82a45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa7c57c463134781b1276b9150bc4226 = $(`<div id="html_aa7c57c463134781b1276b9150bc4226" style="width: 100.0%; height: 100.0%;">Breno 478Km</div>`)[0];
+            popup_03393c6f85d54b87a064466ebda82a45.setContent(html_aa7c57c463134781b1276b9150bc4226);
+        
+
+        circle_1d4cc53c2cfa4f7682cc67be0d9713ba.bindPopup(popup_03393c6f85d54b87a064466ebda82a45)
+        ;
+
+        
+    
+    
+            var circle_249cf649cf884f6db6503add1f7e17b0 = L.circle(
+                [45.5415526, 10.2118019],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8880, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_a5d8cbe7a484460d8aaa39875b4e64e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bd057daef6e492b8cf714762eb8e037 = $(`<div id="html_3bd057daef6e492b8cf714762eb8e037" style="width: 100.0%; height: 100.0%;">Brescia 444Km</div>`)[0];
+            popup_a5d8cbe7a484460d8aaa39875b4e64e9.setContent(html_3bd057daef6e492b8cf714762eb8e037);
+        
+
+        circle_249cf649cf884f6db6503add1f7e17b0.bindPopup(popup_a5d8cbe7a484460d8aaa39875b4e64e9)
+        ;
+
+        
+    
+    
+            var circle_2eaad38a0a72493f95a8f9dd24e83eae = L.circle(
+                [40.6327278, 17.9417616],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9520, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_e0800fe15ee04b809ede3034404e21d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25ca80db6c244f21899fb081d85ecba2 = $(`<div id="html_25ca80db6c244f21899fb081d85ecba2" style="width: 100.0%; height: 100.0%;">Brindisi 476Km</div>`)[0];
+            popup_e0800fe15ee04b809ede3034404e21d1.setContent(html_25ca80db6c244f21899fb081d85ecba2);
+        
+
+        circle_2eaad38a0a72493f95a8f9dd24e83eae.bindPopup(popup_e0800fe15ee04b809ede3034404e21d1)
+        ;
+
+        
+    
+    
+            var circle_aef516a45e844b7b810c906cfbe3f4ab = L.circle(
+                [45.4732537, 10.8507277],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8360, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_3765bee39d244adcb3f106ed93d1e750 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d78f3fed46634cc48f19f73bb1eed81c = $(`<div id="html_d78f3fed46634cc48f19f73bb1eed81c" style="width: 100.0%; height: 100.0%;">Bussolengo 418Km</div>`)[0];
+            popup_3765bee39d244adcb3f106ed93d1e750.setContent(html_d78f3fed46634cc48f19f73bb1eed81c);
+        
+
+        circle_aef516a45e844b7b810c906cfbe3f4ab.bindPopup(popup_3765bee39d244adcb3f106ed93d1e750)
+        ;
+
+        
+    
+    
+            var circle_1cace6ff0b3e4f2fb759d8f221f2416a = L.circle(
+                [39.2238411, 9.1216613],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8240, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_5f2518cf491b42829778e1c966e04467 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a3bb9685d4d47858c64e6636ae01bbb = $(`<div id="html_7a3bb9685d4d47858c64e6636ae01bbb" style="width: 100.0%; height: 100.0%;">Cagliari 412Km</div>`)[0];
+            popup_5f2518cf491b42829778e1c966e04467.setContent(html_7a3bb9685d4d47858c64e6636ae01bbb);
+        
+
+        circle_1cace6ff0b3e4f2fb759d8f221f2416a.bindPopup(popup_5f2518cf491b42829778e1c966e04467)
+        ;
+
+        
+    
+    
+            var circle_352a6f8b507c4a8c99e0b66769373559 = L.circle(
+                [37.4901115, 14.0628928],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10160, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_29d5d7b600784d48b8a21b86a4e2b241 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a02d183c8d54b2198cecda8d89681a4 = $(`<div id="html_6a02d183c8d54b2198cecda8d89681a4" style="width: 100.0%; height: 100.0%;">Caltanissetta 508Km</div>`)[0];
+            popup_29d5d7b600784d48b8a21b86a4e2b241.setContent(html_6a02d183c8d54b2198cecda8d89681a4);
+        
+
+        circle_352a6f8b507c4a8c99e0b66769373559.bindPopup(popup_29d5d7b600784d48b8a21b86a4e2b241)
+        ;
+
+        
+    
+    
+            var circle_eba63be1aed74ad48d16c38e54f71a41 = L.circle(
+                [43.9421402, 10.2969083],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5780, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_1970c34e84e949f5956989ea9c74ba3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39d9ed5cabfa4b5981a8d43fdd497ee4 = $(`<div id="html_39d9ed5cabfa4b5981a8d43fdd497ee4" style="width: 100.0%; height: 100.0%;">Camaiore 289Km</div>`)[0];
+            popup_1970c34e84e949f5956989ea9c74ba3f.setContent(html_39d9ed5cabfa4b5981a8d43fdd497ee4);
+        
+
+        circle_eba63be1aed74ad48d16c38e54f71a41.bindPopup(popup_1970c34e84e949f5956989ea9c74ba3f)
+        ;
+
+        
+    
+    
+            var circle_57146bc54fef458f8ee8c956b89f1b12 = L.circle(
+                [41.5602544, 14.6627161],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3660, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_f4aec9d344464c77b8b99a30f56ae9fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd3a25fe8e1f4dda9cbb6653e9a950b1 = $(`<div id="html_bd3a25fe8e1f4dda9cbb6653e9a950b1" style="width: 100.0%; height: 100.0%;">Campobasso 183Km</div>`)[0];
+            popup_f4aec9d344464c77b8b99a30f56ae9fd.setContent(html_bd3a25fe8e1f4dda9cbb6653e9a950b1);
+        
+
+        circle_57146bc54fef458f8ee8c956b89f1b12.bindPopup(popup_f4aec9d344464c77b8b99a30f56ae9fd)
+        ;
+
+        
+    
+    
+            var circle_9e4575d86eef40a2bce8bd51c7e528b8 = L.circle(
+                [45.1316088, 8.450503],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9700, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_13eb848797d24dd1b6aefe56fc994f57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_114aa728bcb44448929eb29620ab175b = $(`<div id="html_114aa728bcb44448929eb29620ab175b" style="width: 100.0%; height: 100.0%;">Casale monferrato 485Km</div>`)[0];
+            popup_13eb848797d24dd1b6aefe56fc994f57.setContent(html_114aa728bcb44448929eb29620ab175b);
+        
+
+        circle_9e4575d86eef40a2bce8bd51c7e528b8.bindPopup(popup_13eb848797d24dd1b6aefe56fc994f57)
+        ;
+
+        
+    
+    
+            var circle_9047ca7cc0914f6781845e25393bed8e = L.circle(
+                [41.0854362, 14.367553],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3600, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_bda304c93b3941ff82d573d1c277b206 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c63e524298644f29e76eb72bdbeaffc = $(`<div id="html_0c63e524298644f29e76eb72bdbeaffc" style="width: 100.0%; height: 100.0%;">Caserta 180Km</div>`)[0];
+            popup_bda304c93b3941ff82d573d1c277b206.setContent(html_0c63e524298644f29e76eb72bdbeaffc);
+        
+
+        circle_9047ca7cc0914f6781845e25393bed8e.bindPopup(popup_bda304c93b3941ff82d573d1c277b206)
+        ;
+
+        
+    
+    
+            var circle_22b7c32fa5a1432a879bfd3e1b7f6b3d = L.circle(
+                [40.6984766, 14.4898001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4260, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_ed396d17ef0d42b087ea5a966df3a65d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2865b1b1926745848ecbd44963669379 = $(`<div id="html_2865b1b1926745848ecbd44963669379" style="width: 100.0%; height: 100.0%;">Castellammare di stabia 213Km</div>`)[0];
+            popup_ed396d17ef0d42b087ea5a966df3a65d.setContent(html_2865b1b1926745848ecbd44963669379);
+        
+
+        circle_22b7c32fa5a1432a879bfd3e1b7f6b3d.bindPopup(popup_ed396d17ef0d42b087ea5a966df3a65d)
+        ;
+
+        
+    
+    
+            var circle_c09e477de1a049dba01ca8306d7e5ec3 = L.circle(
+                [37.5078772, 15.0830304],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10720, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_85141940b28942a48cadf352edc37aea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca81257aa37c445fb96cfe58860baefa = $(`<div id="html_ca81257aa37c445fb96cfe58860baefa" style="width: 100.0%; height: 100.0%;">Catania 536Km</div>`)[0];
+            popup_85141940b28942a48cadf352edc37aea.setContent(html_ca81257aa37c445fb96cfe58860baefa);
+        
+
+        circle_c09e477de1a049dba01ca8306d7e5ec3.bindPopup(popup_85141940b28942a48cadf352edc37aea)
+        ;
+
+        
+    
+    
+            var circle_2707aea85f0e4cfa857f6331ae43428d = L.circle(
+                [38.90979189999999, 16.5876516],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9600, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_5b18b8ef97724a42ae43f3c27f8c6201 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4208f241b0b64a8db8742e8f9ee2c6f8 = $(`<div id="html_4208f241b0b64a8db8742e8f9ee2c6f8" style="width: 100.0%; height: 100.0%;">Catanzaro 480Km</div>`)[0];
+            popup_5b18b8ef97724a42ae43f3c27f8c6201.setContent(html_4208f241b0b64a8db8742e8f9ee2c6f8);
+        
+
+        circle_2707aea85f0e4cfa857f6331ae43428d.bindPopup(popup_5b18b8ef97724a42ae43f3c27f8c6201)
+        ;
+
+        
+    
+    
+            var circle_f7fe610ea7bc49e283443fd9f51987ce = L.circle(
+                [44.1396438, 12.2464292],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4980, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_f49a0e5672e14653ae03c041af5e7c5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f38b7c52a824d4d901d7079e9f096e0 = $(`<div id="html_6f38b7c52a824d4d901d7079e9f096e0" style="width: 100.0%; height: 100.0%;">Cesena 249Km</div>`)[0];
+            popup_f49a0e5672e14653ae03c041af5e7c5d.setContent(html_6f38b7c52a824d4d901d7079e9f096e0);
+        
+
+        circle_f7fe610ea7bc49e283443fd9f51987ce.bindPopup(popup_f49a0e5672e14653ae03c041af5e7c5d)
+        ;
+
+        
+    
+    
+            var circle_325f2063ebe6424abd76b76657ef45eb = L.circle(
+                [44.3168416, 9.3199822],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7440, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_68f67ba2b23944bab0149191127acd74 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d538e8cb0b3a48118463996db8f4bff0 = $(`<div id="html_d538e8cb0b3a48118463996db8f4bff0" style="width: 100.0%; height: 100.0%;">Chiavari 372Km</div>`)[0];
+            popup_68f67ba2b23944bab0149191127acd74.setContent(html_d538e8cb0b3a48118463996db8f4bff0);
+        
+
+        circle_325f2063ebe6424abd76b76657ef45eb.bindPopup(popup_68f67ba2b23944bab0149191127acd74)
+        ;
+
+        
+    
+    
+            var circle_30e0b4142d3243798d2699825b879585 = L.circle(
+                [45.008885, 7.827555100000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10220, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_a87aea9cab13477e96a8eb14044aa71d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a276687d405744f7afc8541c0c83d12e = $(`<div id="html_a276687d405744f7afc8541c0c83d12e" style="width: 100.0%; height: 100.0%;">Chieri 511Km</div>`)[0];
+            popup_a87aea9cab13477e96a8eb14044aa71d.setContent(html_a276687d405744f7afc8541c0c83d12e);
+        
+
+        circle_30e0b4142d3243798d2699825b879585.bindPopup(popup_a87aea9cab13477e96a8eb14044aa71d)
+        ;
+
+        
+    
+    
+            var circle_a59ece0f985d4bf08b3fb88303a85e80 = L.circle(
+                [42.347886, 14.1635845],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2920, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_c223210abe2941d7bc56dcc98f18acac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a46719e77df455e8d6d23a5b1f3c7d0 = $(`<div id="html_4a46719e77df455e8d6d23a5b1f3c7d0" style="width: 100.0%; height: 100.0%;">Chieti 146Km</div>`)[0];
+            popup_c223210abe2941d7bc56dcc98f18acac.setContent(html_4a46719e77df455e8d6d23a5b1f3c7d0);
+        
+
+        circle_a59ece0f985d4bf08b3fb88303a85e80.bindPopup(popup_c223210abe2941d7bc56dcc98f18acac)
+        ;
+
+        
+    
+    
+            var circle_ec84adcdaf8b47728f90dc74b0377f77 = L.circle(
+                [45.2190746, 12.2786505],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7380, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_44a72752fdf2474fb7df35a92cd81fb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe077ec5a5fb4f17806ff11ea77cf062 = $(`<div id="html_fe077ec5a5fb4f17806ff11ea77cf062" style="width: 100.0%; height: 100.0%;">Chioggia 369Km</div>`)[0];
+            popup_44a72752fdf2474fb7df35a92cd81fb6.setContent(html_fe077ec5a5fb4f17806ff11ea77cf062);
+        
+
+        circle_ec84adcdaf8b47728f90dc74b0377f77.bindPopup(popup_44a72752fdf2474fb7df35a92cd81fb6)
+        ;
+
+        
+    
+    
+            var circle_bdcab62a1cba470f9489a226dd0e49f8 = L.circle(
+                [45.19003840000001, 7.888952],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10420, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_08c0efdb973c4865b9758151b521b770 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a188d99fb68b494391335e266f200428 = $(`<div id="html_a188d99fb68b494391335e266f200428" style="width: 100.0%; height: 100.0%;">Chivasso 521Km</div>`)[0];
+            popup_08c0efdb973c4865b9758151b521b770.setContent(html_a188d99fb68b494391335e266f200428);
+        
+
+        circle_bdcab62a1cba470f9489a226dd0e49f8.bindPopup(popup_08c0efdb973c4865b9758151b521b770)
+        ;
+
+        
+    
+    
+            var circle_6c22c48a25bc401bb06d702e98f2efcb = L.circle(
+                [45.6660366, 11.7866171],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8440, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_232fc0d7d03e43a6993ad9dd71660f27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4db477532c94765873b91c69124aa3d = $(`<div id="html_f4db477532c94765873b91c69124aa3d" style="width: 100.0%; height: 100.0%;">Cittadella 422Km</div>`)[0];
+            popup_232fc0d7d03e43a6993ad9dd71660f27.setContent(html_f4db477532c94765873b91c69124aa3d);
+        
+
+        circle_6c22c48a25bc401bb06d702e98f2efcb.bindPopup(popup_232fc0d7d03e43a6993ad9dd71660f27)
+        ;
+
+        
+    
+    
+            var circle_25bbde03560b4460badaf0af4fb79f91 = L.circle(
+                [43.4577876, 12.2319048],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3480, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_49a0f31d6b59438aabb8d0f503bae564 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd26aba7b4b64ee8956e60f7175c156d = $(`<div id="html_dd26aba7b4b64ee8956e60f7175c156d" style="width: 100.0%; height: 100.0%;">Città di castello 174Km</div>`)[0];
+            popup_49a0f31d6b59438aabb8d0f503bae564.setContent(html_dd26aba7b4b64ee8956e60f7175c156d);
+        
+
+        circle_25bbde03560b4460badaf0af4fb79f91.bindPopup(popup_49a0f31d6b59438aabb8d0f503bae564)
+        ;
+
+        
+    
+    
+            var circle_a2c20215cb394c55b458950936db1922 = L.circle(
+                [42.0924239, 11.7954132],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1220, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_bb48acaadc7e482e9f43db8496091769 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ab6667c0a9144a398ff191c5851184a = $(`<div id="html_9ab6667c0a9144a398ff191c5851184a" style="width: 100.0%; height: 100.0%;">Civitavecchia 61Km</div>`)[0];
+            popup_bb48acaadc7e482e9f43db8496091769.setContent(html_9ab6667c0a9144a398ff191c5851184a);
+        
+
+        circle_a2c20215cb394c55b458950936db1922.bindPopup(popup_bb48acaadc7e482e9f43db8496091769)
+        ;
+
+        
+    
+    
+            var circle_cda0772e05d141d791fe032f74e3b08d = L.circle(
+                [45.0897785, 7.5865634],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10620, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_862d489e902240a59e354a37dd0169ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d52ae334429420ba83c0d5e71ae8f63 = $(`<div id="html_2d52ae334429420ba83c0d5e71ae8f63" style="width: 100.0%; height: 100.0%;">Collegno 531Km</div>`)[0];
+            popup_862d489e902240a59e354a37dd0169ea.setContent(html_2d52ae334429420ba83c0d5e71ae8f63);
+        
+
+        circle_cda0772e05d141d791fe032f74e3b08d.bindPopup(popup_862d489e902240a59e354a37dd0169ea)
+        ;
+
+        
+    
+    
+            var circle_0e6754772ae2465cb1ddff338de4821c = L.circle(
+                [45.8080597, 9.0851765],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10260, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_795c40312daf47738f81c1cbdcfa48a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e083d0a13884f0887f9b48e29d8e2af = $(`<div id="html_6e083d0a13884f0887f9b48e29d8e2af" style="width: 100.0%; height: 100.0%;">Como 513Km</div>`)[0];
+            popup_795c40312daf47738f81c1cbdcfa48a0.setContent(html_6e083d0a13884f0887f9b48e29d8e2af);
+        
+
+        circle_0e6754772ae2465cb1ddff338de4821c.bindPopup(popup_795c40312daf47738f81c1cbdcfa48a0)
+        ;
+
+        
+    
+    
+            var circle_644466bf73e24ea79fdd21193f7c8db0 = L.circle(
+                [39.2982629, 16.2537357],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8580, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_f43c15c35a314252920cddb939e9a7e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48b6ca4d78944c2d9644fb124e442fd2 = $(`<div id="html_48b6ca4d78944c2d9644fb124e442fd2" style="width: 100.0%; height: 100.0%;">Cosenza 429Km</div>`)[0];
+            popup_f43c15c35a314252920cddb939e9a7e7.setContent(html_48b6ca4d78944c2d9644fb124e442fd2);
+        
+
+        circle_644466bf73e24ea79fdd21193f7c8db0.bindPopup(popup_f43c15c35a314252920cddb939e9a7e7)
+        ;
+
+        
+    
+    
+            var circle_8efa1a649311414f97d8a394769055da = L.circle(
+                [45.133249, 10.0226511],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8200, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_7b99e2748c5e48d49c22e92e34d0712f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02b74f3f9f1c4c8bb4a735ec7510e7c3 = $(`<div id="html_02b74f3f9f1c4c8bb4a735ec7510e7c3" style="width: 100.0%; height: 100.0%;">Cremona 410Km</div>`)[0];
+            popup_7b99e2748c5e48d49c22e92e34d0712f.setContent(html_02b74f3f9f1c4c8bb4a735ec7510e7c3);
+        
+
+        circle_8efa1a649311414f97d8a394769055da.bindPopup(popup_7b99e2748c5e48d49c22e92e34d0712f)
+        ;
+
+        
+    
+    
+            var circle_b66fc9b5073743829df38cca05b4573a = L.circle(
+                [39.0807932, 17.1271102],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10020, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_0949eec16af54a0097ac72092ac21512 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_054c5dbece2b478a9839db141aa67645 = $(`<div id="html_054c5dbece2b478a9839db141aa67645" style="width: 100.0%; height: 100.0%;">Crotone 501Km</div>`)[0];
+            popup_0949eec16af54a0097ac72092ac21512.setContent(html_054c5dbece2b478a9839db141aa67645);
+        
+
+        circle_b66fc9b5073743829df38cca05b4573a.bindPopup(popup_0949eec16af54a0097ac72092ac21512)
+        ;
+
+        
+    
+    
+            var circle_20c9b9df2b8e4a8380f714c575fd6afa = L.circle(
+                [44.3844766, 7.5426711],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9740, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_f01695e19f574c4bb1f817f746d4acf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d93f7d1963748de8412e9ef3b4c50da = $(`<div id="html_5d93f7d1963748de8412e9ef3b4c50da" style="width: 100.0%; height: 100.0%;">Cuneo 487Km</div>`)[0];
+            popup_f01695e19f574c4bb1f817f746d4acf1.setContent(html_5d93f7d1963748de8412e9ef3b4c50da);
+        
+
+        circle_20c9b9df2b8e4a8380f714c575fd6afa.bindPopup(popup_f01695e19f574c4bb1f817f746d4acf1)
+        ;
+
+        
+    
+    
+            var circle_b2bc67df5b454e5db094cf7519ac317a = L.circle(
+                [43.7178919, 10.9477782],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4760, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_f8fa5f1ffddb44a598617d71eacb0c11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96422ed1ff7f4f92b4660896f31ec7b1 = $(`<div id="html_96422ed1ff7f4f92b4660896f31ec7b1" style="width: 100.0%; height: 100.0%;">Empoli 238Km</div>`)[0];
+            popup_f8fa5f1ffddb44a598617d71eacb0c11.setContent(html_96422ed1ff7f4f92b4660896f31ec7b1);
+        
+
+        circle_b2bc67df5b454e5db094cf7519ac317a.bindPopup(popup_f8fa5f1ffddb44a598617d71eacb0c11)
+        ;
+
+        
+    
+    
+            var circle_1ff5aedad8b74b0faf838acca2e2bc3c = L.circle(
+                [37.5099321, 14.262851],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10220, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_04657da3c7f6462a982b7cdab64d74ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae0066a3176b4e1cb14c1474fbe758ba = $(`<div id="html_ae0066a3176b4e1cb14c1474fbe758ba" style="width: 100.0%; height: 100.0%;">Enna 511Km</div>`)[0];
+            popup_04657da3c7f6462a982b7cdab64d74ab.setContent(html_ae0066a3176b4e1cb14c1474fbe758ba);
+        
+
+        circle_1ff5aedad8b74b0faf838acca2e2bc3c.bindPopup(popup_04657da3c7f6462a982b7cdab64d74ab)
+        ;
+
+        
+    
+    
+            var circle_693cefc1313a4f4c8629d67fc51eb454 = L.circle(
+                [46.0178511, 11.9005837],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9200, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_8918d55d3a684a05b82a59a1903a8ae9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3a5743ce7ed4f35be54e62328635710 = $(`<div id="html_f3a5743ce7ed4f35be54e62328635710" style="width: 100.0%; height: 100.0%;">Feltre 460Km</div>`)[0];
+            popup_8918d55d3a684a05b82a59a1903a8ae9.setContent(html_f3a5743ce7ed4f35be54e62328635710);
+        
+
+        circle_693cefc1313a4f4c8629d67fc51eb454.bindPopup(popup_8918d55d3a684a05b82a59a1903a8ae9)
+        ;
+
+        
+    
+    
+            var circle_6f42af27b51e43d0bcf6eaf7aab68fff = L.circle(
+                [44.8381237, 11.619787],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6680, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_0ffb0a6cbae24a3dbd677043dfdf4f75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2a3cb4113904b7c9d50cfa8c43f84f0 = $(`<div id="html_c2a3cb4113904b7c9d50cfa8c43f84f0" style="width: 100.0%; height: 100.0%;">Ferrara 334Km</div>`)[0];
+            popup_0ffb0a6cbae24a3dbd677043dfdf4f75.setContent(html_c2a3cb4113904b7c9d50cfa8c43f84f0);
+        
+
+        circle_6f42af27b51e43d0bcf6eaf7aab68fff.bindPopup(popup_0ffb0a6cbae24a3dbd677043dfdf4f75)
+        ;
+
+        
+    
+    
+            var circle_810e888524994aaeadbd5de6d21a0a0f = L.circle(
+                [43.7695604, 11.2558136],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4600, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_ba9346afa6e4487a8b00c6690f07bb5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40e461b84a9840af8414934d35459ead = $(`<div id="html_40e461b84a9840af8414934d35459ead" style="width: 100.0%; height: 100.0%;">Firenze 230Km</div>`)[0];
+            popup_ba9346afa6e4487a8b00c6690f07bb5e.setContent(html_40e461b84a9840af8414934d35459ead);
+        
+
+        circle_810e888524994aaeadbd5de6d21a0a0f.bindPopup(popup_ba9346afa6e4487a8b00c6690f07bb5e)
+        ;
+
+        
+    
+    
+            var circle_aa45a956085c4f6f8dee1641c8625c6e = L.circle(
+                [41.4621984, 15.5446302],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5140, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_262c09027fad456399de8c792def2b88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ea775eb8f9949b5a1f6ab776a67e60a = $(`<div id="html_9ea775eb8f9949b5a1f6ab776a67e60a" style="width: 100.0%; height: 100.0%;">Foggia 257Km</div>`)[0];
+            popup_262c09027fad456399de8c792def2b88.setContent(html_9ea775eb8f9949b5a1f6ab776a67e60a);
+        
+
+        circle_aa45a956085c4f6f8dee1641c8625c6e.bindPopup(popup_262c09027fad456399de8c792def2b88)
+        ;
+
+        
+    
+    
+            var circle_b66bea92c81b4058bca808c9ea73163f = L.circle(
+                [42.9508683, 12.701474900000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2340, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_67b3f44092ab4b96b8b2cc69f47ca03d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b66935d0cd644188638d473743736eb = $(`<div id="html_9b66935d0cd644188638d473743736eb" style="width: 100.0%; height: 100.0%;">Foligno 117Km</div>`)[0];
+            popup_67b3f44092ab4b96b8b2cc69f47ca03d.setContent(html_9b66935d0cd644188638d473743736eb);
+        
+
+        circle_b66bea92c81b4058bca808c9ea73163f.bindPopup(popup_67b3f44092ab4b96b8b2cc69f47ca03d)
+        ;
+
+        
+    
+    
+            var circle_d2dcbf3a2e54430e95675e5fa54f981c = L.circle(
+                [44.2227398, 12.0407312],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5200, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_8be68e5fd65c4d9bbcd9d9e46e8c6487 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e688894c3f9143fc91a60da189082113 = $(`<div id="html_e688894c3f9143fc91a60da189082113" style="width: 100.0%; height: 100.0%;">Forlì 260Km</div>`)[0];
+            popup_8be68e5fd65c4d9bbcd9d9e46e8c6487.setContent(html_e688894c3f9143fc91a60da189082113);
+        
+
+        circle_d2dcbf3a2e54430e95675e5fa54f981c.bindPopup(popup_8be68e5fd65c4d9bbcd9d9e46e8c6487)
+        ;
+
+        
+    
+    
+            var circle_0aad2fae516b45099a1731d9d50c4013 = L.circle(
+                [41.644102, 13.346595],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1520, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_93f72eb0a4db415e946e5e217fadf768 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12442a30b48b451db86ce5f6f4ec7642 = $(`<div id="html_12442a30b48b451db86ce5f6f4ec7642" style="width: 100.0%; height: 100.0%;">Frosinone 76Km</div>`)[0];
+            popup_93f72eb0a4db415e946e5e217fadf768.setContent(html_12442a30b48b451db86ce5f6f4ec7642);
+        
+
+        circle_0aad2fae516b45099a1731d9d50c4013.bindPopup(popup_93f72eb0a4db415e946e5e217fadf768)
+        ;
+
+        
+    
+    
+            var circle_07d9e186e0714a578b8d7d988dc4006b = L.circle(
+                [46.2891468, 13.1457376],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9800, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_07d1507137d54de3a922dda8c99ad941 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1d02bf0ceed4deb8be8f35efb7f49c4 = $(`<div id="html_d1d02bf0ceed4deb8be8f35efb7f49c4" style="width: 100.0%; height: 100.0%;">Gemona del friuli 490Km</div>`)[0];
+            popup_07d1507137d54de3a922dda8c99ad941.setContent(html_d1d02bf0ceed4deb8be8f35efb7f49c4);
+        
+
+        circle_07d9e186e0714a578b8d7d988dc4006b.bindPopup(popup_07d1507137d54de3a922dda8c99ad941)
+        ;
+
+        
+    
+    
+            var circle_5102a2285bb941e383a69239eee5ac2c = L.circle(
+                [44.4056499, 8.946256],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8000, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_b0f1d0a309c8467489848cdea5f65c8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e51cc34db8948e4b9e0e91ad8d67d2b = $(`<div id="html_5e51cc34db8948e4b9e0e91ad8d67d2b" style="width: 100.0%; height: 100.0%;">Genova 400Km</div>`)[0];
+            popup_b0f1d0a309c8467489848cdea5f65c8c.setContent(html_5e51cc34db8948e4b9e0e91ad8d67d2b);
+        
+
+        circle_5102a2285bb941e383a69239eee5ac2c.bindPopup(popup_b0f1d0a309c8467489848cdea5f65c8c)
+        ;
+
+        
+    
+    
+            var circle_236a890001624460bd8b28a8064d2dc0 = L.circle(
+                [45.9401812, 13.6201754],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9160, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_74ede5949aa349619a48a4ca496134eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad412371c74c4d5da934367f5d877c07 = $(`<div id="html_ad412371c74c4d5da934367f5d877c07" style="width: 100.0%; height: 100.0%;">Gorizia 458Km</div>`)[0];
+            popup_74ede5949aa349619a48a4ca496134eb.setContent(html_ad412371c74c4d5da934367f5d877c07);
+        
+
+        circle_236a890001624460bd8b28a8064d2dc0.bindPopup(popup_74ede5949aa349619a48a4ca496134eb)
+        ;
+
+        
+    
+    
+            var circle_25adda5d7ce447a3be90299dc0eab0a6 = L.circle(
+                [42.7635254, 11.1123634],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2960, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_b4245873b85e4b31ae2f71b9d416a82e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3df20ce9dc6b4f70adf16faa535ce95e = $(`<div id="html_3df20ce9dc6b4f70adf16faa535ce95e" style="width: 100.0%; height: 100.0%;">Grosseto 148Km</div>`)[0];
+            popup_b4245873b85e4b31ae2f71b9d416a82e.setContent(html_3df20ce9dc6b4f70adf16faa535ce95e);
+        
+
+        circle_25adda5d7ce447a3be90299dc0eab0a6.bindPopup(popup_b4245873b85e4b31ae2f71b9d416a82e)
+        ;
+
+        
+    
+    
+            var circle_b86f0d4fe32243e4b04e334be3001671 = L.circle(
+                [39.3127514, 8.5359582],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8820, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_13b2d6217f574dff9817c2eb99baf5f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65dc283e438f4a65a6362927de75d6c2 = $(`<div id="html_65dc283e438f4a65a6362927de75d6c2" style="width: 100.0%; height: 100.0%;">Iglesias 441Km</div>`)[0];
+            popup_13b2d6217f574dff9817c2eb99baf5f4.setContent(html_65dc283e438f4a65a6362927de75d6c2);
+        
+
+        circle_b86f0d4fe32243e4b04e334be3001671.bindPopup(popup_13b2d6217f574dff9817c2eb99baf5f4)
+        ;
+
+        
+    
+    
+            var circle_fa2a08c4170741319b028be1dcd93cb5 = L.circle(
+                [44.35999959999999, 11.7124294],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5600, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_a2c381cb4d5e4f28b47d8c9096095651 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2be2741eccc4daaad8e437fd7a75c66 = $(`<div id="html_d2be2741eccc4daaad8e437fd7a75c66" style="width: 100.0%; height: 100.0%;">Imola 280Km</div>`)[0];
+            popup_a2c381cb4d5e4f28b47d8c9096095651.setContent(html_d2be2741eccc4daaad8e437fd7a75c66);
+        
+
+        circle_fa2a08c4170741319b028be1dcd93cb5.bindPopup(popup_a2c381cb4d5e4f28b47d8c9096095651)
+        ;
+
+        
+    
+    
+            var circle_ac72dd5116dc469d9bd117603d1a8967 = L.circle(
+                [43.8878924, 8.0315641],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8500, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_a637596b0ed9499a8bfc006993186a48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0093189e6ed46379e91a2b117e626a9 = $(`<div id="html_a0093189e6ed46379e91a2b117e626a9" style="width: 100.0%; height: 100.0%;">Imperia 425Km</div>`)[0];
+            popup_a637596b0ed9499a8bfc006993186a48.setContent(html_a0093189e6ed46379e91a2b117e626a9);
+        
+
+        circle_ac72dd5116dc469d9bd117603d1a8967.bindPopup(popup_a637596b0ed9499a8bfc006993186a48)
+        ;
+
+        
+    
+    
+            var circle_b3f1ef09d7c64cac8d49a8d1be4fc4ab = L.circle(
+                [42.3498479, 13.3995091],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1780, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_c4f4d547a1774a8ba53052192df7b3a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d9c00faa1b7410abe96164c5fd07d5d = $(`<div id="html_8d9c00faa1b7410abe96164c5fd07d5d" style="width: 100.0%; height: 100.0%;">L'aquila 89Km</div>`)[0];
+            popup_c4f4d547a1774a8ba53052192df7b3a8.setContent(html_8d9c00faa1b7410abe96164c5fd07d5d);
+        
+
+        circle_b3f1ef09d7c64cac8d49a8d1be4fc4ab.bindPopup(popup_c4f4d547a1774a8ba53052192df7b3a8)
+        ;
+
+        
+    
+    
+            var circle_ee3a90f9df9d4f3ea6f4bf39f4c909f4 = L.circle(
+                [44.1024504, 9.824082599999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6540, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_5c4a4f8f3b124c598029a7ed8cc492d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00c35ea71bf74e8d88d1bca07fb57613 = $(`<div id="html_00c35ea71bf74e8d88d1bca07fb57613" style="width: 100.0%; height: 100.0%;">La spezia 327Km</div>`)[0];
+            popup_5c4a4f8f3b124c598029a7ed8cc492d9.setContent(html_00c35ea71bf74e8d88d1bca07fb57613);
+        
+
+        circle_ee3a90f9df9d4f3ea6f4bf39f4c909f4.bindPopup(popup_5c4a4f8f3b124c598029a7ed8cc492d9)
+        ;
+
+        
+    
+    
+            var circle_b33e8f7e9c0b4e17bb6432f6199142fe = L.circle(
+                [39.8792062, 9.5410458],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6700, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_65e0c8e7a9f94a318eed7820a34df3ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_11477915df764f2dbc47c2ca294850de = $(`<div id="html_11477915df764f2dbc47c2ca294850de" style="width: 100.0%; height: 100.0%;">Lanusei 335Km</div>`)[0];
+            popup_65e0c8e7a9f94a318eed7820a34df3ac.setContent(html_11477915df764f2dbc47c2ca294850de);
+        
+
+        circle_b33e8f7e9c0b4e17bb6432f6199142fe.bindPopup(popup_65e0c8e7a9f94a318eed7820a34df3ac)
+        ;
+
+        
+    
+    
+            var circle_ef47f35267b0413b9c7f6b084ea1f390 = L.circle(
+                [41.4675671, 12.903596499999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1180, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_4d88c702496c4bcea65c009020af199e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f77ee710d21c4c2fbaa34ed1465cc026 = $(`<div id="html_f77ee710d21c4c2fbaa34ed1465cc026" style="width: 100.0%; height: 100.0%;">Latina 59Km</div>`)[0];
+            popup_4d88c702496c4bcea65c009020af199e.setContent(html_f77ee710d21c4c2fbaa34ed1465cc026);
+        
+
+        circle_ef47f35267b0413b9c7f6b084ea1f390.bindPopup(popup_4d88c702496c4bcea65c009020af199e)
+        ;
+
+        
+    
+    
+            var circle_c6011ed0ef13460ebceacb50d1ea42fe = L.circle(
+                [40.3515155, 18.1750161],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10100, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_0f83a0c9586f414eb821e1705b09cf0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a61e8649aebe4dcc9db2f147ce2cff22 = $(`<div id="html_a61e8649aebe4dcc9db2f147ce2cff22" style="width: 100.0%; height: 100.0%;">Lecce 505Km</div>`)[0];
+            popup_0f83a0c9586f414eb821e1705b09cf0a.setContent(html_a61e8649aebe4dcc9db2f147ce2cff22);
+        
+
+        circle_c6011ed0ef13460ebceacb50d1ea42fe.bindPopup(popup_0f83a0c9586f414eb821e1705b09cf0a)
+        ;
+
+        
+    
+    
+            var circle_757bbe16d053475e80dff68850bef2f1 = L.circle(
+                [45.8565698, 9.397670399999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10100, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_b93aabd8dd7041838b86954268a83574 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_788054e14e7c43a1ad3d89a14e82dfe3 = $(`<div id="html_788054e14e7c43a1ad3d89a14e82dfe3" style="width: 100.0%; height: 100.0%;">Lecco 505Km</div>`)[0];
+            popup_b93aabd8dd7041838b86954268a83574.setContent(html_788054e14e7c43a1ad3d89a14e82dfe3);
+        
+
+        circle_757bbe16d053475e80dff68850bef2f1.bindPopup(popup_b93aabd8dd7041838b86954268a83574)
+        ;
+
+        
+    
+    
+            var circle_9e6d6fbe505b433992bcffd1bb6abea0 = L.circle(
+                [45.1935965, 11.303213],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7560, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_97ebc86c13b042dd98fa2120d8d610a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf3286f4e35640ed9fb4ae839464f3a5 = $(`<div id="html_cf3286f4e35640ed9fb4ae839464f3a5" style="width: 100.0%; height: 100.0%;">Legnago 378Km</div>`)[0];
+            popup_97ebc86c13b042dd98fa2120d8d610a2.setContent(html_cf3286f4e35640ed9fb4ae839464f3a5);
+        
+
+        circle_9e6d6fbe505b433992bcffd1bb6abea0.bindPopup(popup_97ebc86c13b042dd98fa2120d8d610a2)
+        ;
+
+        
+    
+    
+            var circle_3136fc0c619e466c80ffb7f2c6eb2d61 = L.circle(
+                [45.5983403, 8.9142485],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10020, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_00b97fa3a4a6409680cc5f83f5530a66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_638415aeb00a4f20b40c2f73aae982b2 = $(`<div id="html_638415aeb00a4f20b40c2f73aae982b2" style="width: 100.0%; height: 100.0%;">Legnano 501Km</div>`)[0];
+            popup_00b97fa3a4a6409680cc5f83f5530a66.setContent(html_638415aeb00a4f20b40c2f73aae982b2);
+        
+
+        circle_3136fc0c619e466c80ffb7f2c6eb2d61.bindPopup(popup_00b97fa3a4a6409680cc5f83f5530a66)
+        ;
+
+        
+    
+    
+            var circle_e1f55b78d476459a81d6adf7712153ca = L.circle(
+                [43.548473, 10.3105674],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5100, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_511bc68155f0402cbbb213ffd34b3d10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31916abec3ee4176a235b84435d9b33a = $(`<div id="html_31916abec3ee4176a235b84435d9b33a" style="width: 100.0%; height: 100.0%;">Livorno 255Km</div>`)[0];
+            popup_511bc68155f0402cbbb213ffd34b3d10.setContent(html_31916abec3ee4176a235b84435d9b33a);
+        
+
+        circle_e1f55b78d476459a81d6adf7712153ca.bindPopup(popup_511bc68155f0402cbbb213ffd34b3d10)
+        ;
+
+        
+    
+    
+            var circle_9b765034a52b4c4f82e6b2c861f5ae2f = L.circle(
+                [38.2337193, 16.2638009],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10360, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_986ef888c0d84f83a48f87dfd4eff036 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f686a9ba6c84b2cadb697f3d0bcbf23 = $(`<div id="html_9f686a9ba6c84b2cadb697f3d0bcbf23" style="width: 100.0%; height: 100.0%;">Locri 518Km</div>`)[0];
+            popup_986ef888c0d84f83a48f87dfd4eff036.setContent(html_9f686a9ba6c84b2cadb697f3d0bcbf23);
+        
+
+        circle_9b765034a52b4c4f82e6b2c861f5ae2f.bindPopup(popup_986ef888c0d84f83a48f87dfd4eff036)
+        ;
+
+        
+    
+    
+            var circle_fb9169d33409461fb8acc3cc9f745efe = L.circle(
+                [45.3097228, 9.503715999999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8980, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_31661d87874144c2a45050fcce8b5835 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6b3a6232fae477ab884c6452e468c75 = $(`<div id="html_d6b3a6232fae477ab884c6452e468c75" style="width: 100.0%; height: 100.0%;">Lodi 449Km</div>`)[0];
+            popup_31661d87874144c2a45050fcce8b5835.setContent(html_d6b3a6232fae477ab884c6452e468c75);
+        
+
+        circle_fb9169d33409461fb8acc3cc9f745efe.bindPopup(popup_31661d87874144c2a45050fcce8b5835)
+        ;
+
+        
+    
+    
+            var circle_f64356d38b424f2eb1a3c255d27ee24e = L.circle(
+                [43.8429197, 10.5026977],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5400, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_a208670e4e054256a3053c5908628080 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be5756255def41bca2cdc72810471b56 = $(`<div id="html_be5756255def41bca2cdc72810471b56" style="width: 100.0%; height: 100.0%;">Lucca 270Km</div>`)[0];
+            popup_a208670e4e054256a3053c5908628080.setContent(html_be5756255def41bca2cdc72810471b56);
+        
+
+        circle_f64356d38b424f2eb1a3c255d27ee24e.bindPopup(popup_a208670e4e054256a3053c5908628080)
+        ;
+
+        
+    
+    
+            var circle_a1cab03bbf9c4305abbfc09a11187afb = L.circle(
+                [45.1564168, 10.7913751],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7740, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_ff27c34c6bdc4fd295d47fb49fd885a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47416cab615f46be9e1b4898091298e4 = $(`<div id="html_47416cab615f46be9e1b4898091298e4" style="width: 100.0%; height: 100.0%;">Mantova 387Km</div>`)[0];
+            popup_ff27c34c6bdc4fd295d47fb49fd885a9.setContent(html_47416cab615f46be9e1b4898091298e4);
+        
+
+        circle_a1cab03bbf9c4305abbfc09a11187afb.bindPopup(popup_ff27c34c6bdc4fd295d47fb49fd885a9)
+        ;
+
+        
+    
+    
+            var circle_0cf415f4eadc4cbf8d1109d3b42ab084 = L.circle(
+                [44.2213998, 10.0359661],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6520, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_5ed2dfa2e8c4439cbac51ec0a34817ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cfe39ef3720c40d488029057a3bbe378 = $(`<div id="html_cfe39ef3720c40d488029057a3bbe378" style="width: 100.0%; height: 100.0%;">Massa carrara 326Km</div>`)[0];
+            popup_5ed2dfa2e8c4439cbac51ec0a34817ed.setContent(html_cfe39ef3720c40d488029057a3bbe378);
+        
+
+        circle_0cf415f4eadc4cbf8d1109d3b42ab084.bindPopup(popup_5ed2dfa2e8c4439cbac51ec0a34817ed)
+        ;
+
+        
+    
+    
+            var circle_5b11062e48fe491b947aa08bdedf58ce = L.circle(
+                [40.666379, 16.6043199],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7380, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_d826ea9b69c34a6bbae0eef0765e6978 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2a82e0b23d5409aa0a127ebff616625 = $(`<div id="html_c2a82e0b23d5409aa0a127ebff616625" style="width: 100.0%; height: 100.0%;">Matera 369Km</div>`)[0];
+            popup_d826ea9b69c34a6bbae0eef0765e6978.setContent(html_c2a82e0b23d5409aa0a127ebff616625);
+        
+
+        circle_5b11062e48fe491b947aa08bdedf58ce.bindPopup(popup_d826ea9b69c34a6bbae0eef0765e6978)
+        ;
+
+        
+    
+    
+            var circle_8056f07f3e7a4815aa135ddc0a2d522c = L.circle(
+                [45.3563017, 9.321463],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9220, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_ef73808bcc354b72bc89f0021f015fd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d87de528706746b8bc38db9065191bdc = $(`<div id="html_d87de528706746b8bc38db9065191bdc" style="width: 100.0%; height: 100.0%;">Melegnano 461Km</div>`)[0];
+            popup_ef73808bcc354b72bc89f0021f015fd5.setContent(html_d87de528706746b8bc38db9065191bdc);
+        
+
+        circle_8056f07f3e7a4815aa135ddc0a2d522c.bindPopup(popup_ef73808bcc354b72bc89f0021f015fd5)
+        ;
+
+        
+    
+    
+            var circle_f68a74b322f2487786ddaea78627d824 = L.circle(
+                [38.1937335, 15.5542057],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9740, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_7cd8737378a94327942c5541c005c0ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1a0fd5d24d24d3cbae6aa258a76b54b = $(`<div id="html_d1a0fd5d24d24d3cbae6aa258a76b54b" style="width: 100.0%; height: 100.0%;">Messina 487Km</div>`)[0];
+            popup_7cd8737378a94327942c5541c005c0ba.setContent(html_d1a0fd5d24d24d3cbae6aa258a76b54b);
+        
+
+        circle_f68a74b322f2487786ddaea78627d824.bindPopup(popup_7cd8737378a94327942c5541c005c0ba)
+        ;
+
+        
+    
+    
+            var circle_b8db6b0c37834b9eaab8689f59d39cf3 = L.circle(
+                [45.464203499999996, 9.189982],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9540, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_8f78724749c541bcbd993b6c5a601fdb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_181b74a5cc504fe4bc97e145cc0a6587 = $(`<div id="html_181b74a5cc504fe4bc97e145cc0a6587" style="width: 100.0%; height: 100.0%;">Milano 477Km</div>`)[0];
+            popup_8f78724749c541bcbd993b6c5a601fdb.setContent(html_181b74a5cc504fe4bc97e145cc0a6587);
+        
+
+        circle_b8db6b0c37834b9eaab8689f59d39cf3.bindPopup(popup_8f78724749c541bcbd993b6c5a601fdb)
+        ;
+
+        
+    
+    
+            var circle_02a9241d2a8b499faba55ef1aa416fe1 = L.circle(
+                [45.4950138, 12.1158683],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8000, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_c071cc09b67d486eb38a65df1f06c758 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ea995d4c8964422bacec3f8979679c3 = $(`<div id="html_9ea995d4c8964422bacec3f8979679c3" style="width: 100.0%; height: 100.0%;">Mirano 400Km</div>`)[0];
+            popup_c071cc09b67d486eb38a65df1f06c758.setContent(html_9ea995d4c8964422bacec3f8979679c3);
+        
+
+        circle_02a9241d2a8b499faba55ef1aa416fe1.bindPopup(popup_c071cc09b67d486eb38a65df1f06c758)
+        ;
+
+        
+    
+    
+            var circle_337bb531ed514ce4baaac8416af988b1 = L.circle(
+                [44.647128, 10.9252269],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6600, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_0839ab8a12cd499aa6d844aa5b114ca8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_739db14467af49e298bda60add792f0c = $(`<div id="html_739db14467af49e298bda60add792f0c" style="width: 100.0%; height: 100.0%;">Modena 330Km</div>`)[0];
+            popup_0839ab8a12cd499aa6d844aa5b114ca8.setContent(html_739db14467af49e298bda60add792f0c);
+        
+
+        circle_337bb531ed514ce4baaac8416af988b1.bindPopup(popup_0839ab8a12cd499aa6d844aa5b114ca8)
+        ;
+
+        
+    
+    
+            var circle_71c4eb9d20a447f2aa09f52dce6b4446 = L.circle(
+                [45.2391132, 11.749736],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7500, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_0676dcdf6527490cb1cfd265895f3a35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17c3878f59c249cab3435054a368dc03 = $(`<div id="html_17c3878f59c249cab3435054a368dc03" style="width: 100.0%; height: 100.0%;">Monselice 375Km</div>`)[0];
+            popup_0676dcdf6527490cb1cfd265895f3a35.setContent(html_17c3878f59c249cab3435054a368dc03);
+        
+
+        circle_71c4eb9d20a447f2aa09f52dce6b4446.bindPopup(popup_0676dcdf6527490cb1cfd265895f3a35)
+        ;
+
+        
+    
+    
+            var circle_ad554c8281c9498ab88ce06066900477 = L.circle(
+                [45.2308365, 11.4624091],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7580, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_8e97a37a5a3b46a58b8a7575d88ddbd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc3447b980a34555903e04e9a79bf885 = $(`<div id="html_dc3447b980a34555903e04e9a79bf885" style="width: 100.0%; height: 100.0%;">Montagnana 379Km</div>`)[0];
+            popup_8e97a37a5a3b46a58b8a7575d88ddbd6.setContent(html_dc3447b980a34555903e04e9a79bf885);
+        
+
+        circle_ad554c8281c9498ab88ce06066900477.bindPopup(popup_8e97a37a5a3b46a58b8a7575d88ddbd6)
+        ;
+
+        
+    
+    
+            var circle_b4a7313df9074ce1a6a4b6f8187ffc34 = L.circle(
+                [45.5845001, 9.2744485],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9680, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_82cd41d35b764f3ab499cccf66b2b8b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a114034d01d74967afa584eec70cb795 = $(`<div id="html_a114034d01d74967afa584eec70cb795" style="width: 100.0%; height: 100.0%;">Monza 484Km</div>`)[0];
+            popup_82cd41d35b764f3ab499cccf66b2b8b7.setContent(html_a114034d01d74967afa584eec70cb795);
+        
+
+        circle_b4a7313df9074ce1a6a4b6f8187ffc34.bindPopup(popup_82cd41d35b764f3ab499cccf66b2b8b7)
+        ;
+
+        
+    
+    
+            var circle_fed13ed4035b4fa0ba2bc481082a7c75 = L.circle(
+                [40.8517983, 14.26812],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3760, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_aab2888312dd4ac7a3cf73186d808240 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9424cb63148840498d77931d1ee1fa41 = $(`<div id="html_9424cb63148840498d77931d1ee1fa41" style="width: 100.0%; height: 100.0%;">Napoli 188Km</div>`)[0];
+            popup_aab2888312dd4ac7a3cf73186d808240.setContent(html_9424cb63148840498d77931d1ee1fa41);
+        
+
+        circle_fed13ed4035b4fa0ba2bc481082a7c75.bindPopup(popup_aab2888312dd4ac7a3cf73186d808240)
+        ;
+
+        
+    
+    
+            var circle_eed9fd1b7f13417d81fda6bf3aa19ee3 = L.circle(
+                [45.44692999999999, 8.622161199999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10040, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_f146a023f07841449f78269d09893580 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be344f19d4914891a08354f21ad380e7 = $(`<div id="html_be344f19d4914891a08354f21ad380e7" style="width: 100.0%; height: 100.0%;">Novara 502Km</div>`)[0];
+            popup_f146a023f07841449f78269d09893580.setContent(html_be344f19d4914891a08354f21ad380e7);
+        
+
+        circle_eed9fd1b7f13417d81fda6bf3aa19ee3.bindPopup(popup_f146a023f07841449f78269d09893580)
+        ;
+
+        
+    
+    
+            var circle_4ded9dcf21624155a03db4384b9a9e35 = L.circle(
+                [40.32024210000001, 9.3264377],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6360, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_ea1bc8d54f8642758a6e84ef3d407406 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e641c684da645f3ac8bfbb1877fecdb = $(`<div id="html_9e641c684da645f3ac8bfbb1877fecdb" style="width: 100.0%; height: 100.0%;">Nuoro 318Km</div>`)[0];
+            popup_ea1bc8d54f8642758a6e84ef3d407406.setContent(html_9e641c684da645f3ac8bfbb1877fecdb);
+        
+
+        circle_4ded9dcf21624155a03db4384b9a9e35.bindPopup(popup_ea1bc8d54f8642758a6e84ef3d407406)
+        ;
+
+        
+    
+    
+            var circle_e9cb9a329c8a4658bce9530ab2ae2620 = L.circle(
+                [40.92357639999999, 9.4964429],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5440, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_09d31791fd16438fa71e3a449e48e481 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a51501ab8d84e579c4eff555550b106 = $(`<div id="html_7a51501ab8d84e579c4eff555550b106" style="width: 100.0%; height: 100.0%;">Olbia 272Km</div>`)[0];
+            popup_09d31791fd16438fa71e3a449e48e481.setContent(html_7a51501ab8d84e579c4eff555550b106);
+        
+
+        circle_e9cb9a329c8a4658bce9530ab2ae2620.bindPopup(popup_09d31791fd16438fa71e3a449e48e481)
+        ;
+
+        
+    
+    
+            var circle_01e65ee35d104b388c065e3567b54e17 = L.circle(
+                [45.8706086, 8.414451999999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10980, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_d6c795a5293a424199418e2f6789029f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fcab8657e274bbdb896e4b94a3cebc8 = $(`<div id="html_8fcab8657e274bbdb896e4b94a3cebc8" style="width: 100.0%; height: 100.0%;">Omegna 549Km</div>`)[0];
+            popup_d6c795a5293a424199418e2f6789029f.setContent(html_8fcab8657e274bbdb896e4b94a3cebc8);
+        
+
+        circle_01e65ee35d104b388c065e3567b54e17.bindPopup(popup_d6c795a5293a424199418e2f6789029f)
+        ;
+
+        
+    
+    
+            var circle_7cdd6c3603584b2daae53f5d4d33944b = L.circle(
+                [39.906182, 8.5883863],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7920, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_4029ea0008924c5385248b6d2136322c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86b61e89386a4162b922ad123af441a1 = $(`<div id="html_86b61e89386a4162b922ad123af441a1" style="width: 100.0%; height: 100.0%;">Oristano 396Km</div>`)[0];
+            popup_4029ea0008924c5385248b6d2136322c.setContent(html_86b61e89386a4162b922ad123af441a1);
+        
+
+        circle_7cdd6c3603584b2daae53f5d4d33944b.bindPopup(popup_4029ea0008924c5385248b6d2136322c)
+        ;
+
+        
+    
+    
+            var circle_c34b88d1687c40f78dde8ed15527db90 = L.circle(
+                [45.4064349, 11.8767611],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7840, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_b985790a4d8d4905ba1b53fc5061a6e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78d97434f7da48629578d09a607057ce = $(`<div id="html_78d97434f7da48629578d09a607057ce" style="width: 100.0%; height: 100.0%;">Padova 392Km</div>`)[0];
+            popup_b985790a4d8d4905ba1b53fc5061a6e5.setContent(html_78d97434f7da48629578d09a607057ce);
+        
+
+        circle_c34b88d1687c40f78dde8ed15527db90.bindPopup(popup_b985790a4d8d4905ba1b53fc5061a6e5)
+        ;
+
+        
+    
+    
+            var circle_539ca137f7a84bef9b154af237b74923 = L.circle(
+                [38.11569, 13.3614868],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8540, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_aabab76c694f40e0a6f6fe18597bb17d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbdfa0cf760843b9911093ba74e72a8b = $(`<div id="html_bbdfa0cf760843b9911093ba74e72a8b" style="width: 100.0%; height: 100.0%;">Palermo 427Km</div>`)[0];
+            popup_aabab76c694f40e0a6f6fe18597bb17d.setContent(html_bbdfa0cf760843b9911093ba74e72a8b);
+        
+
+        circle_539ca137f7a84bef9b154af237b74923.bindPopup(popup_aabab76c694f40e0a6f6fe18597bb17d)
+        ;
+
+        
+    
+    
+            var circle_94523cbd50a140a6885a7eed2586fc03 = L.circle(
+                [45.909424, 13.3057286],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9000, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_f7a18422a0a349b09fb47894a64170c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d02ffd9964c4fa18a917ab122189121 = $(`<div id="html_2d02ffd9964c4fa18a917ab122189121" style="width: 100.0%; height: 100.0%;">Palmanova 450Km</div>`)[0];
+            popup_f7a18422a0a349b09fb47894a64170c1.setContent(html_2d02ffd9964c4fa18a917ab122189121);
+        
+
+        circle_94523cbd50a140a6885a7eed2586fc03.bindPopup(popup_f7a18422a0a349b09fb47894a64170c1)
+        ;
+
+        
+    
+    
+            var circle_e82e872c0d19498e8ad14ad9e04cbc27 = L.circle(
+                [44.801485, 10.327903599999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7340, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_434b796f488347c88827bbb9cd33e175 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_394bef8a15f04e40b11a83685f746967 = $(`<div id="html_394bef8a15f04e40b11a83685f746967" style="width: 100.0%; height: 100.0%;">Parma 367Km</div>`)[0];
+            popup_434b796f488347c88827bbb9cd33e175.setContent(html_394bef8a15f04e40b11a83685f746967);
+        
+
+        circle_e82e872c0d19498e8ad14ad9e04cbc27.bindPopup(popup_434b796f488347c88827bbb9cd33e175)
+        ;
+
+        
+    
+    
+            var circle_64203fce51f7494d81e90666e6649eec = L.circle(
+                [45.1847248, 9.1582069],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9060, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_0ce06d9aa72c4111b9ff9e39c6f80d97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_630c7c12bcb942149cd310e5f8d5acf1 = $(`<div id="html_630c7c12bcb942149cd310e5f8d5acf1" style="width: 100.0%; height: 100.0%;">Pavia 453Km</div>`)[0];
+            popup_0ce06d9aa72c4111b9ff9e39c6f80d97.setContent(html_630c7c12bcb942149cd310e5f8d5acf1);
+        
+
+        circle_64203fce51f7494d81e90666e6649eec.bindPopup(popup_0ce06d9aa72c4111b9ff9e39c6f80d97)
+        ;
+
+        
+    
+    
+            var circle_dcf5d29caf504830af2b417535712cb1 = L.circle(
+                [43.1107168, 12.3908279],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2680, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_604c82881e5e4533a759bdf2a8dfd8fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_335e0d873df94a13b3805a6959c4a2c7 = $(`<div id="html_335e0d873df94a13b3805a6959c4a2c7" style="width: 100.0%; height: 100.0%;">Perugia 134Km</div>`)[0];
+            popup_604c82881e5e4533a759bdf2a8dfd8fd.setContent(html_335e0d873df94a13b3805a6959c4a2c7);
+        
+
+        circle_dcf5d29caf504830af2b417535712cb1.bindPopup(popup_604c82881e5e4533a759bdf2a8dfd8fd)
+        ;
+
+        
+    
+    
+            var circle_7c6fef6a32934bcb99a9162e0954e7ab = L.circle(
+                [42.4617902, 14.2160898],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3080, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_3b8e7d8ed2d34ce58aab2c20dfd8702c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6994624ad18d42f0b98efa3cdbd6e45d = $(`<div id="html_6994624ad18d42f0b98efa3cdbd6e45d" style="width: 100.0%; height: 100.0%;">Pescara 154Km</div>`)[0];
+            popup_3b8e7d8ed2d34ce58aab2c20dfd8702c.setContent(html_6994624ad18d42f0b98efa3cdbd6e45d);
+        
+
+        circle_7c6fef6a32934bcb99a9162e0954e7ab.bindPopup(popup_3b8e7d8ed2d34ce58aab2c20dfd8702c)
+        ;
+
+        
+    
+    
+            var circle_1966f8c575f041ed8c91307a7f901187 = L.circle(
+                [45.0526206, 9.6929845],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8340, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_645a6aa8e2c24da0abdd2a0d735e6de5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40bbaa2476024933b45e87f937fd6829 = $(`<div id="html_40bbaa2476024933b45e87f937fd6829" style="width: 100.0%; height: 100.0%;">Piacenza 417Km</div>`)[0];
+            popup_645a6aa8e2c24da0abdd2a0d735e6de5.setContent(html_40bbaa2476024933b45e87f937fd6829);
+        
+
+        circle_1966f8c575f041ed8c91307a7f901187.bindPopup(popup_645a6aa8e2c24da0abdd2a0d735e6de5)
+        ;
+
+        
+    
+    
+            var circle_3c26b6ed14ef49caa8b54b908f0f838a = L.circle(
+                [45.9078554, 12.1811282],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8920, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_7059a8eed0c54ef69d420dfe57be2d50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38cadeaad2ee457ba698f32933cd7f85 = $(`<div id="html_38cadeaad2ee457ba698f32933cd7f85" style="width: 100.0%; height: 100.0%;">Pieve di soligo 446Km</div>`)[0];
+            popup_7059a8eed0c54ef69d420dfe57be2d50.setContent(html_38cadeaad2ee457ba698f32933cd7f85);
+        
+
+        circle_3c26b6ed14ef49caa8b54b908f0f838a.bindPopup(popup_7059a8eed0c54ef69d420dfe57be2d50)
+        ;
+
+        
+    
+    
+            var circle_05f95c5726e840d6a407c9cf9e644db2 = L.circle(
+                [45.7612022, 11.4313813],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8740, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_0cc6a121fd9345558b5b85406c7260c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46e6d789e36741ae98427417e368e5f7 = $(`<div id="html_46e6d789e36741ae98427417e368e5f7" style="width: 100.0%; height: 100.0%;">Piovene rocchette 437Km</div>`)[0];
+            popup_0cc6a121fd9345558b5b85406c7260c5.setContent(html_46e6d789e36741ae98427417e368e5f7);
+        
+
+        circle_05f95c5726e840d6a407c9cf9e644db2.bindPopup(popup_0cc6a121fd9345558b5b85406c7260c5)
+        ;
+
+        
+    
+    
+            var circle_c0bf4adddd0e4a76a2c34f3ffe498ea5 = L.circle(
+                [43.7228386, 10.4016888],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5280, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_61deeb8a59a347eeaeec0d406bff00cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87db2eb3b52b42e1bca068487e140030 = $(`<div id="html_87db2eb3b52b42e1bca068487e140030" style="width: 100.0%; height: 100.0%;">Pisa 264Km</div>`)[0];
+            popup_61deeb8a59a347eeaeec0d406bff00cd.setContent(html_87db2eb3b52b42e1bca068487e140030);
+        
+
+        circle_c0bf4adddd0e4a76a2c34f3ffe498ea5.bindPopup(popup_61deeb8a59a347eeaeec0d406bff00cd)
+        ;
+
+        
+    
+    
+            var circle_f64ece7aeed54a56a90927d447e4309a = L.circle(
+                [43.9303475, 10.9078587],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5180, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_c3b2aea37e6a43fdb9de59665d25cab8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_203e28ac5f34494eaa95acfa9cb4f574 = $(`<div id="html_203e28ac5f34494eaa95acfa9cb4f574" style="width: 100.0%; height: 100.0%;">Pistoia 259Km</div>`)[0];
+            popup_c3b2aea37e6a43fdb9de59665d25cab8.setContent(html_203e28ac5f34494eaa95acfa9cb4f574);
+        
+
+        circle_f64ece7aeed54a56a90927d447e4309a.bindPopup(popup_c3b2aea37e6a43fdb9de59665d25cab8)
+        ;
+
+        
+    
+    
+            var circle_8c8fa9e62b604b818378d9920c1f168c = L.circle(
+                [45.5379094, 8.054908900000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10780, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_c51d38a2829d45e59c42b218314aadeb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_122b8c8956c04231a3ac5cf9cbd615f0 = $(`<div id="html_122b8c8956c04231a3ac5cf9cbd615f0" style="width: 100.0%; height: 100.0%;">Ponderano 539Km</div>`)[0];
+            popup_c51d38a2829d45e59c42b218314aadeb.setContent(html_122b8c8956c04231a3ac5cf9cbd615f0);
+        
+
+        circle_8c8fa9e62b604b818378d9920c1f168c.bindPopup(popup_c51d38a2829d45e59c42b218314aadeb)
+        ;
+
+        
+    
+    
+            var circle_57a8b125ab6d4d4aa52568f55123acff = L.circle(
+                [45.9563684, 12.661452],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9020, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_7e67f8ad6b7c4d8fbeae19b2d5d6fa46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7d09f92745e4983b4e95bb65d995901 = $(`<div id="html_f7d09f92745e4983b4e95bb65d995901" style="width: 100.0%; height: 100.0%;">Pordenone 451Km</div>`)[0];
+            popup_7e67f8ad6b7c4d8fbeae19b2d5d6fa46.setContent(html_f7d09f92745e4983b4e95bb65d995901);
+        
+
+        circle_57a8b125ab6d4d4aa52568f55123acff.bindPopup(popup_7e67f8ad6b7c4d8fbeae19b2d5d6fa46)
+        ;
+
+        
+    
+    
+            var circle_ef53b9bdbe0f476b8137a83d018c973c = L.circle(
+                [40.6404067, 15.8056041],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6200, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_8b1974360117437f8710befe0221a9cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58905f10702c44939a662cbefbc03c56 = $(`<div id="html_58905f10702c44939a662cbefbc03c56" style="width: 100.0%; height: 100.0%;">Potenza 310Km</div>`)[0];
+            popup_8b1974360117437f8710befe0221a9cb.setContent(html_58905f10702c44939a662cbefbc03c56);
+        
+
+        circle_ef53b9bdbe0f476b8137a83d018c973c.bindPopup(popup_8b1974360117437f8710befe0221a9cb)
+        ;
+
+        
+    
+    
+            var circle_2adbb27bd9eb413dac77e2fd3adf54d3 = L.circle(
+                [40.8459469, 14.0932861],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3540, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_a034ce4be9fb418dba7b98bacec859e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ec16304e10c48eeac9af2b91047d0fb = $(`<div id="html_4ec16304e10c48eeac9af2b91047d0fb" style="width: 100.0%; height: 100.0%;">Pozzuoli 177Km</div>`)[0];
+            popup_a034ce4be9fb418dba7b98bacec859e1.setContent(html_4ec16304e10c48eeac9af2b91047d0fb);
+        
+
+        circle_2adbb27bd9eb413dac77e2fd3adf54d3.bindPopup(popup_a034ce4be9fb418dba7b98bacec859e1)
+        ;
+
+        
+    
+    
+            var circle_2fb9a8cef88c499c8b3767b26234e679 = L.circle(
+                [43.8777049, 11.102228],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4940, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_fa12799a5518425ebe07ea1306e5cb28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e816e999af3e4dd2ad5713695cda568f = $(`<div id="html_e816e999af3e4dd2ad5713695cda568f" style="width: 100.0%; height: 100.0%;">Prato 247Km</div>`)[0];
+            popup_fa12799a5518425ebe07ea1306e5cb28.setContent(html_e816e999af3e4dd2ad5713695cda568f);
+        
+
+        circle_2fb9a8cef88c499c8b3767b26234e679.bindPopup(popup_fa12799a5518425ebe07ea1306e5cb28)
+        ;
+
+        
+    
+    
+            var circle_b316a608ef1244fb9c8097910844c9b6 = L.circle(
+                [36.9269273, 14.7255129],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11700, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_8cf3b78224e7481b92873a52e2c0cd17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8e2946e54144b2a894a16accc092872 = $(`<div id="html_c8e2946e54144b2a894a16accc092872" style="width: 100.0%; height: 100.0%;">Ragusa 585Km</div>`)[0];
+            popup_8cf3b78224e7481b92873a52e2c0cd17.setContent(html_c8e2946e54144b2a894a16accc092872);
+        
+
+        circle_b316a608ef1244fb9c8097910844c9b6.bindPopup(popup_8cf3b78224e7481b92873a52e2c0cd17)
+        ;
+
+        
+    
+    
+            var circle_89cb1e44de704f8da2b03448eb1ef4ac = L.circle(
+                [44.4183598, 12.2035294],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5600, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_1a32cb5a76fa40f88fc528a3bf4a0af0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82c22be082e540d2a304719072f8b653 = $(`<div id="html_82c22be082e540d2a304719072f8b653" style="width: 100.0%; height: 100.0%;">Ravenna 280Km</div>`)[0];
+            popup_1a32cb5a76fa40f88fc528a3bf4a0af0.setContent(html_82c22be082e540d2a304719072f8b653);
+        
+
+        circle_89cb1e44de704f8da2b03448eb1ef4ac.bindPopup(popup_1a32cb5a76fa40f88fc528a3bf4a0af0)
+        ;
+
+        
+    
+    
+            var circle_a39b5413dcfc4135afc4ee69395f79be = L.circle(
+                [38.1113006, 15.6472914],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9980, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_c7a1f6279fe04b70a14cff9727bab68a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d48ab3cd31a34917b676c51d98a9028e = $(`<div id="html_d48ab3cd31a34917b676c51d98a9028e" style="width: 100.0%; height: 100.0%;">Reggio di calabria 499Km</div>`)[0];
+            popup_c7a1f6279fe04b70a14cff9727bab68a.setContent(html_d48ab3cd31a34917b676c51d98a9028e);
+        
+
+        circle_a39b5413dcfc4135afc4ee69395f79be.bindPopup(popup_c7a1f6279fe04b70a14cff9727bab68a)
+        ;
+
+        
+    
+    
+            var circle_a07326ecc4a04c80b108cc24c9b51af4 = L.circle(
+                [44.6989932, 10.6296859],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6900, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_809c15edb2eb4d8c95f892f0ce03473d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a33079f8776d4a3aa99b265424b7b9c5 = $(`<div id="html_a33079f8776d4a3aa99b265424b7b9c5" style="width: 100.0%; height: 100.0%;">Reggio nell'emilia 345Km</div>`)[0];
+            popup_809c15edb2eb4d8c95f892f0ce03473d.setContent(html_a33079f8776d4a3aa99b265424b7b9c5);
+        
+
+        circle_a07326ecc4a04c80b108cc24c9b51af4.bindPopup(popup_809c15edb2eb4d8c95f892f0ce03473d)
+        ;
+
+        
+    
+    
+            var circle_318490672d6749d19f0bcce878f13db4 = L.circle(
+                [42.404509, 12.8567281],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1260, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_d1a4d81f4fe944d9a594ea906fa93992 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5adffe9be38f4221beea9f934dede2c2 = $(`<div id="html_5adffe9be38f4221beea9f934dede2c2" style="width: 100.0%; height: 100.0%;">Rieti 63Km</div>`)[0];
+            popup_d1a4d81f4fe944d9a594ea906fa93992.setContent(html_5adffe9be38f4221beea9f934dede2c2);
+        
+
+        circle_318490672d6749d19f0bcce878f13db4.bindPopup(popup_d1a4d81f4fe944d9a594ea906fa93992)
+        ;
+
+        
+    
+    
+            var circle_b5d44cffc35e4661ba0890ec446f4a2f = L.circle(
+                [44.0678288, 12.5695158],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4800, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_5775398aa4b242c5b716ee507aafb348 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1fb17ea201047268059f987341cad49 = $(`<div id="html_c1fb17ea201047268059f987341cad49" style="width: 100.0%; height: 100.0%;">Rimini 240Km</div>`)[0];
+            popup_5775398aa4b242c5b716ee507aafb348.setContent(html_c1fb17ea201047268059f987341cad49);
+        
+
+        circle_b5d44cffc35e4661ba0890ec446f4a2f.bindPopup(popup_5775398aa4b242c5b716ee507aafb348)
+        ;
+
+        
+    
+    
+            var circle_a42ab50f93d64aa3bf5b6fd32c24e522 = L.circle(
+                [41.9027835, 12.4963655],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_c7a0317b10f54b4a893a58316cc895dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c28f332acf844b4e8ed735f56633d569 = $(`<div id="html_c28f332acf844b4e8ed735f56633d569" style="width: 100.0%; height: 100.0%;">Roma</div>`)[0];
+            popup_c7a0317b10f54b4a893a58316cc895dd.setContent(html_c28f332acf844b4e8ed735f56633d569);
+        
+
+        circle_a42ab50f93d64aa3bf5b6fd32c24e522.bindPopup(popup_c7a0317b10f54b4a893a58316cc895dd)
+        ;
+
+        
+    
+    
+            var circle_d2f27015ae624605b852361edd99dbea = L.circle(
+                [45.0698118, 11.7902158],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7120, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_9b80bf704b1e4250b1fa7a3185efa84e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8076114555ba4f50bafd42fe1d2c3b20 = $(`<div id="html_8076114555ba4f50bafd42fe1d2c3b20" style="width: 100.0%; height: 100.0%;">Rovigo 356Km</div>`)[0];
+            popup_9b80bf704b1e4250b1fa7a3185efa84e.setContent(html_8076114555ba4f50bafd42fe1d2c3b20);
+        
+
+        circle_d2f27015ae624605b852361edd99dbea.bindPopup(popup_9b80bf704b1e4250b1fa7a3185efa84e)
+        ;
+
+        
+    
+    
+            var circle_d75e56a38d75401d988f755a06657bb5 = L.circle(
+                [40.68244079999999, 14.7680961],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4660, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_9ed2f87a0cfd496c9b9bb0770d007858 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b9e63670e654ad4a8de836dc44a0587 = $(`<div id="html_4b9e63670e654ad4a8de836dc44a0587" style="width: 100.0%; height: 100.0%;">Salerno 233Km</div>`)[0];
+            popup_9ed2f87a0cfd496c9b9bb0770d007858.setContent(html_4b9e63670e654ad4a8de836dc44a0587);
+        
+
+        circle_d75e56a38d75401d988f755a06657bb5.bindPopup(popup_9ed2f87a0cfd496c9b9bb0770d007858)
+        ;
+
+        
+    
+    
+            var circle_7033cb1816e947949d6e18f35e090f03 = L.circle(
+                [45.630335, 12.5660992],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8280, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_6e27e6e6af624346b3f13b1e3e16fc7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70c3b790f5e743afbe9d059880b0938c = $(`<div id="html_70c3b790f5e743afbe9d059880b0938c" style="width: 100.0%; height: 100.0%;">San donà di piave 414Km</div>`)[0];
+            popup_6e27e6e6af624346b3f13b1e3e16fc7c.setContent(html_70c3b790f5e743afbe9d059880b0938c);
+        
+
+        circle_7033cb1816e947949d6e18f35e090f03.bindPopup(popup_6e27e6e6af624346b3f13b1e3e16fc7c)
+        ;
+
+        
+    
+    
+            var circle_75bf8018488a436fa907bf37380add65 = L.circle(
+                [39.5628683, 8.8998948],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7980, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_e4ff35b977fe41aca0030c2285cce57e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34a0713df8044df48cf9ee34f0b62777 = $(`<div id="html_34a0713df8044df48cf9ee34f0b62777" style="width: 100.0%; height: 100.0%;">Sanluri 399Km</div>`)[0];
+            popup_e4ff35b977fe41aca0030c2285cce57e.setContent(html_34a0713df8044df48cf9ee34f0b62777);
+        
+
+        circle_75bf8018488a436fa907bf37380add65.bindPopup(popup_e4ff35b977fe41aca0030c2285cce57e)
+        ;
+
+        
+    
+    
+            var circle_3f012d10b8e14e079d3223e03eb503c2 = L.circle(
+                [43.81596709999999, 7.7760567],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8780, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_18e1030baaa34a528c781d43254c373b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d29c2a79f70b4546895d468576930157 = $(`<div id="html_d29c2a79f70b4546895d468576930157" style="width: 100.0%; height: 100.0%;">Sanremo 439Km</div>`)[0];
+            popup_18e1030baaa34a528c781d43254c373b.setContent(html_d29c2a79f70b4546895d468576930157);
+        
+
+        circle_3f012d10b8e14e079d3223e03eb503c2.bindPopup(popup_18e1030baaa34a528c781d43254c373b)
+        ;
+
+        
+    
+    
+            var circle_f583066516514763ad77d775b3a2c4e5 = L.circle(
+                [40.7259269, 8.5556826],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7080, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_28b5593982714934a4201302537f8ecf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b803bbe8d50f41669a634f418940795b = $(`<div id="html_b803bbe8d50f41669a634f418940795b" style="width: 100.0%; height: 100.0%;">Sassari 354Km</div>`)[0];
+            popup_28b5593982714934a4201302537f8ecf.setContent(html_b803bbe8d50f41669a634f418940795b);
+        
+
+        circle_f583066516514763ad77d775b3a2c4e5.bindPopup(popup_28b5593982714934a4201302537f8ecf)
+        ;
+
+        
+    
+    
+            var circle_b842f725451546fc97dd7fcbb61759a4 = L.circle(
+                [44.298387, 8.464533099999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8440, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_5066d34a3ef040cf832e64eccf595b8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e32455c377b4d19a62465678c88a6ed = $(`<div id="html_7e32455c377b4d19a62465678c88a6ed" style="width: 100.0%; height: 100.0%;">Savona 422Km</div>`)[0];
+            popup_5066d34a3ef040cf832e64eccf595b8c.setContent(html_7e32455c377b4d19a62465678c88a6ed);
+        
+
+        circle_b842f725451546fc97dd7fcbb61759a4.bindPopup(popup_5066d34a3ef040cf832e64eccf595b8c)
+        ;
+
+        
+    
+    
+            var circle_13821569aecb4a89a09c95cf6269659b = L.circle(
+                [43.31880899999999, 11.3307574],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3680, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_2a33ed3707874f6585c80313f11a9aeb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f79d01533364ae1a4ee0002e3e49424 = $(`<div id="html_3f79d01533364ae1a4ee0002e3e49424" style="width: 100.0%; height: 100.0%;">Siena 184Km</div>`)[0];
+            popup_2a33ed3707874f6585c80313f11a9aeb.setContent(html_3f79d01533364ae1a4ee0002e3e49424);
+        
+
+        circle_13821569aecb4a89a09c95cf6269659b.bindPopup(popup_2a33ed3707874f6585c80313f11a9aeb)
+        ;
+
+        
+    
+    
+            var circle_8bd95519881b488c9420768d1a2bea6f = L.circle(
+                [37.0754739, 15.2865861],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11740, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_33240e207c6e483f807f3d3ed963ab72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc1a864e37be463d936c74d41ff67fea = $(`<div id="html_dc1a864e37be463d936c74d41ff67fea" style="width: 100.0%; height: 100.0%;">Siracusa 587Km</div>`)[0];
+            popup_33240e207c6e483f807f3d3ed963ab72.setContent(html_dc1a864e37be463d936c74d41ff67fea);
+        
+
+        circle_8bd95519881b488c9420768d1a2bea6f.bindPopup(popup_33240e207c6e483f807f3d3ed963ab72)
+        ;
+
+        
+    
+    
+            var circle_989060460871459bac22813f28c2c1c9 = L.circle(
+                [46.1698583, 9.8787674],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10360, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_c0e135299e694f549e046cd7454862b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8369bdc647644d7cafbdfea899ba2f7c = $(`<div id="html_8369bdc647644d7cafbdfea899ba2f7c" style="width: 100.0%; height: 100.0%;">Sondrio 518Km</div>`)[0];
+            popup_c0e135299e694f549e046cd7454862b0.setContent(html_8369bdc647644d7cafbdfea899ba2f7c);
+        
+
+        circle_989060460871459bac22813f28c2c1c9.bindPopup(popup_c0e135299e694f549e046cd7454862b0)
+        ;
+
+        
+    
+    
+            var circle_1c9d08761a1a4ff095650072cde4be73 = L.circle(
+                [40.46436060000001, 17.2470303],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8560, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_af0a690cf1f34011925021d0dbf866d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6528d4b4d7c34fd19a3be12039aec47b = $(`<div id="html_6528d4b4d7c34fd19a3be12039aec47b" style="width: 100.0%; height: 100.0%;">Taranto 428Km</div>`)[0];
+            popup_af0a690cf1f34011925021d0dbf866d6.setContent(html_6528d4b4d7c34fd19a3be12039aec47b);
+        
+
+        circle_1c9d08761a1a4ff095650072cde4be73.bindPopup(popup_af0a690cf1f34011925021d0dbf866d6)
+        ;
+
+        
+    
+    
+            var circle_0afc16bfe7df41b1bba62adb2b832ba9 = L.circle(
+                [42.6611431, 13.6986639],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2600, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_502690cd84844df39d1de5955fcf620d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b54f1b7e3424fb4854dc54c99043f7d = $(`<div id="html_2b54f1b7e3424fb4854dc54c99043f7d" style="width: 100.0%; height: 100.0%;">Teramo 130Km</div>`)[0];
+            popup_502690cd84844df39d1de5955fcf620d.setContent(html_2b54f1b7e3424fb4854dc54c99043f7d);
+        
+
+        circle_0afc16bfe7df41b1bba62adb2b832ba9.bindPopup(popup_502690cd84844df39d1de5955fcf620d)
+        ;
+
+        
+    
+    
+            var circle_7d72dcc5ef184d8b8396ca90ff8d2c96 = L.circle(
+                [42.5636168, 12.6426604],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1480, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_639a4d03eb10412fadce65d75e7b5722 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4014be8b30a451394b52aae00f2b86f = $(`<div id="html_d4014be8b30a451394b52aae00f2b86f" style="width: 100.0%; height: 100.0%;">Terni 74Km</div>`)[0];
+            popup_639a4d03eb10412fadce65d75e7b5722.setContent(html_d4014be8b30a451394b52aae00f2b86f);
+        
+
+        circle_7d72dcc5ef184d8b8396ca90ff8d2c96.bindPopup(popup_639a4d03eb10412fadce65d75e7b5722)
+        ;
+
+        
+    
+    
+            var circle_6102a52f65a0478797c4328c8b830a10 = L.circle(
+                [41.959817, 12.8022261],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 520, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_54fb2d3cc3da40db975e23ef20666703 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06dd43f244ab4b439bd4f0df8b16780c = $(`<div id="html_06dd43f244ab4b439bd4f0df8b16780c" style="width: 100.0%; height: 100.0%;">Tivoli 26Km</div>`)[0];
+            popup_54fb2d3cc3da40db975e23ef20666703.setContent(html_06dd43f244ab4b439bd4f0df8b16780c);
+        
+
+        circle_6102a52f65a0478797c4328c8b830a10.bindPopup(popup_54fb2d3cc3da40db975e23ef20666703)
+        ;
+
+        
+    
+    
+            var circle_66743d1193d1438e876ed494e2dd195b = L.circle(
+                [45.0703393, 7.686864],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10480, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_3bc2b357c02443ac855053b0ee3682dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b161d8bd00084a56a68b811474bd45d4 = $(`<div id="html_b161d8bd00084a56a68b811474bd45d4" style="width: 100.0%; height: 100.0%;">Torino 524Km</div>`)[0];
+            popup_3bc2b357c02443ac855053b0ee3682dd.setContent(html_b161d8bd00084a56a68b811474bd45d4);
+        
+
+        circle_66743d1193d1438e876ed494e2dd195b.bindPopup(popup_3bc2b357c02443ac855053b0ee3682dd)
+        ;
+
+        
+    
+    
+            var circle_5b395801e5214b86ba867a736a0c346b = L.circle(
+                [38.0173505, 12.5365171],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8640, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_b3345f0dce414d50a0704fd890827fd7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a58e4d53c4f41af8a47bc6912708a3e = $(`<div id="html_8a58e4d53c4f41af8a47bc6912708a3e" style="width: 100.0%; height: 100.0%;">Trapani 432Km</div>`)[0];
+            popup_b3345f0dce414d50a0704fd890827fd7.setContent(html_8a58e4d53c4f41af8a47bc6912708a3e);
+        
+
+        circle_5b395801e5214b86ba867a736a0c346b.bindPopup(popup_b3345f0dce414d50a0704fd890827fd7)
+        ;
+
+        
+    
+    
+            var circle_e83fe160888e4395b6fd57b6d2db50b3 = L.circle(
+                [46.0747793, 11.1217486],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9520, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_5eac4bdde73c4d10a7dac3422d07865a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22398326e59c499aad1ced9ca35ddb8e = $(`<div id="html_22398326e59c499aad1ced9ca35ddb8e" style="width: 100.0%; height: 100.0%;">Trento 476Km</div>`)[0];
+            popup_5eac4bdde73c4d10a7dac3422d07865a.setContent(html_22398326e59c499aad1ced9ca35ddb8e);
+        
+
+        circle_e83fe160888e4395b6fd57b6d2db50b3.bindPopup(popup_5eac4bdde73c4d10a7dac3422d07865a)
+        ;
+
+        
+    
+    
+            var circle_4c5ce01d9c4c443da260204ada0253b8 = L.circle(
+                [45.6668893, 12.2430437],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8380, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_963addc7eade4780a7bb5a0f601d18cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_212f974c04a04f74ac1d5072812c4561 = $(`<div id="html_212f974c04a04f74ac1d5072812c4561" style="width: 100.0%; height: 100.0%;">Treviso 419Km</div>`)[0];
+            popup_963addc7eade4780a7bb5a0f601d18cd.setContent(html_212f974c04a04f74ac1d5072812c4561);
+        
+
+        circle_4c5ce01d9c4c443da260204ada0253b8.bindPopup(popup_963addc7eade4780a7bb5a0f601d18cd)
+        ;
+
+        
+    
+    
+            var circle_4597ab492dca4f92a2986dc819e68c25 = L.circle(
+                [45.6495264, 13.7768182],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8580, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_6c07bbfb845e4204b54addd75460880b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07327001eed84246a805759c8ef74a8f = $(`<div id="html_07327001eed84246a805759c8ef74a8f" style="width: 100.0%; height: 100.0%;">Trieste 429Km</div>`)[0];
+            popup_6c07bbfb845e4204b54addd75460880b.setContent(html_07327001eed84246a805759c8ef74a8f);
+        
+
+        circle_4597ab492dca4f92a2986dc819e68c25.bindPopup(popup_6c07bbfb845e4204b54addd75460880b)
+        ;
+
+        
+    
+    
+            var circle_9d20a2db58b343c399b510f7d5fb188e = L.circle(
+                [46.0710668, 13.2345794],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9340, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_f87bb75e4e7c4b9bbc9f0bbbcb1427a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9a028e4043f49158be2294a19bbbf8c = $(`<div id="html_f9a028e4043f49158be2294a19bbbf8c" style="width: 100.0%; height: 100.0%;">Udine 467Km</div>`)[0];
+            popup_f87bb75e4e7c4b9bbc9f0bbbcb1427a7.setContent(html_f9a028e4043f49158be2294a19bbbf8c);
+        
+
+        circle_9d20a2db58b343c399b510f7d5fb188e.bindPopup(popup_f87bb75e4e7c4b9bbc9f0bbbcb1427a7)
+        ;
+
+        
+    
+    
+            var circle_8472ffd6434a42e7a8533e3996a82b2e = L.circle(
+                [45.82059890000001, 8.8250576],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10500, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_88a3a443293f42aab2d198caa29c7d4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af5e8da892aa4cfaab5da7882bad3688 = $(`<div id="html_af5e8da892aa4cfaab5da7882bad3688" style="width: 100.0%; height: 100.0%;">Varese 525Km</div>`)[0];
+            popup_88a3a443293f42aab2d198caa29c7d4b.setContent(html_af5e8da892aa4cfaab5da7882bad3688);
+        
+
+        circle_8472ffd6434a42e7a8533e3996a82b2e.bindPopup(popup_88a3a443293f42aab2d198caa29c7d4b)
+        ;
+
+        
+    
+    
+            var circle_d4c9857ec82c4b0bbc55cd37660fcf9c = L.circle(
+                [45.4408474, 12.3155151],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7860, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_6119dc72e1564f93860412f5dbed9f51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4f84bfb5314446fbd2326bdc60446ee = $(`<div id="html_d4f84bfb5314446fbd2326bdc60446ee" style="width: 100.0%; height: 100.0%;">Venezia 393Km</div>`)[0];
+            popup_6119dc72e1564f93860412f5dbed9f51.setContent(html_d4f84bfb5314446fbd2326bdc60446ee);
+        
+
+        circle_d4c9857ec82c4b0bbc55cd37660fcf9c.bindPopup(popup_6119dc72e1564f93860412f5dbed9f51)
+        ;
+
+        
+    
+    
+            var circle_f7cd3922732b47daa347ec678d5c6600 = L.circle(
+                [45.32022720000001, 8.418573499999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10040, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_3ef9df36956748ab9b883a17788a2dc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75e0d08490a949f68b2db23db030c58d = $(`<div id="html_75e0d08490a949f68b2db23db030c58d" style="width: 100.0%; height: 100.0%;">Vercelli 502Km</div>`)[0];
+            popup_3ef9df36956748ab9b883a17788a2dc7.setContent(html_75e0d08490a949f68b2db23db030c58d);
+        
+
+        circle_f7cd3922732b47daa347ec678d5c6600.bindPopup(popup_3ef9df36956748ab9b883a17788a2dc7)
+        ;
+
+        
+    
+    
+            var circle_e06a6f9ef4fb4a4c918f4c47f4deb0f7 = L.circle(
+                [45.43838419999999, 10.9916215],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8220, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_765cba471d004cdda237f3472c785fd6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2226bfe0b60480ab65ec1936377f1ec = $(`<div id="html_b2226bfe0b60480ab65ec1936377f1ec" style="width: 100.0%; height: 100.0%;">Verona 411Km</div>`)[0];
+            popup_765cba471d004cdda237f3472c785fd6.setContent(html_b2226bfe0b60480ab65ec1936377f1ec);
+        
+
+        circle_e06a6f9ef4fb4a4c918f4c47f4deb0f7.bindPopup(popup_765cba471d004cdda237f3472c785fd6)
+        ;
+
+        
+    
+    
+            var circle_e15514bb3ada48c3a23dca66796cf838 = L.circle(
+                [43.8657267, 10.2513103],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5680, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_1d08a1b8a17843ba8dabc3a7bf42f514 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5333e914a6df427ba20b7f8f6a0aa346 = $(`<div id="html_5333e914a6df427ba20b7f8f6a0aa346" style="width: 100.0%; height: 100.0%;">Viareggio 284Km</div>`)[0];
+            popup_1d08a1b8a17843ba8dabc3a7bf42f514.setContent(html_5333e914a6df427ba20b7f8f6a0aa346);
+        
+
+        circle_e15514bb3ada48c3a23dca66796cf838.bindPopup(popup_1d08a1b8a17843ba8dabc3a7bf42f514)
+        ;
+
+        
+    
+    
+            var circle_14aff610c7ca4f42a22c89b4d5a74bc7 = L.circle(
+                [38.6757774, 16.0983488],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9420, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_364faeaf87f94644ad55a8a7c182a195 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f89f0b2096404be9a789e1ab974acba5 = $(`<div id="html_f89f0b2096404be9a789e1ab974acba5" style="width: 100.0%; height: 100.0%;">Vibo valentia 471Km</div>`)[0];
+            popup_364faeaf87f94644ad55a8a7c182a195.setContent(html_f89f0b2096404be9a789e1ab974acba5);
+        
+
+        circle_14aff610c7ca4f42a22c89b4d5a74bc7.bindPopup(popup_364faeaf87f94644ad55a8a7c182a195)
+        ;
+
+        
+    
+    
+            var circle_e1f410b5523a443fb59f0ead51638cbe = L.circle(
+                [45.5454787, 11.5354214],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8240, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_bd5dd567f9024732ab248f4d32666033 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_367217a6f2f54c03887c08d699f0bf7a = $(`<div id="html_367217a6f2f54c03887c08d699f0bf7a" style="width: 100.0%; height: 100.0%;">Vicenza 412Km</div>`)[0];
+            popup_bd5dd567f9024732ab248f4d32666033.setContent(html_367217a6f2f54c03887c08d699f0bf7a);
+        
+
+        circle_e1f410b5523a443fb59f0ead51638cbe.bindPopup(popup_bd5dd567f9024732ab248f4d32666033)
+        ;
+
+        
+    
+    
+            var circle_0ed6dbf91f6944eab441267b6da3dd55 = L.circle(
+                [42.4206766, 12.107669],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1300, "stroke": true, "weight": 3}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+        var popup_bb270290d4f545729e1780009fe2ef36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c001d26271f4fa883e8bce20b60fbba = $(`<div id="html_8c001d26271f4fa883e8bce20b60fbba" style="width: 100.0%; height: 100.0%;">Viterbo 65Km</div>`)[0];
+            popup_bb270290d4f545729e1780009fe2ef36.setContent(html_8c001d26271f4fa883e8bce20b60fbba);
+        
+
+        circle_0ed6dbf91f6944eab441267b6da3dd55.bindPopup(popup_bb270290d4f545729e1780009fe2ef36)
+        ;
+
+        
+    
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": true, "position": "topright", "title": "Fullscreen", "titleCancel": "Exit fullscreen"}
+            ).addTo(map_3a60d70091e447539239484c8e2a28e2);
+        
+    
+            var tile_layer_90c6b43429cb4136a31a5bf4d4afd216 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_7b4d0cd3534f4371b13ab1f1906afd89 = new L.Control.MiniMap(
+                tile_layer_90c6b43429cb4136a31a5bf4d4afd216,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_3a60d70091e447539239484c8e2a28e2.addControl(mini_map_7b4d0cd3534f4371b13ab1f1906afd89);
+        
+</script>
