@@ -7,7 +7,7 @@ L'implementazione prevede tre differenti modelli. Il primo modello assume che tu
 ### Features
 Rappresentazione tramite formato .html di una cartina geografica dell'Italia di tutti i nodi compreso il sorgente e il più distante in Km o minuti. Il raggio di ogni nodo è proporzionale alla distanza in Km (1° modello) o minuti dalla sorgente (2° modello). Nel 1° e 2° modello viene inoltre calcolato il miglior comune sorgente che minimizza le distanze o i tempi di percorrenza da qualunque altro nodo. Il 3° modello identifica sia il miglior capoluogo di regione da cui partire che la miglior provincia per ogni capoluogo da cui partire.
 
-> **Tip:** Nei modelli viene richiesto se si vuole mostrare la rappresentazione per **Kn** o per **minuti**.
+> **Tip:** Nei modelli viene richiesto se si vuole mostrare la rappresentazione per **Km** o per **minuti**.
 
 ### Datasets
 - Il dataset contenente le informazioni sulle ASL ed i comuni di riferimento è disponibile all'[indirizzo](https://www.salute.gov.it/portale/documentazione/p6_2_8_1_1.jsp?id=13)
