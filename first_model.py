@@ -12,7 +12,7 @@ from rich.console import Console
 from folium import plugins
 
 #######################################################
-GOOGLE_API = "AIzaSyCne109pBSAhpB2rg6SlsdqIP6q5bsbp18"
+GOOGLE_API = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 comuni = f"data{os.sep}comuni.json"
 gmaps = googlemaps.Client(key=GOOGLE_API, retry_over_query_limit=False)
 
