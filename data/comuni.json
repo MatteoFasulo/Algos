@@ -496,6 +496,14 @@
     "lat": 42.7635254
   },
   {
+    "comune": "Iglesias",
+    "sigla_provincia": "SU",
+    "provincia": "Carbonia",
+    "regione": "Sardegna",
+    "lng": 8.5359582,
+    "lat": 39.3127514
+  },
+  {
     "comune": "Imola",
     "sigla_provincia": "BO",
     "provincia": "Bologna",
@@ -950,6 +958,22 @@
     "regione": "Veneto",
     "lng": 12.5660992,
     "lat": 45.630335
+  },
+  {
+    "comune": "Imperia",
+    "sigla_provincia": "IM",
+    "provincia": "Imperia",
+    "regione": "Liguria",
+    "lng": 8.0315641,
+    "lat": 43.8878924
+  },
+  {
+    "comune": "Sanluri",
+    "sigla_provincia": "SU",
+    "provincia": "Carbonia",
+    "regione": "Sardegna",
+    "lng": 8.8998948,
+    "lat": 39.5628683
   },
   {
     "comune": "Sanremo",
