@@ -5,7 +5,7 @@ import googlemaps
 import numpy as np
 import pandas as pd
 
-GOOGLE_API = "AIzaSyCne109pBSAhpB2rg6SlsdqIP6q5bsbp18"
+GOOGLE_API = "XXXXXXXXXXXXXXXXXXXXXXXXXXx"
 capoluoghi = ["L'Aquila", "Potenza", "Catanzaro", "Napoli", "Bologna", "Trieste", "Roma", "Genova", "Milano", "Ancona",
               "Campobasso", "Torino", "Bari", "Cagliari", "Palermo", "Firenze", "Trento", "Perugia", "Aosta",
               "Venezia", "Bolzano"]
