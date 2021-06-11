@@ -141,30 +141,24 @@ def best_source():
     weights = list()
     comuni = list_comuni()
     for comune_sorgente in comuni:
-        # list()
+        temp = list()
         source_lat, source_long = (float(search_comune(comune_sorgente)[1]), float(search_comune(comune_sorgente)[0]))
         for comune_destinazione in comuni:
             dest_lat, dest_long = (
                 float(search_comune(comune_destinazione)[1]), float(search_comune(comune_destinazione)[0]))
             distance = calculate_distance(source_long, source_lat, dest_long, dest_lat)
+            temp.append(distance)
+        weights.append(temp)
 
     new_df = pd.read_json("weights_1stModel.json")
     cities = new_df["city"].tolist()
     maximums = []
     best_city = None
 
-    # print(graph_type)
-    if graph_type is True:
-        # print("KM")
-        parameter = new_df["Distance"].tolist()
-    else:
-        # print("MIN")
-        parameter = new_df["Minutes"].tolist()
-
     # print((new_df["Minutes"].tolist()[43]),(new_df["Distance"].tolist()[43]), sep='\n')
 
     for i in range(len(cities)):
-        maximums.append(max(parameter[i]))
+        maximums.append(max(weights[i]))
 
     best_value = min(maximums)
     index = 0
