@@ -90,6 +90,8 @@ def graph_italy():
     m = folium.Map(location=[41.87194, 12.56738], tiles="CartoDB positron", min_zoom=5.8, max_zoom=7, zoom_start=5.8,
                    zoom_control=True, min_lat=36, max_lat=47, min_lon=9.5, max_lon=15.5, max_bounds=True)
 
+    best_source_index, value = best_source()
+
     """thread = threading.Thread(target=threaded_tasks, args=(list_cities,))
     thread.start()"""
 
@@ -105,11 +107,20 @@ def graph_italy():
                 fill=True,
                 fill_color="crimson"
             ).add_to(m)
+        elif i == best_source_index:
+            folium.Circle(
+                location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                popup=f"{list_cities[i]}\n{distance}Km",
+                radius=distance * 10,
+                color="blue",
+                fill=True,
+                fill_color="blue"
+            ).add_to(m)
         elif distance >= longest_path[0]:
             folium.Circle(
                 location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
                 popup=f"{list_cities[i]}\n{distance}Km",
-                radius=distance * 20,
+                radius=distance * 10,
                 color="purple",
                 fill=True,
                 fill_color="purple"
@@ -118,7 +129,7 @@ def graph_italy():
             folium.Circle(
                 location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
                 popup=f"{list_cities[i]}\n{distance}Km",
-                radius=distance * 20,
+                radius=distance * 10,
                 color="green",
                 fill=True,
                 fill_color="green"
