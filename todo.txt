@@ -3,4 +3,5 @@
 - Calcolare cProfile di BF e DJ
 - Ripetere N volte l'analisi
 - Plot dati
+- Relazione sui dati
 - (Opzionale) FW Algo
