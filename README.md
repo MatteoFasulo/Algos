@@ -9,6 +9,10 @@ Rappresentazione tramite formato .html di una cartina geografica dell'Italia di 
 
 > **Tip:** Nei modelli viene richiesto se si vuole mostrare la rappresentazione per **Km** o per **minuti**.
 
+### Map Example
+[Modello 1][https://raw.githubusercontent.com/MatteoFasulo/Algos/main/result/first_model.html]
+[Modello 2][https://raw.githubusercontent.com/MatteoFasulo/Algos/main/result/second_model.html]
+
 ### Datasets
 - Il dataset contenente le informazioni sulle ASL ed i comuni di riferimento è disponibile all'[indirizzo](https://www.salute.gov.it/portale/documentazione/p6_2_8_1_1.jsp?id=13)
 - Le coordinate geografiche di ogni comune sono state reperite nel [repository](https://github.com/MatteoHenryChinaski/Comuni-Italiani-2018-Sql-Json-excel)
