@@ -1,0 +1,6 @@
+3° Modello:
+- Adattare BF e DJ
+- Calcolare cProfile di BF e DJ
+- Ripetere N volte l'analisi
+- Plot dati
+- (Opzionale) FW Algo
