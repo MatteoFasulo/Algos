@@ -155,18 +155,28 @@
   },
   "Ancona": {
     "capoluoghi_provincia": [
-      "Ancona"
+      "Ancona",
+      "Ascoli Piceno",
+      "Pesaro",
+      "Fermo",
+      "Macerata"
     ],
     "sigla_province": [
-      "AN"
+      "AN",
+      "AP",
+      "PU",
+      "FM",
+      "MC"
     ]
   },
   "Campobasso": {
     "capoluoghi_provincia": [
-      "Campobasso"
+      "Campobasso",
+      "Isernia"
     ],
     "sigla_province": [
-      "CB"
+      "CB",
+      "IS"
     ]
   },
   "Torino": {
@@ -194,7 +204,7 @@
   "Bari": {
     "capoluoghi_provincia": [
       "Bari",
-      "Andria",
+      "Barletta",
       "Brindisi",
       "Foggia",
       "Lecce",
@@ -256,7 +266,7 @@
       "Grosseto",
       "Livorno",
       "Lucca",
-      "Massa Carrara",
+      "Massa",
       "Pisa",
       "Pistoia",
       "Prato",
