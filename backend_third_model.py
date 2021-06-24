@@ -269,6 +269,33 @@ def search_comune(comune: str):
         print(comune, geo[geo["comune"] == comune]["lat"], geo[geo["comune"] == comune]["lng"])
 
 
+def chunk(longlist: list, size: int=10):
+    if size<=len(longlist):
+        i = size-1
+        step = size
+    else:
+        i = len(longlist)-1
+        step = len(longlist)
+    bound = len(longlist)
+    
+    chunked_list = list()
+    chunk = list()
+
+    while i<bound:
+        i += 1
+        if i%step==0:
+            chunk = [longlist[x] for x in range(i-step,i)]
+            #print(i, [x for x in range(i-step,i)])
+            chunked_list.append(chunk)
+            last = i
+        elif i>=bound-(bound%step):
+            chunk = [longlist[x] for x in range(last,bound)]
+            #print(i, [x for x in range(last,bound)], "final")
+            chunked_list.append(chunk)
+            break
+
+    return chunked_list
+
 
 def compute_weights(cities: list, filename: str, traffic_model="best_guess", night_time=datetime.datetime(2022, 1, 1, 4, 0, 0, 0)):
     if datetime.datetime.now() >= night_time:
@@ -276,12 +303,8 @@ def compute_weights(cities: list, filename: str, traffic_model="best_guess", nig
         compute_weights(cities, filename, traffic_model, night_time)
     print("COMPUTE START!")
 
-    latitudes = []
-    longitudes = []
-    origins = []
-    destination = []
-    distances = []
-    time_needed = []
+    latitudes = list()
+    longitudes = list()
 
     for comune in cities:
         long, lat = search_comune(comune)
@@ -291,38 +314,48 @@ def compute_weights(cities: list, filename: str, traffic_model="best_guess", nig
     weights_df = pd.DataFrame(data={"city": cities, "lat": latitudes, "long": longitudes})
     weights_df['Distance'] = list
     weights_df['Minutes'] = list
+    
+    origins = destination = []
+    for i in range(len(cities)):
+        LatOrigin = weights_df['lat'][i]
+        LongOrigin = weights_df['long'][i]
+        origins.append((LatOrigin, LongOrigin))
+
+    distances = list()
+    time_needed = list()
 
     now = datetime.datetime.now()
     for i in range(len(cities)):
+
         distances.clear()
         time_needed.clear()
-        for j in range(len(cities)):
-            LatOrigin = weights_df['lat'][i]
-            LongOrigin = weights_df['long'][i]
-            origins.append((LatOrigin, LongOrigin))
-            LatDest = weights_df['lat'][j]  # Save value as lat
-            LongDest = weights_df['long'][j]  # Save value as lat
-            destination.append((LatDest, LongDest))
-
-            sleep((randint(50,900)/300))
-            result = gmaps.distance_matrix(origins, destination, mode='driving', departure_time=night_time,
-                                           traffic_model=traffic_model)["rows"][0]["elements"][0]
-            # print(result)
-            time = round((result["duration"]["value"]) / 60)
-            result = round((result["distance"]["value"]) / 1000)
-            time_needed.append(time)
-            distances.append(result)
-            origins.clear()
-            destination.clear()
+        chunks = chunk(destination, 25)
+        for slot in chunks:
+            #sleep((randint(1,1250)/500))
+            #print(slot,"\n")
+            result = gmaps.distance_matrix(origins[i], slot, mode='driving', departure_time=night_time, traffic_model=traffic_model)["rows"][0]["elements"]#[0]
+            for g_data in range(len(slot)):
+                #print(result[g_data])
+                try:
+                    time = round((result[g_data]["duration"]["value"]) / 60)
+                except KeyError:
+                    time = math.inf()
+                time_needed.append(time)
+                try:
+                    dist = round((result[g_data]["distance"]["value"]) / 1000)
+                except KeyError:
+                    dist = math.inf()
+                distances.append(dist)
+        #print(time_needed)
+        #print(distances)
         print(f"{round(100/len(cities)*(i+1),2)}%")
         weights_df['Distance'][i] = distances[::]
         weights_df['Minutes'][i] = time_needed[::]
-    print(f"Tempo: {datetime.datetime.now()-now}\nSalvo...")
+    print(f"Tempo scraping: {datetime.datetime.now()-now}\nSalvo...")
     now = datetime.datetime.now()
     with open(f"{filename}.json", 'w', encoding='utf-8') as file:
         weights_df.to_json(file, force_ascii=False, indent=4)
-    print(f"Tempo: {datetime.datetime.now()-now}")
-    return
+    print(f"Tempo salvataggio: {datetime.datetime.now()-now}")
     
 
 
@@ -339,10 +372,9 @@ if __name__ == "__main__":
 
     my_df = pd.read_json(f"data{os.sep}geo_final.json")
     comuni = my_df["comune"].tolist()
-    #comuni = comuni[:11]
+    #comuni = comuni[:25]
     compute_weights(comuni, "weights_2.0")
     #regioni = my_df["regione"].unique().tolist()
     #make_capoluoghi_regionali()
     #make_capoluoghi_provincia()
     #make_comuni_provincia()
-    
