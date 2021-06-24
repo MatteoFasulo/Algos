@@ -58,7 +58,7 @@
   "VB": "Omegna",
   "VC": "Vercelli",
   "BA": "Bari",
-  "BT": "Andria",
+  "BT": "Barletta",
   "BR": "Brindisi",
   "FG": "Foggia",
   "LE": "Lecce",
@@ -82,7 +82,7 @@
   "GR": "Grosseto",
   "LI": "Livorno",
   "LU": "Lucca",
-  "MS": "Massa Carrara",
+  "MS": "Massa",
   "PI": "Pisa",
   "PT": "Pistoia",
   "PO": "Prato",
@@ -100,5 +100,10 @@
   "VR": "Verona",
   "VI": "Vicenza",
   "CS": "Cosenza",
-  "CZ": "Catanzaro"
+  "CZ": "Catanzaro",
+  "PU": "Pesaro",
+  "AP": "Ascoli Piceno",
+  "IS": "Isernia",
+  "FM": "Fermo",
+  "MC": "Macerata"
 }
