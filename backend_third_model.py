@@ -8,7 +8,7 @@ import os
 from time import sleep
 import math, datetime
 from random import randint
-from multiprocessing import Process
+from multiprocessing import Process, Pool
 
 GOOGLE_API = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 gmaps = googlemaps.Client(key=GOOGLE_API)
@@ -188,7 +188,7 @@ def weights(filename: str ="matrix_weights"):
     for row in range(len(comuni)):
         weights = list()
         weights_name = list()
-        known, city_w = conneceted(comuni[row])
+        known, city_w = connected(comuni[row])
         for cols in range(len(comuni)):
             if comuni[cols].lower() in map(str.lower, known):
                 weights.append(city_w[cols])
@@ -209,7 +209,7 @@ def weights(filename: str ="matrix_weights"):
     return matrix
             
             
-def conneceted(comune: str):
+def connected(comune: str):
     comune = comune.lower()
     known = list()
     check1 = check2 = False
@@ -385,8 +385,8 @@ def merge(start: int, stop: int, filename: str="weights_2.0.json"):
 def parallel_scraping(comuni, start=0, stop=None):
     if stop == None:
         stop = len(comuni)
-    group = chunk([x for x in range(start, stop)],4)
-    group = chunk(group,8)
+    group = chunk([x for x in range(start, stop)],6)    #Numero città
+    group = chunk(group,8)                              #Numero thread
     print(group)
     filename = ''
     for slot in group:
@@ -398,7 +398,7 @@ def parallel_scraping(comuni, start=0, stop=None):
                 print(filename)
                 p1 = Process(target=compute_weights, args=(comuni, filename, start, stop))
                 p1.start()
-            sleep(90)
+            sleep(180)
             if i == slot[-1]:
                 print(f"{filename} ULTIMO")
                 #compute_weights(comuni, filename, slot[0], slot[-1])
@@ -411,7 +411,7 @@ def parallel_scraping(comuni, start=0, stop=None):
             start, stop = i[0], i[-1]
             stop +=1
             merge(start, stop)
-        print("\t FINITA PRIMA MANCHE")
+        print("\n\t FINITA MANCHE\n\n")
 
 
 if __name__ == "__main__":
@@ -429,10 +429,11 @@ if __name__ == "__main__":
     comuni = my_df["comune"].tolist()
     #comuni = comuni[:25]
     #compute_weights(comuni, "weights_2.0")
-    parallel_scraping(comuni, 28, 100)
+    parallel_scraping(comuni, 500, 600)
 
 
     #regioni = my_df["regione"].unique().tolist()
     #make_capoluoghi_regionali()
     #make_capoluoghi_provincia()
     #make_comuni_provincia()
+    
