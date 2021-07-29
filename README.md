@@ -18,7 +18,7 @@ Rappresentazione tramite formato .html di una cartina geografica dell'Italia di 
 - Le coordinate geografiche di ogni comune sono reperite tramite Open Street Map API
 
 ### Errori noti
-I dataset riportati sono stati in parte modificati manualmente per permettere all'API di Google Maps di identificare, a partire dal nome del comune, le coordinate di latitudine e longitudine. I dataset ottimizzati sono reperibili nella cartella "data".
+I dataset riportati sono stati in parte modificati manualmente per permettere all'API di Open Street Map di identificare, a partire dal nome del comune, le coordinate di latitudine e longitudine. I dataset ottimizzati sono reperibili nella cartella "data".
 
 
 ### Libraries
