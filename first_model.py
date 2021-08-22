@@ -3,19 +3,30 @@ import numpy as np
 import pandas as pd
 import folium
 import time
+from copy import deepcopy
 import urllib.request
 import urllib.error
 from folium import plugins
+import json
+
 from distance import calculate_distance
 
 ##############################################
-comuni = f"data{os.sep}comuni.json"
+comuni = f"data{os.sep}geo_final.json"
+
+
+def clear():
+    if os.name == 'nt':
+        _ = os.system('cls')
+    else:
+        _ = os.system('clear')
 
 
 ##############################################
 
-def download_comuni(filename="comuni.json"):
-    url = "https://raw.githubusercontent.com/MatteoFasulo/Algos/main/data/comuni.json"
+
+def download_comuni(filename="geo_final.json"):
+    url = "https://raw.githubusercontent.com/MatteoFasulo/Algos/main/data/geo_final.json"
     connection = True
     while connection:
         try:
@@ -58,6 +69,7 @@ def search_comune(comune: str):
 def choose_city(city_list: list):
     city_list = {k: v for k, v in enumerate(city_list)}
     correct = False
+    clear()
     while not correct:
         city = input("Source node (city name or ID): ").capitalize().strip()
         try:
@@ -65,7 +77,6 @@ def choose_city(city_list: list):
             if city in city_list.keys():
                 index = city
                 city_name = city_list[city]
-                # print(city)
                 correct = True
         except ValueError:
             if city in city_list.values():
@@ -76,64 +87,195 @@ def choose_city(city_list: list):
                 correct = True
             else:
                 print("\n[!] Not found\n", city_list, sep='')
-    # print(f"{index}, {city_name}")
     return (index, city_name, city_list)
+
+
+def cap_regione():
+    list_cap_regione = []
+    f_cap = open(f"data{os.sep}capoluoghi_regione.json", 'r', encoding='UTF-8')
+    df = json.load(f_cap)
+    f_cap.close()
+
+    for key in df.keys():
+        list_cap_regione.append(df[key]["comune"])
+
+    return list_cap_regione
+
+
+def cap_provincia():
+    list_cap_provincia = []
+    f_cap = open(f"data{os.sep}capoluoghi_provincia.json", 'r', encoding='UTF-8')
+    df = json.load(f_cap)
+    f_cap.close()
+
+    cap_reg = cap_regione()
+
+    for key in df.keys():
+        for city in df[key]["capoluoghi_provincia"]:
+            if city not in cap_reg:
+                list_cap_provincia.append(city)
+
+    return list_cap_provincia
+
+
+def give_comuni():
+    list_comuni = list()
+    df = pd.read_json(f"data{os.sep}geo_final.json")
+    comuni = df["comune"].tolist()
+    cap_reg = cap_regione()
+    cap_prov = cap_provincia()
+
+    for comune in comuni:
+        if (comune not in cap_reg) and (comune not in cap_prov):
+            list_comuni.append(comune)
+
+    return list_comuni
 
 
 def graph_italy():
     list_cities = list_comuni()
     index, city_name, list_cities = choose_city(list_cities)
-    source_lat, source_long = (float(search_comune(city_name)[1]), float(search_comune(city_name)[0]))
 
-    longest_path = [max(calculate_distance(source_long, source_lat, float(search_comune(list_cities[i])[0]), float(search_comune(list_cities[i])[1])) for i in range(len(list_cities)))]
+    try:
+        f_dist = open(f"data{os.sep}linear_weights.json", 'r', encoding='UTF-8')
+        dist = json.load(f_dist)
+        f_dist.close()
+    except FileNotFoundError:
+        dist = matrix_distance()
 
-    m = folium.Map(location=[41.87194, 12.56738], tiles="CartoDB positron", min_zoom=5.8, max_zoom=7, zoom_start=5.8,
-                   zoom_control=True, min_lat=36, max_lat=47, min_lon=9.5, max_lon=15.5, max_bounds=True)
+    longest_path = [max(dist[i]) for i in range(len(list_cities))]
 
-    best_source_index, value = best_source()
+    m = folium.Map(location=[41.87194, 12.56738], tiles="CartoDB positron", min_zoom=5.8, zoom_start=5.8,
+                   zoom_control=True, min_lat=36, max_lat=47, min_lon=9.5, max_lon=15.5, max_bounds=False)
 
-    """thread = threading.Thread(target=threaded_tasks, args=(list_cities,))
-    thread.start()"""
+    best_source_index, value = best_source(list_cities, dist)
+
+    capoluoghi_regione = cap_regione()
+    capoluoghi_provincia = cap_provincia()  # capoluoghi_provincia-capoluoghi_regione
+    # comuni = give_comuni()                      #comuni-capoluoghi_provincia
+
+    f1 = folium.FeatureGroup("Capoluoghi di regione")
+    f2 = folium.FeatureGroup("Capoluoghi di provincia")
+    f3 = folium.FeatureGroup("Comuni")
 
     for i in range(len(list_cities)):
-        distance = calculate_distance(source_long, source_lat, float(search_comune(list_cities[i])[0]),
-                                      float(search_comune(list_cities[i])[1]))
+        distance = dist[index][i]
+        ################################################################################################################
         if city_name == list_cities[i]:
-            folium.Circle(
-                location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
-                popup=list_cities[i],
-                radius=7500,
-                color="crimson",
-                fill=True,
-                fill_color="crimson"
-            ).add_to(m)
+            if list_cities[i] in capoluoghi_regione:
+                folium.Circle(
+                    location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                    popup=list_cities[i],
+                    radius=7500,
+                    color="crimson",
+                    fill=True,
+                    fill_color="crimson"
+                ).add_to(f1)
+            elif list_cities[i] in capoluoghi_provincia:
+                folium.Circle(
+                    location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                    popup=list_cities[i],
+                    radius=7500,
+                    color="crimson",
+                    fill=True,
+                    fill_color="crimson"
+                ).add_to(f2)
+            else:
+                folium.Circle(
+                    location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                    popup=list_cities[i],
+                    radius=7500,
+                    color="crimson",
+                    fill=True,
+                    fill_color="crimson"
+                ).add_to(f3)
+        ################################################################################################################
         elif i == best_source_index:
-            folium.Circle(
-                location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
-                popup=f"{list_cities[i]}\n{distance}Km",
-                radius=distance * 10,
-                color="blue",
-                fill=True,
-                fill_color="blue"
-            ).add_to(m)
+            if list_cities[i] in capoluoghi_regione:
+                folium.Circle(
+                    location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                    popup=f"{list_cities[i]}\n{distance}Km",
+                    radius=distance * 10,
+                    color="blue",
+                    fill=True,
+                    fill_color="blue"
+                ).add_to(f1)
+            elif list_cities[i] in capoluoghi_provincia:
+                folium.Circle(
+                    location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                    popup=f"{list_cities[i]}\n{distance}Km",
+                    radius=distance * 10,
+                    color="blue",
+                    fill=True,
+                    fill_color="blue"
+                ).add_to(f2)
+            else:
+                folium.Circle(
+                    location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                    popup=f"{list_cities[i]}\n{distance}Km",
+                    radius=distance * 10,
+                    color="blue",
+                    fill=True,
+                    fill_color="blue"
+                ).add_to(f3)
+        ################################################################################################################
         elif distance >= longest_path[0]:
-            folium.Circle(
-                location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
-                popup=f"{list_cities[i]}\n{distance}Km",
-                radius=distance * 10,
-                color="purple",
-                fill=True,
-                fill_color="purple"
-            ).add_to(m)
+            if list_cities[i] in capoluoghi_regione:
+                folium.Circle(
+                    location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                    popup=f"{list_cities[i]}\n{distance}Km",
+                    radius=distance,
+                    color="purple",
+                    fill=True,
+                    fill_color="purple"
+                ).add_to(f1)
+            elif list_cities[i] in capoluoghi_provincia:
+                folium.Circle(
+                    location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                    popup=f"{list_cities[i]}\n{distance}Km",
+                    radius=distance,
+                    color="purple",
+                    fill=True,
+                    fill_color="purple"
+                ).add_to(f2)
+            else:
+                folium.Circle(
+                    location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                    popup=f"{list_cities[i]}\n{distance}Km",
+                    radius=distance,
+                    color="purple",
+                    fill=True,
+                    fill_color="purple"
+                ).add_to(f3)
+        ################################################################################################################
         else:
-            folium.Circle(
-                location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
-                popup=f"{list_cities[i]}\n{distance}Km",
-                radius=distance * 10,
-                color="green",
-                fill=True,
-                fill_color="green"
-            ).add_to(m)
+            if list_cities[i] in capoluoghi_regione:
+                folium.Circle(
+                    location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                    popup=f"{list_cities[i]}\n{distance}Km",
+                    radius=distance,
+                    color="green",
+                    fill=True,
+                    fill_color="green"
+                ).add_to(f1)
+            elif list_cities[i] in capoluoghi_provincia:
+                folium.Circle(
+                    location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                    popup=f"{list_cities[i]}\n{distance}Km",
+                    radius=distance,
+                    color="green",
+                    fill=True,
+                    fill_color="green"
+                ).add_to(f2)
+            else:
+                folium.Circle(
+                    location=(search_comune(list_cities[i])[1], search_comune(list_cities[i])[0]),
+                    popup=f"{list_cities[i]}\n{distance}Km",
+                    radius=distance,
+                    color="green",
+                    fill=True,
+                    fill_color="green"
+                ).add_to(f3)
     plugins.Fullscreen(
         position="topright",
         title="Fullscreen",
@@ -142,31 +284,20 @@ def graph_italy():
     ).add_to(m)
     minimap = plugins.MiniMap()
     m.add_child(minimap)
+    f1.add_to(m)
+    f2.add_to(m)
+    f3.add_to(m)
+    folium.LayerControl().add_to(m)
     if not os.path.isdir("result"):
         os.mkdir("result")
     m.save(os.path.join("result", "first_model.html"))
     return os.path.abspath(f"result{os.sep}first_model.html")
 
 
-def best_source():
-    weights = list()
-    comuni = list_comuni()
-    for comune_sorgente in comuni:
-        temp = list()
-        source_lat, source_long = (float(search_comune(comune_sorgente)[1]), float(search_comune(comune_sorgente)[0]))
-        for comune_destinazione in comuni:
-            dest_lat, dest_long = (
-                float(search_comune(comune_destinazione)[1]), float(search_comune(comune_destinazione)[0]))
-            distance = calculate_distance(source_long, source_lat, dest_long, dest_lat)
-            temp.append(distance)
-        weights.append(temp)
-
-    new_df = pd.read_json("weights_1stModel.json")
-    cities = new_df["city"].tolist()
+def best_source(list_cities, weights):
+    cities = list_cities
     maximums = []
     best_city = None
-
-    # print((new_df["Minutes"].tolist()[43]),(new_df["Distance"].tolist()[43]), sep='\n')
 
     for i in range(len(cities)):
         maximums.append(max(weights[i]))
@@ -177,10 +308,46 @@ def best_source():
     for value in maximums:
         if value == best_value:
             best_city = (index, value)
-            break
         index += 1
-    print(cities[best_city[0]])
+    print(f"Best city: {cities[best_city[0]]}")
     return best_city
+
+
+def make_matrix(leng: int):
+    riga = [0 for x in range(leng)]
+    matrix = [deepcopy(riga) for x in range(leng)]
+    return matrix
+
+
+def matrix_distance(filename=comuni):
+    city = pd.read_json(filename)
+    unique = city["comune"].tolist()
+    longitudes = city["lng"].tolist()
+    latitudes = city["lat"].tolist()
+
+    matrix = make_matrix(len(unique))
+
+    for r in range(len(matrix)):
+        for c in range(r, len(matrix[r])):
+            dist = calculate_distance(longitudes[r], latitudes[r], longitudes[c], latitudes[c])
+            matrix[r][c] = dist
+            matrix[c][r] = dist
+    js_file = open(f"data{os.sep}linear_weights.json", 'w', encoding="utf-8")
+    json.dump(obj=matrix, fp=js_file, indent=4)
+    js_file.close()
+    return matrix
+
+
+def print_matrix(matrix):
+    print("[", end="")
+    for row in range(len(matrix)):
+        if row == 0:
+            print(matrix[row], sep='')
+        elif row == len(matrix) - 1:
+            print(' ', matrix[row], sep='', end='')
+        else:
+            print(' ', matrix[row], sep='')
+    print("]\n")
 
 
 def main():

@@ -1,46 +1,50 @@
 import os
 import first_model
 import second_model
-import third_model
 import webbrowser
 
 
 def main():
     clear()
+    if not os.path.isdir("data"):
+        os.mkdir("data")
     print(mk_title(string="main menù", length=52))
     print("1. 1st Model")
     print("2. 2nd Model")
-    print("3. 3rd Model")
-    print("4. Performance summary")
-    print("5. Exit")
+    print("3. Performance summary")
+    print("4. Exit")
     print(52 * "-")
     try:
         done = False
         while not done:
-            choice = handle_int(5)
+            choice = handle_int(4)
             if choice == 1:
                 clear()
-                path = first_model.main()
+                if os.path.isfile(f"result{os.sep}first_model.html"):
+                    path = f"result{os.sep}first_model.html"
+                else:
+                    path = first_model.main()
                 webbrowser.open_new(path)
                 done = True
             elif choice == 2:
                 clear()
-                path, time_needed = second_model.main()
+                if os.path.isfile(f"result{os.sep}second_model.html"):
+                    path = f"result{os.sep}second_model.html"
+                else:
+                    path = None
                 webbrowser.open_new(path)
-                done = True
-            elif choice == 3:
-                clear()
-                path = third_model.main()
-                webbrowser.open_new(path)
-                pass
                 done = True
             elif choice == 4:
                 clear()
+                second_model.main(distance_df="test.json", output_csv="shortest_path_time.csv")
                 webbrowser.open_new_tab("https://github.com/MatteoFasulo/Algos/blob/b764d198c8dc9a45f74fee5eab9e220bb4c7ed80/algorithm.ipynb")
-                pass
+                done = True
             else:
                 clear()
-                print("Bye bye see you soon!")
+                print("###################################\n"
+                      "# Exit command received, exiting! #\n"
+                      "#        Bye, see you soon!       #\n"
+                      "###################################")
                 done = True
     except KeyboardInterrupt:
         raise KeyboardInterrupt
