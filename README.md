@@ -45,14 +45,13 @@ I dataset riportati sono stati in parte modificati manualmente per permettere al
 $ pip install -r requirements.txt
 ```
 ----
-
 ### Execution:
 
 ```
 $ python main.py
 ```
-Le possibili scelte dal menù riguardano la visualizzazione (compreso anche il calcolo) del 1° modello e la sola visualizzazione del 2° modello (per motivi strettamente legati alla realizzazione del secondo modello).
 ----
+Le possibili scelte dal menù riguardano la visualizzazione (compreso anche il calcolo) del 1° modello e la sola visualizzazione del 2° modello (per motivi strettamente legati alla realizzazione del secondo modello).
 
 ### Functions:                
          
