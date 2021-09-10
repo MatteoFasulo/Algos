@@ -51,14 +51,14 @@ $ pip install -r requirements.txt
 ```
 $ python main.py
 ```
-
+Le possibili scelte dal menù riguardano la visualizzazione (compreso anche il calcolo) del 1° modello e la sola visualizzazione del 2° modello (per motivi strettamente legati alla realizzazione del secondo modello).
 ----
 
 ### Functions:                
          
 | Function                   | Description                    |
 | -------------------------- | ------------------------------ |
-| `def main()`                       | ** **|
+| `def main()`                       |Gestione del menù con relative scelte e riassunto delle performance|
 | `def ()`              |** **|
 | `def ()`             | ** **|
 | `def ()`                 | ** **|
