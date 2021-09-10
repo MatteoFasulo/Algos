@@ -58,16 +58,26 @@ Le possibili scelte dal menù riguardano la visualizzazione (compreso anche il c
 | Function                   | Description                    |
 | -------------------------- | ------------------------------ |
 | `def main()`                       |Gestione del menù con relative scelte e riassunto delle performance|
-| `def ()`              |** **|
-| `def ()`             | ** **|
-| `def ()`                 | ** **|
-| `def ()`                     | ** **|
-| `def ()`               | ** **|
-| `def()`             | ** **|
-
+| `def mk_title()`              |Funzione di utilità per interfaccia CLI|
+| `def handle_int(numberOfChoiches)`             |Gestione delle scelte da raw_input dell'utente|
+| `def clear()`                 |CLI clearer in base all'OS|
+| `def download_comuni()`                     |Retrieve dei dataset da github|
+| `def list_comuni()`               |Util per lista delle città nei dataset|
+| `def search_comune(comune)`             |Retrieve di latitudine e longitudine a partire dal nome del comune|
+| `def cap_regione()`             |lista cap. di regione|
+| `def cap_provincia()`             |lista cap. di provincia|
+| `def give_comuni()`             |lista dei comuni senza capoluoghi di provincia e regione|
+| `def graph_italy()`             |Mappa di Folium con visualizzazione di capoluoghi e comuni compresa la possibilità di deselezionare o selezionare cosa visualizzare. E' possibile inoltre notare il comune rosso (sorgente scelta) e il miglior comune (quello che minimizza le distanze in KM da ogni altro comune sulla mappa (in blu))|
+| `def best_source(list_cities, weights)`             |Calcola il miglior comune (in blu) sulla mappa (quello che minimizza le distanze in KM da ogni altro comune)|
+| `def matrix*`             |Insieme delle funzioni che gestiscono la matrice di distanze calcolata attraverso la formula dell'emisenoverso|
+| `def shortest_path(algorithm: str, matrix, one_way: bool = False, index: int = 0) -> np.ndarray`             |Funzione che attraverso Scipy calcola il tempo di esecuzione in CPython di più noti algoritmi come Dijkstra, Bellman-Ford e Johnson|
+| `def subs()`             |La funzione di subsetting della matrice è stata omessa in quanto ritenuta secondaria rispetto ai modelli presentati|
+| `def execution_time()`             |Calcolo del tempo di esecuzione e generazione del file CSV con il tempo necessario. Sono stati eseguiti 3 test per ogni Algoritmo e per ogni subset della matrice originaria|
+| `def calculate_distance(lon1, lat1, lon2, lat2, R=6373.0)`                     |Date le posizioni di lat e long di due comuni, la funzione calcola la loro distanza attraverso la Haversine Formula|
 ----
+### Considerazioni:
 
-### *End*
+Essendo un modello basato su una distanza "aerea" è chiaro che il miglior comune sarà quello più "centrale" tra tutti i comuni. Ciononostante vista la grande quantità di comuni con ASL al Sud, il "miglior" comune si trova nel Centro-Sud.
 
 [Python 3.9.X]: <https://www.python.org/downloads/>
 [time]: <http://robyp.x10host.com/3/time.html#loaded>
